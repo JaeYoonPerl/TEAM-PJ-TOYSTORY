@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@import url(./reset.css);
+@import url(./common.css);
+@import url(./core.css);
+@import url(./grid_12_flex.css);
+
+#logo-area{
+}
+.logo{
+    background: url(../IMG/img2/toy-story-background-1920.jpg) no-repeat top;
+    height: 100vh;
+    /* width: 100%; */
+    text-align: center;
+}
+.logo a{
+    left: 50%;
+
+}
+.logo a img{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%);
+    height: 60vh;
+    user-select: none;
+}
+.logo a img:nth-child(2){
+    transform: rotateY(90deg);
+    transition: 1s;
+    transform-origin: center;
+}
