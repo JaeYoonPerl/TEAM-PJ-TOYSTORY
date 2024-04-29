@@ -5,7 +5,8 @@ import mFn from "./my_function.js";
 // 대상 : .logo a:last-child
 const toyLogoA = mFn.qsa(".logo a");
 const poster = mFn.qs(".logo a:last-child");
-
+const toyLogoA2 =mFn.qsa(".chars-bg a");
+const SUMMARY = mFn.qs(".chars-bg a:last-child");
 
 function showPoster() {
     toyLogoA.forEach((element) => {
@@ -13,6 +14,11 @@ function showPoster() {
         poster.classList.toggle("show");
       });
     });
+    toyLogoA2.forEach((element) => {
+      element.addEventListener("click", () => {
+        SUMMARY.classList.toggle("show");
+      });
+    });
   }
-  
   showPoster();
+
