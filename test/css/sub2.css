@@ -127,16 +127,21 @@ body * {
 /******************* 2.트레일러 영역 *******************/
 .trailers-area{
   height: 100vh;
+  position: relative;
 }
 .character-design-area{
   height: 100vh;
+  position: relative;
 }
 .world-design-area{
   height: 100vh;
+  position: relative;
 }
 .awards-area{
   height: 100vh;
+  position: relative;
 }
 .footer-area{
   height: 100vh;
+  position: relative;
 }
