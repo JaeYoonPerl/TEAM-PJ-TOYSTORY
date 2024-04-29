@@ -5,6 +5,10 @@
 @import url(./core.css);
 @import url(./grid_12_flex.css);
 
+.ibx {
+  max-width: 1680px;
+  margin: 0 auto;
+}
 /* 공사중 표시 */
 body * {
   outline: 2px dashed #ccc;
@@ -17,17 +21,44 @@ body * {
   font-size: 30px;
   line-height: 1.7;
 }
-/*************** 상단영역 ***************/
+
+
+/* 백그라운드 */
 #logo-area {
   background: url(../IMG/img2/bg_sky.jpg) no-repeat
     center/cover;
 }
+#trailers-area{
+  background: url(../IMG/img2/bg_TRAILERS.png) no-repeat
+  center/cover;
+}
+#character-design-area{
+  background: url(../IMG/img2/bg_CHARACTERDESIGN.jpg) no-repeat
+  center/cover;
+}
+#world-design-area{
+  background: url(../IMG/img2/bg_WORLDDESIGN.jpg) no-repeat
+  center/cover;
+}
+#awards-area{
+  background: url(../IMG/img2/bg_AWARDS.jpg) no-repeat
+  center/cover;
+}
+#footer-area{
+  background: url(../IMG/img2/bg_CREDITS.jpg) no-repeat
+  center/cover;
+}
+
+
+
+/*************** 상단영역 ***************/
 .logo {
   position: relative;
   height: 100vh;
   aspect-ratio: 453/662;
   overflow: hidden;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 .logo a {
   position: absolute;
@@ -56,6 +87,7 @@ body * {
 /* --------------------- */
 .chars-bg {
   position: relative;
+  margin: 0 auto;
   bottom: 0;
   height: 100vh;
   aspect-ratio: 261/208;
@@ -94,5 +126,17 @@ body * {
 
 /******************* 2.트레일러 영역 *******************/
 .trailers-area{
+  height: 100vh;
+}
+.character-design-area{
+  height: 100vh;
+}
+.world-design-area{
+  height: 100vh;
+}
+.awards-area{
+  height: 100vh;
+}
+.footer-area{
   height: 100vh;
 }
