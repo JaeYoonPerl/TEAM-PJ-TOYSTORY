@@ -9,10 +9,17 @@
 body * {
   outline: 2px dashed #ccc;
 }
-
+.main-tit{
+  font-size: 60px;
+  font-weight: bold;
+}
+.main-text {
+  font-size: 30px;
+  line-height: 1.7;
+}
 /*************** 상단영역 ***************/
 #logo-area {
-  background: url(../IMG/img2/toy-story-background-1920.jpg) no-repeat
+  background: url(../IMG/img2/bg_sky.jpg) no-repeat
     center/cover;
 }
 .logo {
@@ -84,11 +91,8 @@ body * {
   transition: .5s;
   opacity: 1;
 }
-.main-tit{
-  font-size: 60px;
-  font-weight: bold;
-}
-.main-text {
-  font-size: 30px;
-  line-height: 1.7;
+
+/******************* 2.트레일러 영역 *******************/
+.trailers-area{
+  height: 100vh;
 }
