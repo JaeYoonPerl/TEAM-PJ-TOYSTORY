@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+@import url(./reset.css);
+@import url(./common.css);
+@import url(./core.css);
+@import url(./grid_12_flex.css);
+
+/* 공사중 표시 */
+body * {
+  outline: 2px dashed #ccc;
+}
+
+/*************** 상단영역 ***************/
+#logo-area {
+  position: relative;
+  height: 200vh;
+  /* height: 2000px; */
+  background: url(../IMG/img2/toy-story-background-1920.jpg) no-repeat
+  center/cover;
+  /* padding: 10%; */
+}
+.logo {
+  position: absolute;
+  width: 30%;
+  aspect-ratio: 453/662;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  overflow: hidden;
+}
+.logo a {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.5s ease-in-out;
+}
+.logo a:first-child:hover{
+    transition: 0.3s ease-in-out;
+    transform:  translateY(-50%) rotateX(-10deg) rotateY(20deg) scale(1.1);
+
+}
+.logo a img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+}
+.logo a:last-child {
+  top: -200%;
+}
+.logo a:last-child.show {
+  top: 50%;
+  transform: translateY(-50%);
+}
+ /* --------------------- */
+.chars-bg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 100vh;
+    /* width: 90%; */
+    aspect-ratio: 261/208;
+    transform: translate(-50%, 0);
+    background: url(../IMG/img2/chars.png)no-repeat center;
+}
+.chars-bg>p{
+    position: absolute;
+    /* width: 100%; */
+    /* bottom: 5%; */
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: #ffffff80;
+    color: #000;
+    padding: 5% 10%;
+    border-radius: 10%;
+}
+.main-text{
+    font-size: 30px;
+    line-height: 1.7;
+}
