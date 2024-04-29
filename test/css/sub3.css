@@ -34,7 +34,7 @@ body{
     position: absolute;
     height: 100%;
      width: 100%;
-     z-index: -1;
+     z-index: -2;
      overflow: hidden;
      top: 0;
      left: 0%;
@@ -45,4 +45,18 @@ body{
      width: 100%;
      left: -5%;
      object-fit: cover;
+ }
+
+ .bg-box{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.507);
+ }
+ .toy-3rd-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
  }
