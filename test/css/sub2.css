@@ -20,6 +20,7 @@ body * {
   height: 100vh;
   aspect-ratio: 453/662;
   overflow: hidden;
+  box-sizing: border-box;
 }
 .logo a {
   position: absolute;
