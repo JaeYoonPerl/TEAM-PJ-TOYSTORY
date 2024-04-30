@@ -83,3 +83,24 @@ body{
     padding: 10px;
     
  }
+ .indic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px 0;
+    width: 50%;
+ }
+ .indic img{
+    width: 10vw;
+ }
+
+ .abtn{
+    display: none;
+ }
+.char-banner li{
+    position: absolute;
+}
+ .char-banner img{
+    width: 75vw;
+ }
