@@ -71,7 +71,7 @@ body{
     top: 60%;
     left: 5%;
     width: 90vw;
-    height: 30vh;
+    height: 300px;
     background-color: #b4b4b4ab;
     z-index: 9999;
 
@@ -79,7 +79,7 @@ body{
  .sino-box span{
     color: #fff;
     font-size: 2rem;
-    line-height: 2;
-    padding: 15px;
+    line-height: 1.5;
+    padding: 10px;
     
  }
