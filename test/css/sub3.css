@@ -83,6 +83,12 @@ body{
     padding: 10px;
     
  }
+ .char-btn{
+   display: flex;
+   
+   justify-content: center;
+   
+ }
  .indic{
     display: flex;
     flex-direction: column;
@@ -93,13 +99,36 @@ body{
  }
  .indic span{
    font-size: 2.5rem;
+   color: #fff;
+   
+  
  }
  .indic li{
-   overflow: hidden;
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    align-items: center;
+
+   position: relative;
+    width: 200px;
+    height: 100px;
+
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid #c2c2c2;
+    border-radius: 19px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    /* transition: color 0.3s; */
+    cursor: pointer;
  }
  .indic img{
-    width: 10vw;
+    width: 200px;
+    position: absolute;
+    z-index: -1;
  }
+ 
 
  .abtn{
     display: none;
