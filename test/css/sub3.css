@@ -91,6 +91,12 @@ body{
     gap: 28px 0;
     width: 50%;
  }
+ .indic span{
+   font-size: 2.5rem;
+ }
+ .indic li{
+   overflow: hidden;
+ }
  .indic img{
     width: 10vw;
  }
@@ -102,5 +108,5 @@ body{
     position: absolute;
 }
  .char-banner img{
-    width: 75vw;
+    width: 70vw;
  }

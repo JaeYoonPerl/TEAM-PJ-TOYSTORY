@@ -57,7 +57,7 @@ function loadFn(){
 
         // 블릿 넣기
         indic.innerHTML += `<li><span>${bulText[i]}</span>
-        <img src="./IMG/img3/ico${i+1}.png" alt="charbtn"/>
+        <img src="./IMG/img3/toystory3-${i + 1}.jpg" alt="charbtn"/>
         </li>`;
         }
 
