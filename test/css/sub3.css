@@ -8,12 +8,14 @@
 
 /* 공사중 표시 */
 body * {
-    outline: 2px dashed #ccc;
+    /* outline: 2px dashed #ccc; */
 }
 
 body{
     margin: 0 auto;
+    background-color: rgba(0, 100, 0, 0.678);
 }
+
 
 /* 중앙속박스 */
 .inbox{
@@ -29,6 +31,18 @@ body{
 }
 .char-area{
     height: 100vh;
+    position: relative;
+}
+.char-area::before{
+   content: '';
+   background: url(../IMG/img3/world_head.jpg)no-repeat center/cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   opacity: 0.7;
+   z-index: -1;
 }
 .bg-video{
     position: absolute;
@@ -47,13 +61,7 @@ body{
      object-fit: cover;
  }
 
- /* .bg-box{
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.507);
- } */
+ /* 메인로고 */
  .toy-3rd-logo{
     position: absolute;
     top: 30%;
@@ -62,8 +70,9 @@ body{
     white-space: nowrap;
  }
  .toy-3rd-logo img{
-    scale: 0.5;
+    scale: 0.8;
  }
+ /* 시놉시스박스 */
  .sino-box{
     text-align: center;
     position: relative;
@@ -78,19 +87,41 @@ body{
  }
  .sino-box span{
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.5;
     padding: 10px;
+    font-weight: bold;
     
  }
+/* 서브타이틀 */
+ .sub-tit{
+   position: relative;
+   text-align: center;
+   font-size: 4rem;
+   margin: 10px 0;
+   padding: 5px 0;
+   z-index: 1;
+   font-weight: bold;
+   color: #fff;
+   text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000;
+
+ }
+ /* 캐릭터 설명 */
+ .char-area{
+   padding-top: 5%;
+ }
+ /* 캐릭터 선택 버튼 */
  .char-btn{
    display: flex;
    
    justify-content: center;
    
  }
+
  .indic{
     display: flex;
+    position: relative;
+    top: 5%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -114,30 +145,74 @@ body{
    position: relative;
     width: 200px;
     height: 100px;
-
+   opacity: 0.7;
     box-sizing: border-box;
     overflow: hidden;
-    border: 1px solid #c2c2c2;
+    border: 2px solid #c2c2c2;
     border-radius: 19px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
     
-    /* transition: color 0.3s, opacity: 0.3s; */
+    transition: 0.3s;
     cursor: pointer;
  }
  .indic img{
     width: 200px;
     position: absolute;
     z-index: -1;
-    opacity: 0.7;
+    
+ }
+ .indic li:hover{
+   opacity: 1;
+   border: 2px solid yellow;
+ }
+ .indic li.on{
+   opacity: 1;
+   border: 2px solid yellow;
  }
  
+/* 배너 페이드 onoff */
+ .char-banner li{
+   display: flex;
 
+    /* 모두 투명 */
+   opacity: 0;
+   /* 트랜지션 */
+   transition: opacity .6s ease-in-out;
+ }
+ .char-banner li.on{
+   opacity: 1;
+   z-index: 1;
+    
+ }
  .abtn{
     display: none;
  }
+ /* 배너 디자인 */
 .char-banner li{
     position: absolute;
+    display: inline-block;
+    text-align: center;
 }
  .char-banner img{
-    width: 70vw;
+    width: 1000px;
+    border-radius: 10px;
+    border: 5px solid rgb(248, 248, 248);
+   
+ }
+ .char-banner p{
+   margin: 0 auto;
+   margin-top: 1%;
+
+   
+   max-width: 900px;
+   
+   font-size: 2.1rem;
+   padding-top: 1%;
+   padding-bottom: 1%;
+   font-weight: bold;
+   line-height: 1.5;
+   color: #fff;
+   text-shadow: 1px 1px 1px #000;
+   border-radius: 10px;
+   background-color: rgba(0, 0, 0, 0.473);
  }
