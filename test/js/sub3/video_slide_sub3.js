@@ -92,7 +92,7 @@ function loadFn(){
         // 1. 오른쪽버튼 여부
         let isRbtn = this.classList.contains("ab2");
         // 호출 확인
-        // console.log('오른쪽버튼',isRbtn,this);
+        console.log('오른쪽버튼',isRbtn,this);
 
         // 2. 버튼에 따른 전역슬라이드 번호 증감하기
         // (1) 오른쪽버튼일 경우 증가
