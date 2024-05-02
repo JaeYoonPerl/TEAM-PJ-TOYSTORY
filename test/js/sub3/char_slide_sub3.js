@@ -14,7 +14,7 @@ export default function charSlide(){
 
 
 function loadFn(){
-    console.log("로딩완료!");
+    // console.log("로딩완료!");
 
     // 대상선정
     let slide = qs(".char-banner");
