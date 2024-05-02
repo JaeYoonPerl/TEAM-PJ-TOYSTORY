@@ -11,7 +11,10 @@
 
 #top{
  height: 1200px;
+
+  background: url(../IMG/img4/common4.jpg) no-repeat center /100% 100%;
 }
+
 #main{
   max-height: 100vh; 
 }
@@ -110,17 +113,18 @@
   border-radius: 50%;
   overflow: hidden;
   z-index: 10;
-  transition: opacity 2s;  
+  transition: opacity 3s;  
 }
 .poster span{
-  position: relative;
-    z-index: 11;
-    right: 49%;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: white;
-  
+  position: absolute;
+  z-index: 11;
+  top: 46%;
+  left: 30%;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white; 
 }
+
 .poster img{
   width: min(700px, 40vw);
 }
@@ -130,7 +134,7 @@
   gap: 2%;
   padding: 3%;
   opacity: 0;
-  transition: opacity 2s;
+  transition: opacity 3s;
 }
 .poster2 li{
   flex: 1;
