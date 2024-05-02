@@ -10,6 +10,9 @@
 body * {
     /* outline: 2px dashed #ccc; */
 }
+body>* {
+  overflow-x: hidden;
+}
 
 body{
     margin: 0 auto;
@@ -121,7 +124,7 @@ body{
    z-index: 1;
    font-weight: bold;
    color: #fff;
-   text-shadow: 3px 0 #000, -3px 0 #000, 0 3px #000, 0 -3px #000;
+   text-shadow: 3px 0 #000, -3px 0 #f00, 0 3px #fff700, 0 -3px #0064ff;
   /* background-color: yellow; */
  }
  /* 캐릭터 설명 */
