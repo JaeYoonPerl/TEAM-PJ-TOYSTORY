@@ -106,3 +106,21 @@ mFn.addEvt(gbox,"mouseleave",()=>{
     // 재귀호출함수 호출하기
     moveGallery();
 });
+
+
+
+/////////////////////////////////////////////////////////////////
+// 포스터 영역
+// 대상요소
+const poster = mFn.qsa('.poster-common');
+
+mFn.addEvt(poster[0],"mouseenter",showPoster)
+
+function showPoster(){
+    console.log(this.parentElement);
+    this.parentElement.classList.add("on");
+    // 2초후 앞에 있는 포스터 없애기
+    setTimeout(()=>{
+        poster[0].style.display="none";
+    },3000)
+}
