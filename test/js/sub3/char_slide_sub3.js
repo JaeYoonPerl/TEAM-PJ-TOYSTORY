@@ -1,5 +1,4 @@
-// 내함수 가져오기
-import mFn from "./my_function.js";
+export default function charSlide(){
 // DOM 함수 객체 //////////////
 
     // DOM 선택함수
@@ -15,7 +14,7 @@ import mFn from "./my_function.js";
 
 
 function loadFn(){
-    console.log("로딩완료!");
+    // console.log("로딩완료!");
 
     // 대상선정
     let slide = qs(".char-banner");
@@ -211,6 +210,4 @@ function loadFn(){
     } ////////// clearAuto ////////////
 } /////////////// loadFn 함수 //////////////
 
-
-
-
+}
