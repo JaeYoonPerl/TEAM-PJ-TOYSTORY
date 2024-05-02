@@ -33,6 +33,9 @@ body{
     height: 100vh;
     position: relative;
 }
+.video-area{
+  height: 500px;
+}
 .char-area::before{
    content: '';
    background: url(../IMG/img3/world_head.jpg)no-repeat center/cover;
@@ -74,23 +77,36 @@ body{
  }
  /* 시놉시스박스 */
  .sino-box{
+    margin: 0 auto;
     text-align: center;
     position: relative;
     display: flex;
-    top: 60%;
-    left: 5%;
-    width: 90vw;
+    top: 55%;
+    
+    /* width: 90vw;
     height: 300px;
-    background-color: #b4b4b4ab;
+    background-color: #b4b4b4ab; */
     z-index: 9999;
+
+   
 
  }
  .sino-box span{
+ 
     color: #fff;
     font-size: 2.5rem;
     line-height: 1.5;
     padding: 10px;
     font-weight: bold;
+
+    border-radius: 10px;
+    background-color: #4747479c;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    max-width:90vw;
+    height: 300px;
+    
     
  }
 /* 서브타이틀 */
