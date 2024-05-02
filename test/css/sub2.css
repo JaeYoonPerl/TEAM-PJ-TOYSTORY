@@ -4,29 +4,96 @@
 @import url(./common.css);
 @import url(./core.css);
 @import url(./grid_12_flex.css);
-
-.ibx {
-  max-width: 1680px;
-  margin: 0 auto;
+/**************** 공통영역 ****************/
+html{  
+  scroll-behavior: smooth;
+}
+body{
+  overflow: hidden;
 }
 /* 공사중 표시 */
 body * {
   outline: 2px dashed #ccc;
+}
+/* **** */
+strong{
+  font-weight: bold;
+}
+/* 스크롤바 디자인 클래스 */
+.content-box::-webkit-scrollbar{
+  width: 0;
+}
+.ibx {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 100vh;
+  position: relative;
+}
+.flex-column{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.flex-row{
+  position: relative;
+  padding: 0 150px 0 30px;
+  display: flex;
+  flex-direction: row;
+}
+.main-tit2{
+  padding-top: 60px;
+ margin-bottom: 40px;
+ color: #fff;
+ text-align: center;
+ width: 100%;
 }
 .main-tit{
   font-size: 60px;
   font-weight: bold;
 }
 .main-text {
-  font-size: 30px;
-  line-height: 1.7;
+  font-size: 20px;
+  line-height: 1.5;
+  white-space: wrap;
+}
+/**************** gnb 인딕 고정 박스 ****************/
+#top-area{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
 }
 
+.gnb{
+  position: absolute;
+  right: 1%;
+  top: 30vh;
+}
+.gnb ul li{
+  margin: 5px 0 ;
+  text-align: center;
+  background-color: #0000003f;
+  border-radius: 20px;
+}
+.gnb ul li.on a{
+  color: yellow;
+}
+.gnb ul li a{
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+}
 
-/* 백그라운드 */
+/********************* 백그라운드 영역 *********************/
 #logo-area {
   background: url(../IMG/img2/bg_sky.jpg) no-repeat
     center/cover;
+}
+#summary-area{
+  background: url(../IMG/img2/bg_summary.jpg) no-repeat
+  center/cover;
 }
 #trailers-area{
   background: url(../IMG/img2/bg_TRAILERS.png) no-repeat
@@ -44,17 +111,21 @@ body * {
   background: url(../IMG/img2/bg_AWARDS.jpg) no-repeat
   center/cover;
 }
-#footer-area{
+#credits-area{
   background: url(../IMG/img2/bg_CREDITS.jpg) no-repeat
+  center/cover;
+}
+#footer-area{
+  background: url(../IMG/img2/bg_THANKS.jpg) no-repeat
   center/cover;
 }
 
 
 
-/*************** 상단영역 ***************/
+/*************** 상단 로고영역 ***************/
 .logo {
   position: relative;
-  height: 100vh;
+  height: 100%;
   aspect-ratio: 453/662;
   overflow: hidden;
   box-sizing: border-box;
@@ -85,63 +156,120 @@ body * {
   transform: translateY(-50%);
 }
 /* --------------------- */
-.chars-bg {
+.sum-text {
   position: relative;
   margin: 0 auto;
   bottom: 0;
   height: 100vh;
-  aspect-ratio: 261/208;
-  background: url(../IMG/img2/chars.png) no-repeat center;
+  padding: 0 10%;
 }
-.chars-bg p {
+.sum-text p {
   position: relative;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #fff;
-  color: #000;
+  background-color: #00000085;
+  color: #fff;
   padding: 5% 10%;
-  border-radius: 10%;
+  border-radius: 50px;
 }
-.chars-bg a:first-child h1{
+.sum-text a:first-child h1{
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  color: #fff;
   padding: 20px;
   border-radius: 20px;
 }
-.chars-bg a:last-child{
+.sum-text a:first-child{
+  transition: .5s;
+}
+.sum-text a:last-child{
   position: relative;
   transition: .5s;
   opacity: 0;
   pointer-events: none;
 }
-.chars-bg a:last-child.show{
+.sum-text a:last-child.show{
   pointer-events: painted;
   transition: .5s;
   opacity: 1;
 }
-
+.sum-text a:first-child.show{
+  pointer-events: none;
+  transition: .5s;
+  opacity: 0;
+  
+}
 /******************* 2.트레일러 영역 *******************/
-.trailers-area{
-  height: 100vh;
+/******************* 3.캐릭터 영역 *******************/
+.menu{
+  width: 250px;
+}
+.menu ul li a{
+  color: #fff;
+  font-size: 30px;
+  line-height: 2;
+}
+.main-cont{
   position: relative;
 }
-.character-design-area{
-  height: 100vh;
-  position: relative;
+.ab-box{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
 }
-.world-design-area{
-  height: 100vh;
-  position: relative;
+.main-box{
+  color: #fff;
+  width: 800px;
+  height: 100%;
 }
-.awards-area{
-  height: 100vh;
-  position: relative;
+.main-box p{
 }
+.main-box img{
+  display: block;
+  max-height: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.main-box{
+  margin-left: 30px;
+}
+/******************* 4.월드 영역 *******************/
+/******************* 5.어워즈 영역 *******************/
+/******************* 6.크레딧 영역 *******************/
+/******************* 7.하단 영역 *******************/
+
+
+
+
+
+
+
+
+.content-box{
+  height: 100%;
+  margin: 0 auto;
+  overflow: auto;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #00000073;
+  text-align: center;
+}
+.credits-text p,.awards-text p{
+  margin: 25px 0;
+  line-height: 1.5;
+}
+.credits-text p:last-child,.awards-text p:last-child{
+  padding-bottom: 150px;
+}
+
 .footer-area{
   height: 100vh;
   position: relative;
 }
+
+
