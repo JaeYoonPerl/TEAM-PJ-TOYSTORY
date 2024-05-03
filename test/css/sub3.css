@@ -325,12 +325,12 @@ body{
 }
 /*왼쪽버튼*/
 .ab1 {
-  left: 100px;
+  left: 20px;
 }
 
 /*오른쪽버튼*/
 .ab2 {
-  right: 100px;
+  right: 20px;
 }
 
 .video-area::before{
