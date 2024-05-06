@@ -40,15 +40,12 @@ body{
   height: 100vh;
   position: relative;
 }
-.char-area::before{
+#char-area{
    content: '';
    background: url(../IMG/img3/world_head.jpg)no-repeat center/cover;
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   opacity: 0.7;
+   
+ 
+   /* opacity: 0.7; */
    z-index: -1;
 }
 .bg-video{
@@ -218,7 +215,7 @@ body{
     transform: translate(-50%,-50%);
 }
  .char-banner img{
-    width: 1000px;
+    width: 800px;
     border-radius: 10px;
     border: 5px solid rgb(248, 248, 248);
    
@@ -274,11 +271,11 @@ body{
 
  .video-btn{
   position: absolute;
-    bottom: 16%;
+    bottom: 0;
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 74px;
+    /* height: 74px; */
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     
  }
@@ -336,14 +333,42 @@ body{
   right: 20px;
 }
 
-.video-area::before{
+#video-area{
   content: '';
   background: url(../IMG/img3/creditshead.jpg)no-repeat center/cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.7;
+  /* position: absolute; */
+  
+  /* opacity: 0.7; */
   z-index: -1;
+}
+
+
+/************************** 미디어 쿼리 **************************/
+
+@media screen and (max-width: 1200px) {
+  .avbtn{
+    /* 트레일러 방향 버튼 x */
+    display: none;
+  }
+
+}
+@media screen and (max-width: 1100px) {
+  .sino-box span{
+   font-size: 2rem;
+    height: 220px;
+    }
+    .char-banner li{
+      width: 700px;
+      left: 56%;
+    }
+    .char-banner p{
+      position: relative;
+      left: 49px;
+    }
+}
+@media screen and (max-width: 1000px) {
+  .sino-box span{
+   font-size: 2rem;
+    height: 220px;
+    }
 }
