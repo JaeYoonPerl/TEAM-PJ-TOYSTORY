@@ -84,7 +84,7 @@ strong{
   white-space: wrap;
 }
 /**************** gnb 인딕 고정 박스 ****************/
-#top-area{
+#side-area{
   position: fixed;
   z-index: 100;
   width: 100%;
