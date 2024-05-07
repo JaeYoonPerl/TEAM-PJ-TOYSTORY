@@ -11,6 +11,13 @@ font-family: "Pacifico", cursive;
 font-family: "Lobster", sans-serif;
   */
 /**************** 공통영역 ****************/
+#GNB{
+  position: absolute;
+  z-index: 1000;
+}
+.ts{
+  display: none;
+}
 html{  
   scroll-behavior: smooth;
 }
@@ -49,6 +56,12 @@ strong{
   flex-wrap: nowrap;
   align-items:center;
 }
+.sub-text{
+
+}
+.sub-tit{
+
+}
 .main-tit2{
   padding-top: 60px;
  margin-bottom: 60px;
@@ -56,11 +69,6 @@ strong{
  text-align: center;
  width: 100%;
 }
-  /* font-family: "Dancing Script", cursive;
-    font-family: "Lugrasimo", cursive;
-font-family: "Pacifico", cursive;
-font-family: "Lobster", sans-serif;
-  */
 .main-tit{
   font-family: "Dancing Script", cursive;
   font-size: 60px;

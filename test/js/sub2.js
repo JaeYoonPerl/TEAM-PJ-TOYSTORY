@@ -2,7 +2,8 @@
 import mFn from "./my_function.js";
 import showTrailers from "./sub2/sub2_trailers.js";
 import {gnbItems} from "./sub2/sub2_data.js";
-
+import goSub from "./gosub.js";
+goSub();
 // gnb 뿌려주기 슬라이드 기능보다 앞에있어야함 -> 노란표시기능때문임
 showGNB();
 // 페이지 슬라이드 기능 불러오기
