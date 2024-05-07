@@ -65,6 +65,9 @@ strong{
 }
 
 /**************** gnb 인딕 고정 박스 ****************/
+#top-area{
+  position: fixed;
+}
 #side-area{
   position: fixed;
   z-index: 100;
