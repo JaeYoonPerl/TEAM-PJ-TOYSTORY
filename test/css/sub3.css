@@ -130,9 +130,14 @@ body{
  }
  /* 캐릭터 선택 버튼 */
  .char-btn{
-   display: flex;
-   margin-top: 15%;
-   justify-content: center;
+  position: absolute;
+  display: flex;
+  /* margin-top: 40%; */
+  top: 50%;
+  left: 20%;
+  margin-right: 5px;
+  margin-left: 5px;
+  transform: translate(-50%,-50%);
    
  }
 
@@ -161,8 +166,8 @@ body{
     align-items: center;
 
    position: relative;
-    width: 200px;
-    height: 100px;
+    width: 20vw;
+    height: 10vh;
    opacity: 0.7;
     box-sizing: border-box;
     overflow: hidden;
@@ -174,7 +179,7 @@ body{
     cursor: pointer;
  }
  .indic img{
-    width: 200px;
+    width: 20vw;
     position: absolute;
     z-index: -1;
     
@@ -186,6 +191,7 @@ body{
  .indic li.on{
    opacity: 1;
    border: 2px solid yellow;
+   z-index: 1;
  }
  
 /* 배너 페이드 onoff */
@@ -211,11 +217,11 @@ body{
     display: inline-block;
     text-align: center;
     top: 50%;
-    left: 62%;
+    left: 65%;
     transform: translate(-50%,-50%);
 }
  .char-banner img{
-    width: 800px;
+    width: 60vw;
     border-radius: 10px;
     border: 5px solid rgb(248, 248, 248);
    
@@ -351,19 +357,19 @@ body{
     display: none;
   }
 
-}
-@media screen and (max-width: 1100px) {
   .sino-box span{
    font-size: 2rem;
     height: 220px;
     }
+}
+@media screen and (max-width: 1100px) {
     .char-banner li{
-      width: 700px;
-      left: 56%;
+      /* width: 700px; */
+      /* left: 56%; */
     }
     .char-banner p{
-      position: relative;
-      left: 49px;
+      /* position: relative; */
+      /* left: 49px; */
     }
 }
 @media screen and (max-width: 1000px) {
