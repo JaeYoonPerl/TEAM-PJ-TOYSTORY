@@ -78,10 +78,10 @@ function innerSum() {
   const sunTit = mFn.qs(".sum-text");
   let hcode = `
   <a href="###" class="summary-click">
-  <h1 class="main-tit">SUMMARY</h1>
+  <h1 class="main-title">SUMMARY</h1>
 </a>
 <a href="###">
-  <p class="main-text">
+  <p class="sub-text1">
     Buzz, Woody, and their friends are back as Andy heads off to
     Cowboy Camp, leaving his toys to their own devices. Things shift
     into high gear when an obsessive toy collector name Al

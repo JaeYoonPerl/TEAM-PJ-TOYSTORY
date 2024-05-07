@@ -56,15 +56,6 @@ strong{
   flex-wrap: nowrap;
   align-items:center;
 }
-.sub-text{
-  font-family: "Lugrasimo", cursive;
-  font-size: 20px;
-}
-.sub-tit{
-  font-family: "Dancing Script", cursive;
-  font-size: 60px;
-  font-weight: bold;
-}
 .main-tit2{
   padding-top: 60px;
  margin-bottom: 60px;
@@ -72,18 +63,11 @@ strong{
  text-align: center;
  width: 100%;
 }
-.main-tit{
-  font-family: "Dancing Script", cursive;
-  font-size: 60px;
-  font-weight: bold;
-}
-.main-text {
-  font-family: "Lugrasimo", cursive;
-  font-size: 20px;
-  line-height: 1.5;
-  white-space: wrap;
-}
+
 /**************** gnb 인딕 고정 박스 ****************/
+#top-area{
+  position: fixed;
+}
 #side-area{
   position: fixed;
   z-index: 100;
