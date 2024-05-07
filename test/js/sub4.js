@@ -1,8 +1,8 @@
+import catInfo from './sub4_data.js';
+
 
 import mFn from './my_function.js';
 
-// 재귀함수 호출
-// 초기셋팅하기
 // 대상: .gbox
 const gbox = mFn.qs(".gbox");
 
@@ -26,9 +26,6 @@ gbox.innerHTML = hcode;
 
 
 
-///// 갤러리 박스를 왼쪽으로 계속 움직이게하는 재귀호출함수 만들기
-
-// 움직일 대상 : .gbox ul
 let target = mFn.qsEl(gbox,'ul');
 
 
@@ -124,3 +121,35 @@ function showPoster(){
         poster[0].style.display="none";
     },3000)
 }
+
+
+
+//// 캐릭터 영역
+// 대상 : .cha-box
+(()=>{
+
+    const catList = mFn.qs(".cha-box");
+    
+    console.log(catList);
+
+    const makeCode = (imgName,title) => {
+        let hcode = '<ul class = "cha-pic">';
+        for(let i=1;i<=5;i++){
+            hcode += `<li>
+                 <img src="./IMG/img4/${imgName+i}.jpg" alt="${title}" />
+                 </li>
+            `;
+        } //// for ///
+        hcode += "</ul>";
+
+        return hcode;
+    }; ////// makeCode 함수 ////////
+    
+    
+    catList.innerHTML = 
+    catInfo.map((v,i)=>`
+        <h1>${v.title}</h1>
+        <span>${v.desc}</span>        
+        ${makeCode(v.imgName,v.title)}`).join('');
+
+})();
