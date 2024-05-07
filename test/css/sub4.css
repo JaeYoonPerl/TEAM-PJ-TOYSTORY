@@ -92,7 +92,7 @@
 /********************************* 메인구역 *********************************/
 .main-title >img{
   width: 40%;
-  margin-left: 23%;
+  margin-left: -2%;
   padding: 6%;
 }
 
@@ -128,12 +128,11 @@
   height: 15%;
   padding-top: 6%;
 }
-.main-synopsis h2{
+.main-title{
   text-align: center;
-  font-size: 2.5rem;
+ 
 }
 .main-synopsis span{
-  font-size: 1.5rem;
   line-height: 1.6;
   text-align: center;
   display: flex;
