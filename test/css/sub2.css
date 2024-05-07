@@ -57,10 +57,13 @@ strong{
   align-items:center;
 }
 .sub-text{
-
+  font-family: "Lugrasimo", cursive;
+  font-size: 20px;
 }
 .sub-tit{
-
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  font-weight: bold;
 }
 .main-tit2{
   padding-top: 60px;
