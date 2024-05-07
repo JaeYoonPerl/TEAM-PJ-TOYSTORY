@@ -245,7 +245,6 @@ const grid = qs(".grid");
 // 20개 이미지 넣기
 for (let i = 1; i <= 19; i++) {
   grid.innerHTML += `
-      <div class="
       <div ${
         i === 1 ? 'class="first"' : i === 8 ? 'class="second"' : ""
       }>

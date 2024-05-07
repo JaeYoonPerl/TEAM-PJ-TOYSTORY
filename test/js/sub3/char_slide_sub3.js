@@ -64,7 +64,7 @@ function loadFn(){
             <img 
             src="./IMG/img3/toystory3-${i + 1}.jpg"         
             alt="slide">
-            <p>${introText[i]}</p>
+            <p><span>${bulText[i]}</span></br></br>${introText[i]}</p>
         </li>    `;
 
         // 블릿 넣기
