@@ -106,3 +106,16 @@
     line-height: 2.8;
     text-align: center;
 }
+@media screen and (max-width: 1000px) {
+    /* 예시 입니다. */
+   
+    .main-title{
+        font-size: 40px;
+     }
+     .sub-text1{
+        font-size: 20px;
+    }
+    .sub-text2{
+        font-size: 14px;
+    }
+}
