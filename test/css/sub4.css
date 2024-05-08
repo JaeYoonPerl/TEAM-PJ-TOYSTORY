@@ -181,7 +181,25 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
 
+.cha-pic > li:hover img {
+  /* transition: .2s linear;
+  transform: scale(1.1); */
+  animation: cha-ani 1.2s linear infinite;
+  cursor: pointer;
+}
+
+@keyframes cha-ani {
+  0% {
+    transform: translateY(0px) scale(0.95);
+  }
+  50% {
+  transform: translateY(-20px) scale(1.05);
+  }
+  100%{
+    transform: translateY(20px) scale(0.95);
+  }
 }
 
 
@@ -224,4 +242,26 @@
   }
 }
   
+/************************** 미디어쿼리 **************************/
+@media screen and (max-width: 450px) {
+  #top {
+    height: 400px;
+  }
 
+  #ifr {
+    left: 0;
+    width: 203px;
+    height: auto;
+}
+.screen {
+  padding-top: 41%;
+}
+.poster img {
+  padding-top: 55%;
+}
+
+.cha-pic{
+ display: inline;
+}
+
+}
