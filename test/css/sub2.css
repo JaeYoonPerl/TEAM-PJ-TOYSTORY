@@ -72,12 +72,14 @@ strong{
   position: fixed;
   z-index: 100;
   width: 100%;
+  /* background-color: #fff; */
+  /* right: 0; */
 }
 
 .gnb{
   position: absolute;
-  right: 1vw;
-  top: 30vh;
+  /* right: 1vw;
+  top: 30vh; */
 }
 .gnb ul li{
   margin: 5px 0 ;
@@ -386,13 +388,10 @@ strong{
   .main-tit2{
     font-size: 40px;
   }
-  .gnb{
-    top: 40vh;
-    /* bottom: 0vh; */
-  }
-  .gnb ul {
-    /* gap: 10px; */
-  }
+#slide-area{
+  /* bottom: 1vh; */
+}
+
   .gnb ul li {
     margin: 10px 0;
   }
@@ -462,6 +461,11 @@ strong{
   }
   .info-box {
     margin: 0 80px 0 20px;
+  }
+  .gnb{
+    /* top: auto; */
+    /* bottom: 0vh; */
+    /* bottom: 30vh; */
   }
 }
 @media screen and (max-width: 400px){
