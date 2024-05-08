@@ -242,4 +242,26 @@
   }
 }
   
+/************************** 미디어쿼리 **************************/
+@media screen and (max-width: 450px) {
+  #top {
+    height: 400px;
+  }
 
+  #ifr {
+    left: 0;
+    width: 203px;
+    height: auto;
+}
+.screen {
+  padding-top: 41%;
+}
+.poster img {
+  padding-top: 55%;
+}
+
+.cha-pic{
+ display: inline;
+}
+
+}
