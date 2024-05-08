@@ -21,30 +21,16 @@
     outline: 2px dashed #ccc;
 } */
 
-.subbx {
-    position: relative;
-    padding-top: 70px;
-}
-
-
 /************************************************* 상단 영역 CSS 코딩 구역 *************************************************/
 
 
 
 /************************************************* 메인 영역 CSS 코딩 구역 *************************************************/
 
-#top-area{
-
-}
 #main-area {
    position: relative;
-    /* height: 680px; */
+   padding-top: 70px;
 }
-
-.main-bx{
-    /* height: 500px; */
-}
-
 
 /* 인트로영역 이미지 */
 .intro-area {
@@ -61,24 +47,6 @@
     padding-top: 300px;
 }
 
-.bar-area{
-    position: fixed;
-    right: 30px;
-}
-
-/* 메인 이동 버튼 */
-.gomain-btn{
-    position: fixed;
-    right: var(--top-pos-right);
-    bottom: 50px;
-    z-index: 99;
-    width: var(--top-size);
-    height: var(--top-size);
-    padding-top: 2.8rem;
-    border: 2px solid #000;
-    border-radius: 90%;
-    background: #fff url(../IMG/logo_black.png) center center/no-repeat;
-}
 
 /* 트레일러 영역 */
 
