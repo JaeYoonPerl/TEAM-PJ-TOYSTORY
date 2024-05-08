@@ -10,16 +10,16 @@
 .main-title{
     font-family: "Lugrasimo", cursive;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 6rem;
 }
 .sub-text1{
     font-family: "Lugrasimo", cursive;
-    font-size: 25px;
+    font-size: 2.5rem;
     line-height: 1.7;
 }
 .sub-text2{
     font-family: "Lugrasimo", cursive;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.7;
 }
 
