@@ -264,28 +264,7 @@ margin-left: 40px;
     grid-row: 3/5;
 }
 
-.second::after{
-    content: "[Sid's House]"
-    " Movie villains are often more fun than the straight guy, and many on the Pixar team found they related to the mutant impulses of Sid, the bad boy next door. “I think Sid is normal,” says Andrew Stanton. “I think Andy is the weird one, this boy who takes care of his toys.” Coming up with disturbing new creations to populate Sid’s room became one of the most popular tasks in Toy Story.";
-    position: absolute;
-    top: 20px;
-    left: 1px;
-    width: 100%;
-    height: 100%;
-    color: #000;
-    line-height: 1.5;
-    box-sizing: border-box;
-    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff;
-    text-justify :auto;
-    font-size: 23px;
-    padding: 20px;
-    opacity: 0;
-    transition: .2s;
-  }
-
-  .first::after{
-    content: "[Andy's House]"
-    " Andy’s room was a world of its own, home to most of Toy Story’s characters and a place that immediately conveyed comfort and safety. That sense of safety provided the conflict as the characters faced new anxieties like leaving the house and welcoming a new toy.";
+.beingTxt span{
     position: absolute;
     top: 20px;
     left: 1px;
@@ -301,61 +280,33 @@ margin-left: 40px;
     opacity: 0;
     transition: .2s;
   }
-  .first:hover::after{
+  .beingTxt:hover span{
     opacity: 1;
   }
 
 
+.second span{
+    line-height: 1.5;
+    font-size: 22px;
 
-  .second:hover::after{
-    opacity: 1;
   }
 
 
-.third::after{
-    content: "Dinoco Station";
-    position: absolute;
+.third span{
     margin: 0 auto;
-    left: 1px;
-    width: 100%;
-    height: 100%;
-    color: #000;
     box-sizing: border-box;
-    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff;
     text-align: center;
     font-size: 25px;
-    padding : 100px 0;
-    opacity: 0;
-    transition: .2s;
-  }
-  .third:hover::after{
-    opacity: 1;
+    padding : 80px 0;
   }
 
-  .fourth::after{
-    content: "Pizza Planet";
-    position: absolute;
+.fourth span{
     margin: 0 auto;
-    left: 1px;
-    width: 100%;
-    height: 100%;
-    color: #000;
     box-sizing: border-box;
-    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff;
     text-align: center;
     font-size: 25px;
-    padding : 100px 0;
-    opacity: 0;
-    transition: .2s;
+    padding : 80px 0;
   }
-
-  .fourth:hover::after{
-    opacity: 1;
-  }
-
-
-
-
 
 
 
