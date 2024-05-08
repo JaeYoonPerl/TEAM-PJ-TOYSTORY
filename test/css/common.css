@@ -68,5 +68,7 @@
     height: 20%;
     width: 20%;
     box-sizing: border-box;
-    padding-right: 50px;
+    /* padding-right: 50px; */
+    background-color: #ffffff7a;
+    padding: 10px 15px 5px;
 }
