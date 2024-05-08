@@ -86,7 +86,6 @@
  
 }
 .main-synopsis span{
-  line-height: 1.6;
   text-align: center;
   display: flex;
   margin: 72px auto 0;
@@ -156,11 +155,11 @@
 }
 
 .cha-box > h1{
- font-size: 3rem;
+ /* font-size: 3rem; */
  padding-bottom: 1%;
 }
 .cha-box > span{
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
   line-height: 1.5;
 }
 

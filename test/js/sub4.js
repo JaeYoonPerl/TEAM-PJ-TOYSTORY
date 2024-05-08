@@ -148,8 +148,8 @@ function showPoster(){
     
     catList.innerHTML = 
     catInfo.map((v,i)=>`
-        <h1>${v.title}</h1>
-        <span>${v.desc}</span>        
+        <h1 class = "main-title">${v.title}</h1>
+        <span class = "sub-text2">${v.desc}</span>        
         ${makeCode(v.imgName,v.title)}`).join('');
 
 })();
