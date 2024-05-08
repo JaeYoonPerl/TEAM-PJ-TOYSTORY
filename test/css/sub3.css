@@ -461,7 +461,7 @@ body{
     height: 90vh;
   }
   .video-area{
-    height: 90vh;
+    /* height: 90vh; */
    }
 }
 
