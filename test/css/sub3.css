@@ -80,7 +80,7 @@ body{
  /* 메인로고 */
  .toy-3rd-logo{
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);   
     white-space: nowrap;
@@ -437,7 +437,9 @@ body{
   .char-banner li p{
     font-size: 1.3rem;
   }
-  
+  .indic li span{
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 360px) {
