@@ -156,11 +156,12 @@
 
 .cha-box > h1{
  /* font-size: 3rem; */
- padding-bottom: 1%;
+ padding-bottom: 2%;
 }
 .cha-box > span{
   /* font-size: 1.3rem; */
-  line-height: 1.5;
+  /* line-height: 1.5; */
+  text-align: center;
 }
 
 .cha-pic{
