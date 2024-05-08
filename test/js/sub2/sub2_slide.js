@@ -1,12 +1,21 @@
 import mFn from "../my_function.js";
-import { startSS, setScrollPos, SmoothScroll } from "./smoothScroll23.js";
+
+import SmoothScroll from "./smoothScroll23.js";
+// 1. 부드러운 스크롤 호출
+const mySmooth1 = new SmoothScroll(
+  document.querySelectorAll(".content-box")[0],
+  60,
+  20
+);
+const mySmooth2 = new SmoothScroll(
+  document.querySelectorAll(".content-box")[1],
+  60,
+  20
+);
 
 export default function scrollPage() {
   //  부드러운스크롤 to content-box
-  // 스크롤 5~6페이지 순번 이동시 서로간의 콘텐트박스 위치값 공유로 각자 잡아주었다
-  // -> 그런데도 공유가 되고있다
 
-  // 2. 이거 지워도될듯 - 의미없음
   // function applySmoothScrollToContentBox1() {
   //   const contentBoxes = document.querySelectorAll(".content-box")[0];
   //   new SmoothScroll(contentBoxes, 60, 30);
@@ -18,10 +27,8 @@ export default function scrollPage() {
   // } ///////////////////////////////
   // applySmoothScrollToContentBox2();
 
-
-  // 1. 못고치면 스무스스크롤 자체제거
   //   function applySmoothScrollToContentBox() {
-  //     // 스크롤 5~6페이지 순번 이동시 서로간의 콘텐트박스 위치값 공유로 각자 잡아주었다
+  //     // 스크롤 5~6페이지 순번 이동시 서로간의 콘텐트박스 위치값 공유
   //     const contentBoxes = document.querySelectorAll('.content-box');
   //     contentBoxes.forEach(contentBox => {
   //         new SmoothScroll(contentBox, 60, 30);
@@ -76,11 +83,11 @@ export default function scrollPage() {
     console.log(e.deltaY);
     if (pgNum === 6 || pgNum === 5) {
       // 0이면서 윗방향일때
-      if (scrollPercentage == 0 && e.deltaY < 0) {
+      if (scrollPercentage < 5 && e.deltaY < 0) {
         stopSts = false;
       }
       // 100이고 아랫방향일때
-      else if (scrollPercentage == 100 && e.deltaY > 0) {
+      else if (scrollPercentage > 95 && e.deltaY > 0) {
         stopSts = false;
       }
       // 기타일 경우
@@ -102,7 +109,6 @@ export default function scrollPage() {
     //     stopSts = false;
     //   },0);
     // }, 500);
-
 
     // setTimeout 설정으로 페이지가 움직이는 동안에도
     // content-box 의 스크롤기능 막아보기 !!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -169,10 +175,12 @@ export default function scrollPage() {
     // 부드러운 스크롤 적용시 상태값 튕김현상으로 0고정 일시제거
     ////////////////////////////////
     if (pgNum != 5 || pgNum != 6) {
-        contBox.forEach((ele) => {
-            ele.scrollTo(0, 0);
-          });
-        }
+      contBox.forEach((ele) => {
+        ele.scrollTo(0, 0);
+      });
+      mySmooth1.setScrollPos(0);
+      mySmooth2.setScrollPos(0);
+    }
     ////////////////////////////////
     ////////////////////////////////
 

@@ -440,6 +440,29 @@ body{
   .indic li span{
     font-size: 13px;
   }
+  .video-btn{
+    display: none;
+  }
+
+  .video-banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .video-banner li{
+    position: relative;
+    opacity: 1 !important;
+    margin: 5px 0;
+  }
+  .video-box{
+    padding-top: 10%;
+  }
+  .char-area{
+    height: 90vh;
+  }
+  .video-area{
+    /* height: 90vh; */
+   }
 }
 
 @media screen and (max-width: 360px) {
@@ -447,6 +470,12 @@ body{
     
     font-size:3rem;
   }
+  .char-area{
+    height: 70vh;
+  }
+  .video-area{
+    height: 70vh;
+   }
  
   
 }
