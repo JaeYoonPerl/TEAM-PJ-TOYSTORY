@@ -72,14 +72,12 @@ strong{
   position: fixed;
   z-index: 100;
   width: 100%;
-  /* background-color: #fff; */
-  /* right: 0; */
+  bottom: 60vh;
 }
 
 .gnb{
   position: absolute;
-  /* right: 1vw;
-  top: 30vh; */
+  right: 0;
 }
 .gnb ul li{
   margin: 5px 0 ;
@@ -385,11 +383,9 @@ strong{
   position: relative;
 }
 @media screen and (max-width: 1000px) {
-  .main-tit2{
-    font-size: 40px;
-  }
-#slide-area{
-  /* bottom: 1vh; */
+
+#side-area{
+  bottom: 30vh;
 }
 
   .gnb ul li {
@@ -447,7 +443,7 @@ strong{
   }
   .menu {
     width: auto;
-    padding: 30px 20px;
+    padding: 0 20px 30px;
     left: 0;
   }
   .menu ul{
@@ -462,6 +458,9 @@ strong{
   .info-box {
     margin: 0 80px 0 20px;
   }
+  #side-area{
+    /* bottom: 300px; */
+  }
   .gnb{
     /* top: auto; */
     /* bottom: 0vh; */
@@ -472,10 +471,7 @@ strong{
   .sub-text2{
     font-size: 12px;
   }
-  .flex-row {
-  }
-  .menu{
-  }
-  .menu ul{
+  .main-tit2{
+    margin-bottom: 30px;
   }
 }
