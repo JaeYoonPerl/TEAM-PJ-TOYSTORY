@@ -56,7 +56,9 @@
     right: 20px;
 }
 
-
+.mlogo{
+    padding: 10px;
+}
 .mlogo img{
     height: 20%;
     width: 20%;
