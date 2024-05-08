@@ -126,10 +126,14 @@ strong{
   background: url(../IMG/img2/bg_CREDITS.jpg) no-repeat
   center/cover;
 }
-#footer-area{
+#foot-back{
   background: url(../IMG/img2/bg_THANKS.jpg) no-repeat
   center/cover;
 }
+/* #footer-area{
+  background: url(../IMG/img2/bg_THANKS.jpg) no-repeat
+  center/cover;
+} */
 
 
 
@@ -378,9 +382,35 @@ strong{
   padding-bottom: 150px;
 }
 /******************* 7.하단 영역 *******************/
-.footer-area{
-  height: 100vh;
-  position: relative;
+#footer-area{
+  /* 부모설정 */
+position: relative;
+}
+.footer-bx{
+  width: 100%;
+  position: absolute;
+/* background-color: #ffffff33; */
+bottom: 0;
+padding: 30px 0;
+}
+.sns-box ul{
+  gap: 30px;
+}
+.sns-box a{
+  color: #fff;
+  font-size: 40px;
+}
+.fcont-part a{
+  color: #fff;
+  font-size: 20px;
+  line-height: 2.5;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.corp-part{
+  color: #fff;
+  margin-top: 20px;
+  font-size: 25px;
 }
 @media screen and (max-width: 1000px) {
 

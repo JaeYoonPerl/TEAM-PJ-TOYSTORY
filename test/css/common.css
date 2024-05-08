@@ -41,7 +41,6 @@
     font-size: 20px;
     font-style: normal;
 }
-
 .toy02{
     top: 0;
     left: 135px;
@@ -52,12 +51,13 @@
 }
 
 .logobx-area{
-    top: 10px;
-    right: 20px;
+    /* top: 10px;
+    right: 20px; */
+    /* 부모박스 자식박스 합쳐서 무의미함 */
 }
 
 .mlogo{
-    padding: 10px;
+    padding: 5px;
 }
 .mlogo img{
     height: 20%;
@@ -65,6 +65,7 @@
     background-color: #ffffff7a;
     padding: 10px 15px 5px;
     min-width: 200px;
+    max-width: 300px;
     box-sizing: border-box;
 }
 
@@ -82,15 +83,16 @@
 
 .sns-box ul{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    /* flex-wrap: wrap; */
     gap: 0 15px;
     justify-content: center
 }
 .sns-box a{
-    margin: 0 auto;
+    /* margin: 0 auto; */
     font-size: 25px;
     line-height: 2.5;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 .fcont-part{
@@ -106,6 +108,7 @@
     line-height: 2.8;
     text-align: center;
 }
+
 @media screen and (max-width: 1000px) {
     /* 예시 입니다. */
    
