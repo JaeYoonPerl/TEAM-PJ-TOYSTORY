@@ -2,7 +2,6 @@ import mFn from "./my_function.js";
 
 const topArea = mFn.qs('#top-area');
 let hcode = `<header class="page-bx">`;
-
 hcode+=`
 <nav class="top-menu">
   <ul>
