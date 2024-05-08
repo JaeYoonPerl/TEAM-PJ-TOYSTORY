@@ -39,6 +39,7 @@ body{
 }
 
 .intro-area{
+  position: relative;
     height: 100vh;
     overflow: hidden;
 }
@@ -80,7 +81,7 @@ body{
  /* 메인로고 */
  .toy-3rd-logo{
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%,-50%);   
     white-space: nowrap;
@@ -389,7 +390,7 @@ body{
 }
 @media screen and (max-width: 1000px) {
   .sino-box span{
-   font-size: 2rem;
+   font-size: 1.8rem;
   
     }
 }
@@ -398,7 +399,7 @@ body{
     top: 70%;
   }
   .sino-box span{
-   font-size: 1.2rem;
+   font-size: 1.5rem;
    
     }
   .toy-3rd-logo img{
