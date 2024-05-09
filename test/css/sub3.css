@@ -27,12 +27,14 @@ body{
   padding: 10px;
 }
 #GNB ul li a{
-  color: #fff;
+  /* color: #fff; */
 }
 .mlogo img {
+  /* background-color: #ffffff7a; */
+}
+#top-area{
   background-color: #ffffff7a;
 }
-
 
 /* 중앙속박스 */
 .inbox{
@@ -86,16 +88,18 @@ body{
  /* 메인로고 */
  .toy-3rd-logo{
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);   
     white-space: nowrap;
  }
  .toy-3rd-logo img{
     scale: 0.7;
+    transition: .4s ease-out;
  }
+
  .toy-3rd-logo:hover img{
-  transform: rotate(-15deg);
+  transform: rotate(15deg);
  }
  /* 시놉시스박스 */
  .sino-box{
@@ -103,7 +107,7 @@ body{
     text-align: center;
     position: relative;
     display: flex;
-    top: 55%;
+    top: 60%;
     height: 300px;
     /* width: 90vw;
     height: 300px;
@@ -189,7 +193,7 @@ body{
    position: relative;
     width: 20vw;
     max-width: 280px;
-    height: 10vh;
+    height: 11vh;
     max-height: 120px;
    opacity: 0.7;
     box-sizing: border-box;
@@ -204,7 +208,7 @@ body{
  .indic img{
     width: 20vw;
     max-width: 280px;
-    max-height: 120px;
+    max-height: 130px;
     position: absolute;
     z-index: -1;
     
