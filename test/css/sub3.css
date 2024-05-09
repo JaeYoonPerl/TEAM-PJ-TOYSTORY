@@ -94,6 +94,9 @@ body{
  .toy-3rd-logo img{
     scale: 0.7;
  }
+ .toy-3rd-logo:hover img{
+  transform: rotate(-15deg);
+ }
  /* 시놉시스박스 */
  .sino-box{
     margin: 0 auto;
