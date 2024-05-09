@@ -8,7 +8,6 @@ import goSub from "../gosub.js"
 
 
 
-spreadCommon();
 
 // 캐릭터 슬라이드 불러오기
 charSlide();
