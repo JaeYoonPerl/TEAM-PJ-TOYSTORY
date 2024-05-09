@@ -265,9 +265,7 @@
 .info-link >ul {
   padding: 2%;
 }
-/* .info-link >li >a {
-  padding: 1%;
-}   */
+ 
 /************************** 미디어쿼리 **************************/
 @media screen and (max-width: 450px) {
   #top {
