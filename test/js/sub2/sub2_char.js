@@ -36,8 +36,6 @@ export default function showChar() {
     let hcode = "";
     const mainCont = mFn.qsa(".main-cont")[0];
     charTextItems.forEach((text, i) => {
-      // let text = charTextItems[1];
-      // let i = 3;
       hcode += `
             <div class=" ab-box ab-box1 char${i + 1}">
               <div class="char-info-box info-box">
@@ -55,7 +53,6 @@ export default function showChar() {
     mainCont.innerHTML = hcode;
   } ////////////////캐릭터정보 뿌리기 함수///////////////////////////////
   innerChar2();
-
   ///////////// 캐릭터 사진겔러리 뿌리기 /////////////
   function makeCode(seq, total = 9) {
     let hcode = "";
@@ -84,14 +81,14 @@ export default function showChar() {
     // 1-2. 변경대상 : .ab-box (겔러리 박스들) abBox
     menuLi.forEach((li, index) => {
       mFn.addEvt(li, "click", () => {
-        // 1-1.모든 menuLi에서 'show' 클래스 제거z`
+        // 1-1.모든 menuLi에서 'show' 클래스 제거`
         // li.classList.remove("show");
         // 이건왜 이상한걸까요???????????????
         menuLi.forEach((menuLi) => {
           menuLi.classList.remove("show");
         }); /////// forEach //////////////
 
-        // 1-2.모든 ab-box에서 'show' 클래스 제거z`
+        // 1-2.모든 ab-box에서 'show' 클래스 제거`
         abBox.forEach((abBox) => {
           abBox.classList.remove("show");
         }); /////// forEach //////////////
