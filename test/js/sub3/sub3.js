@@ -6,8 +6,9 @@ import videoSlide from "./video_slide_sub3.js";
 
 import goSub from "../gosub.js"
 
+import spreadCommon from "../sub_spread_common.js";
 
-
+spreadCommon();
 
 // 캐릭터 슬라이드 불러오기
 charSlide();
@@ -15,4 +16,4 @@ charSlide();
 // 비디오 슬라이드 불러오기
 videoSlide();
 
-// goSub();
+goSub();
