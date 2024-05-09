@@ -18,20 +18,32 @@
 #main{
   max-height: 100vh; 
 }
-#footer{
-  /* height: 400px; */
+
+
+/********************************* 메뉴구역 *********************************/
+
+.ts{
+  display: none;
 }
 
-
-
-
+#top-area::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ffffff60;
+ 
+}
+.mlogo{
+  position: relative;
+}
 /********************************* 상단구역 *********************************/
 
 .screen{
   position: relative;
   width: 100%;
   padding-top: 20%;
-}
+}  
 
 #ifr{
   position: relative;
@@ -39,10 +51,7 @@
   width: 750px;
   height: 460px;
   
-}
-.ts{
-  display: none;
-}
+}  
 
 /********************************* 메인구역 *********************************/
 .main-title >img{
