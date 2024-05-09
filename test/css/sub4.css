@@ -231,6 +231,8 @@
   pointer-events: none;
 }
 
+
+/* top버튼 설정 */
 .footer-icon{
   position: fixed;
   bottom: 1%;
@@ -246,16 +248,26 @@
   animation: icon-ani 1.3s ease-in-out infinite;
 }
 
-
 @keyframes icon-ani {
   0%, 100% {
     transform: translateY(0px) scale(0.95);
   }
   50% {
-  transform: translateY(-20px) scale(1);
+    transform: translateY(-20px) scale(1);
   }
 }
-  
+
+
+/* 하단 sns설정 구역*/
+.sns-part ul {
+  gap: 0 3%;
+}
+.info-link >ul {
+  padding: 2%;
+}
+/* .info-link >li >a {
+  padding: 1%;
+}   */
 /************************** 미디어쿼리 **************************/
 @media screen and (max-width: 450px) {
   #top {

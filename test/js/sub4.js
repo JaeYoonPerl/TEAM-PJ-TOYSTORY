@@ -2,14 +2,17 @@ import catInfo from './sub4_data.js';
 
 
 import mFn from './my_function.js';
+
 import spreadCommon from "./sub_spread_common.js";
 spreadCommon();
 
 import goSub from './gosub.js';
 goSub();
 
-const gbox = mFn.qs(".gbox");
 
+
+
+const gbox = mFn.qs(".gbox");
 
 let hcode = "<ul>";
 
@@ -24,18 +27,12 @@ for(let i=1; i<=8; i++) {
 
 hcode += "</ul>";
 
-
 gbox.innerHTML = hcode;
-
 
 
 let target = mFn.qsEl(gbox,'ul');
 
-
-
 const updateCriteria = () => mFn.qsaEl(target,"li")[0].offsetWidth;
-
-
 
 let criteria = updateCriteria();
 
@@ -47,13 +44,10 @@ mFn.addEvt(window,"resize",
 });
 
 
-
 let currVal = 0;
 
 
-
 function moveGallery(){
-    
 
     target.style.translate = --currVal + "px";
 
@@ -117,7 +111,6 @@ function showPoster(){
 //// 캐릭터 영역
 // 대상 : .cha-box
 (()=>{
-
     const catList = mFn.qs(".cha-box");
     
     console.log(catList);
