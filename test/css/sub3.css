@@ -30,10 +30,11 @@ body{
   /* color: #fff; */
 }
 .mlogo img {
-  /* background-color: #ffffff7a; */
-}
-#top-area{
   background-color: #ffffff7a;
+}
+#top-area:hover{
+  background-color: #ffffff7a;
+  transition: .3s;
 }
 
 /* 중앙속박스 */
