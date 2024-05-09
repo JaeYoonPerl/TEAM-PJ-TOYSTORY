@@ -2,7 +2,11 @@ import catInfo from './sub4_data.js';
 
 
 import mFn from './my_function.js';
+import spreadCommon from "./sub_spread_common.js";
+spreadCommon();
 
+import goSub from './gosub.js';
+goSub();
 
 const gbox = mFn.qs(".gbox");
 
