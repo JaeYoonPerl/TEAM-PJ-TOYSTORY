@@ -552,7 +552,7 @@
   left: -10px;
   box-sizing: border-box;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1;
 }
 
@@ -569,11 +569,9 @@
 }
 
 .grid{
-  max-width: 780px;
-  margin-left: 20px;
+  max-width: 590px;
+  margin-left: 6px;
   }
-
-
 }
  /********* 최대사이즈 600px 이하 끝 *********/
   
