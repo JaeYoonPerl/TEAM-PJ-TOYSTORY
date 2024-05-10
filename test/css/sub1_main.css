@@ -568,7 +568,10 @@
   line-height: 1;
 }
 
-
+.grid{
+  max-width: 780px;
+  margin-left: 20px;
+  }
 
 
 }
