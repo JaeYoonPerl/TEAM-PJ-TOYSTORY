@@ -441,6 +441,19 @@
       padding-bottom: 30px;
       }
   
+      .trmovie h4{
+        font-size: 1.3rem;
+        line-height: 1.4;
+        text-align: left;
+        margin-right: 10px;
+        } 
+
+        .deintro h4{
+          font-size: 1.3rem;
+          line-height: 1.4;
+          text-align: left;
+       }
+
       #container>.de-chpart {
       width: 60vw;
       }
