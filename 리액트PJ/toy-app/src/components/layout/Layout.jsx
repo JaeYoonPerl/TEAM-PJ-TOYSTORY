@@ -3,6 +3,11 @@ import TopArea from "./TopArea";
 import FooterArea from "./FooterArea";
 import MainArea from "./MainArea";
 
+// 공통 css
+import "../../css/common/common.scss";
+import "../../css/common/core.scss";
+import "../../css/common/reset.scss";
+
 
 function Layout() {
   return (
