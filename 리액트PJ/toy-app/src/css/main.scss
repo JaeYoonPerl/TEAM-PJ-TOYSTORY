@@ -1,14 +1,10 @@
-@charset "utf-8";
-
-@import url(./reset.css);
-@import url(./common.css);
-@import url(./core.css);
-
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
   /* font-family: "Dancing Script", cursive; */
 
-
+#foot-back{
+  // display: none;
+}
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +18,6 @@
   
   /* Background image */
   .bg-image {
-    background: url(../IMG/bg/bg2.jpg) no-repeat center/cover;
     position: fixed;
     top: 0;
     left: 0;
@@ -69,11 +64,12 @@
   }
   
   .menu-list li {
-    margin: 20% 0;
+    // margin: 20% 0;
+    // 이거 절대하지말것
   }
   
   .menu-list li a {
-    color: #fff;
+    // color: #fff;
     text-decoration: none;
     font-family: "Dancing Script", cursive;
     font-size: 40px;

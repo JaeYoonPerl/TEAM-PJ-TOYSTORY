@@ -7,6 +7,7 @@ import MainArea from "./MainArea";
 import "../../css/common/common.scss";
 import "../../css/common/core.scss";
 import "../../css/common/reset.scss";
+import "../../css/common/grid_12_flex.scss";
 
 
 function Layout() {

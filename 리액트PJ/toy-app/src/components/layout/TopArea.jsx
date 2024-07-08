@@ -19,19 +19,19 @@ export default function TopArea() {
                     {v.text}
                   </Link>
                   <Link to={v.link} className="icon2">
-                    <img
-                      src={process.env.PUBLIC_URL + "./IMG/toy${i}_icon.png"}
-                      alt={v.text}
-                    />
+                    <img src={process.env.PUBLIC_URL + v.src} alt={v.text} />
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
           <div className="logobx-area mlogo">
-            <a href="./main.html">
-              <img src="./IMG/PIXAR_LOGO black.png" alt="메인로고" />
-            </a>
+            <Link to="/" >
+              <img
+                src={process.env.PUBLIC_URL + "/images/PIXAR_LOGO black.png"}
+                alt="메인로고"
+              />
+            </Link>
           </div>
         </div>
       </header>

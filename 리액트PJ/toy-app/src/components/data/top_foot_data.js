@@ -15,22 +15,22 @@ import {
     {
         link: "/sub1",
         text: "Toy Story 1",
-        src: "",
+        src: "/images/toy1_icon.png",
     },
     {
         link: "/sub2",
         text: "Toy Story 2",
-        src: "",
+        src: "/images/toy2_icon.png",
     },
     {
         link: "/sub3",
         text: "Toy Story 3",
-        src: "",
+        src: "/images/toy3_icon.png",
     },
     {
         link: "/sub4",
         text: "Toy Story 4",
-        src:"",
+        src:"/images/toy4_icon.png",
     }
 ];
 
@@ -76,4 +76,24 @@ const footerItems = {
     },
   ],
 };
-export { topItems,footerItems};
+
+const mainItems = [
+  {
+    src:"/images/poster/01_ts.jpg",
+    text:"ts1-img",
+  },
+  {
+    src:"/images/poster/02_ts.jpg",
+    text:"ts2-img",
+  },
+  {
+    src:"/images/poster/03_ts.jpg",
+    text:"ts3-img",
+  },
+  {
+    src:"/images/poster/04_ts.jpg",
+    text:"ts4-img",
+  },
+];
+
+export { topItems,footerItems,mainItems};
