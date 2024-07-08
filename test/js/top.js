@@ -4,6 +4,11 @@ const topArea = mFn.qs('#top-area');
 let hcode = `<header class="page-bx">`;
 hcode+=`
 <nav class="top-menu">
+<div class="logobx-area">
+  <h1 class="mlogo">
+    <img src="./IMG/PIXAR_LOGO black.png" alt="메인로고" />
+  </h1>
+</div>
   <ul>
     <li class="toy01">
       <a href="#">TOY STORY 01 / </a>
@@ -13,11 +18,7 @@ hcode+=`
     </li>
   </ul>
 </nav>
-<div class="logobx-area">
-  <h1 class="mlogo">
-    <img src="./IMG/PIXAR_LOGO black.png" alt="메인로고" />
-  </h1>
-</div>
+
 `;
 
 hcode +=`
