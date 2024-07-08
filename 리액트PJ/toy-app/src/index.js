@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import Layout from "./components/layout/Layout";
 import Main from "./components/pages/Main";
 import Sub1 from "./components/pages/Sub1";
 import Sub2 from "./components/pages/Sub2";
