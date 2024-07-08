@@ -1,8 +1,8 @@
 import React from "react";
-
-import { FooterArea } from "./FooterArea";
+import TopArea from "./TopArea";
+import FooterArea from "./FooterArea";
 import MainArea from "./MainArea";
-import { TopArea } from "./TopArea";
+
 
 function Layout() {
   return (

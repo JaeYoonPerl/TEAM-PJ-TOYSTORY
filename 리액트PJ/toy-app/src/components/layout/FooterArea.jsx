@@ -34,13 +34,13 @@ export default function FooterArea() {
             let hcode2 = "";
             switch (item.type) {
               case "sns":
-                hcode2 += `<div class="sns-part">
-                            <aside class="sns-box">
+                hcode2 += `<div className="sns-part">
+                            <aside className="sns-box">
                               <ul>`;
                 item.links.forEach(link => {
                   hcode2 += `<li>
-                              <a href="${link.href}" target="_blank" class="fa-brands ${link.icon}">
-                                <span class="ir"></span>
+                              <a href="${link.href}" target="_blank" className="fa-brands ${link.icon}">
+                                <span className="ir"></span>
                               </a>
                             </li>`;
                 });
@@ -49,8 +49,8 @@ export default function FooterArea() {
                         </div>`;
                 break;
               case "policy":
-                hcode2 += `<div class="fcont-part">
-                            <aside class="info-link">
+                hcode2 += `<div className="fcont-part">
+                            <aside className="info-link">
                               <ul>`;
                 item.links.forEach(link => {
                   hcode2 += `<li>
@@ -62,8 +62,8 @@ export default function FooterArea() {
                         </div>`;
                 break;
               case "corp":
-                hcode2 += `<div class="corp-part">
-                            <address class="corp-info">${item.text}</address>
+                hcode2 += `<div className="corp-part">
+                            <address className="corp-info">${item.text}</address>
                           </div>`;
                 break;
               default:
@@ -77,9 +77,9 @@ export default function FooterArea() {
   return (
     <>
       <div id="foot-back">
-        <footer id="footer-area" class="section ibx">
-          <h1 class="main-title main-tit2">ABOUT</h1>
-          <div class="footer-bx col-12"></div>
+        <footer id="footer-area" className="section ibx">
+          <h1 className="main-title main-tit2">ABOUT</h1>
+          <div className="footer-bx col-12"></div>
         </footer>
       </div>
     </>
