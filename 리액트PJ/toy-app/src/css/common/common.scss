@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url(./grid_12_flex.css);
+// @import url(./grid_12_flex.css);
 /*예시) 영역별 큰제목 & 작은제목 & 설명글 공통*/
 :root{
     --main:50px;
@@ -28,6 +28,7 @@
 /* 상단 영역바 CSS */
 
 #top-area {
+    top: 0;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -160,6 +161,7 @@
     }
     .icon1{
         display: none;
+        // 이건 생각좀 해봐야함
     }
     .icon2{
         display: inline-block;
