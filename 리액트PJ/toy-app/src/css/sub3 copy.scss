@@ -8,7 +8,7 @@ body>* {
   overflow-x: hidden;
 }
 .ts{
-  // display: none;
+  display: none;
 }
 body{
     margin: 0 auto;
@@ -52,7 +52,7 @@ body{
 }
 #char-area{
    content: '';
-   background: url(../../public/images/img3/world_head.jpg)no-repeat center/cover;
+  //  background: url(../IMG/img3/world_head.jpg)no-repeat center/cover;
    
  
    /* opacity: 0.7; */
@@ -65,10 +65,16 @@ body{
      z-index: -2;
      /* overflow: hidden; */
      /* filter: brightness(.7); */
-     background: url(../../public/images/img3/character.jpg) no-repeat center/cover;
+    //  background: url(../IMG/img3/character.jpg)no-repeat center/cover;
      
  }
- 
+ .bgvideo{
+     height: 100%;
+     width: 100%;
+     
+     object-fit: cover;
+ }
+
  /* 메인로고 */
  .toy-3rd-logo{
     position: absolute;
@@ -104,7 +110,7 @@ body{
  .sino-box span{
  
     color: #fff;
-    font-size: 20px;
+    font-size: 2.5rem;
     line-height: 1.5;
     padding: 10px;
     font-weight: bold;
@@ -358,7 +364,7 @@ body{
 
 #video-area{
   content: '';
-  background: url(../../public/images/img3/creditshead.jpg)no-repeat center/cover;
+  // background: url(../IMG/img3/creditshead.jpg)no-repeat center/cover;
   /* position: absolute; */
   
   /* opacity: 0.7; */

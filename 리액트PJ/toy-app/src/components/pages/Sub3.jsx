@@ -1,4 +1,4 @@
-// import "../../css/sub3.scss";
+import "../../css/sub3.scss";
 
 export default function Sub3(){
     // 코드 리턴구역 ////
@@ -23,6 +23,59 @@ export default function Sub3(){
                     </div>
                 </div>
 
+            </section>
+        </div>
+
+        
+        <div id ="char-area">
+            <section className="char-area inbox">
+                <div className="cont-box">
+                     
+                <a href="#" className="abtn ab1"></a>
+                <a href="#" className="abtn ab2"></a>
+                   
+                    <div className="col-3">
+                        <div className="char-btn">
+                            <ol className="indic"></ol>
+                        </div>
+                    </div>
+                    
+                    <div className="col-9">
+                        <h2 className="main-title sub-tit">Character</h2>
+                        <div className="char-box">
+                            <ul className="char-banner sub-text2"></ul>
+                        </div>
+                    </div>
+                   
+                </div>    
+            </section>
+        </div>
+
+
+        <div id="video-area">
+            <section class="video-area inbox">
+                <div class="cont-box">
+                    <div class="col-12">
+                        <h2 class="sub-tit main-title">Trailer</h2>
+                        <div class="video-box">
+
+                            <ul class="video-banner"></ul>
+                            
+                            
+                            <a href="javascript:;" class="avbtn ab1"><img src="../images/img3/left_btn.png" alt="왼쪽이동버튼"/></a>
+                            <a href="javascript:;" class="avbtn ab2"><img src="../images/img3/right_btn.png" alt="오른쪽이동버튼"/></a>
+                            
+                            
+                            <div class="video-btn">
+
+
+                                <ol class="v-indic"></ol>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
             </section>
         </div>
         </>
