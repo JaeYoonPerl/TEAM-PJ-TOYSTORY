@@ -22,7 +22,7 @@ function S3CharSlide() {
                     </div>
 
                     <h2 className="main-title sub-tit">Character</h2>
-                    <div className="char-box">
+                    {/* <div className="char-box">
                         {charS3[currentTab].tit.map((v, i) => (
                             <li key={i} className="dbox">
                                 <div>
@@ -32,7 +32,7 @@ function S3CharSlide() {
                                 </div>
                             </li>
                         ))}
-                    </div>
+                    </div> */}
                 </div>
             </section>
         </div>
