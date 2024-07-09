@@ -1,4 +1,5 @@
 import "../../css/sub3.scss";
+import S3CharSlide from "../modules/S3CharSlide";
 
 export default function Sub3(){
     // 코드 리턴구역 ////
@@ -25,9 +26,9 @@ export default function Sub3(){
 
             </section>
         </div>
-
+        <S3CharSlide/>
         
-        <div id ="char-area">
+        {/* <div id ="char-area">
             <section className="char-area inbox">
                 <div className="cont-box">
                      
@@ -49,7 +50,7 @@ export default function Sub3(){
                    
                 </div>    
             </section>
-        </div>
+        </div> */}
 
 
         <div id="video-area">
