@@ -3,7 +3,7 @@ export const charS3 =[
         cimg:"/images/img3/toystory3-1.jpg",
         ctxt:"Woody is a cowboy sheriff who proclaims his signature catchphrases from the 1950s TV show Woody’s Roundup every time his pull-string is pulled. He’s always been Andy’s favorite toy. Even though his owner is now grown, the loyal sheriff Woody maintains a steadfast belief that Andy still cares about his toys."
     },
-    {tit:"Buzz Lightyear",
+    {tit:"Buzz",
         cimg:"/images/img3/toystory3-2.jpg",
         ctxt:"Buzz Lightyear is a heroic space ranger action figure, complete with laser beam, karate-chop action, and pop-out wings. Buzz is a boy’s dream toy who becomes a quick favorite of young Andy and the closest of buddies with Woody. While Buzz’s sole mission used to be defeating the evil Emperor Zurg, what he now cares about most is keeping his toy family together. Buzz’s new mission is sidetracked along the way, however, when his journey brings out surprising aspects of his personality even he didn’t know existed."
     },

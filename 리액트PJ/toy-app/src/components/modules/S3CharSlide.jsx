@@ -9,29 +9,33 @@ function S3CharSlide() {
     };
 
     return (
-        <div id="char-area">
+        <div id="s3Char-area">
             <section className="char-area inbox">
                 <div className="cont-box">
+                    <h2 className="main-title s3Sub-tit">Character</h2>
                     <div className="char-btn">
                         <ul className="indic">
                             {charS3.map((v, i) => (
                                 <li key={i} className={i === currentTab ? "submenu focused" : "submenu"} onClick={() => selectMenu(i)}>
                                     <img src={v.cimg} />
+                                    <span>{v.tit}</span>
                                 </li>
                             ))}
                         </ul>
                     </div>
 
-                    <h2 className="main-title sub-tit">Character</h2>
                     <div className="Desc">
                         <div className="char-box">
                             <ul className="char-banner sub-text2">
-                                <li><img src={charS3[currentTab].cimg} alt={charS3[currentTab].tit} /></li>
-                                <li><span>{charS3[currentTab].ctxt}</span></li>
+                                <li>
+                                    <img src={charS3[currentTab].cimg} alt={charS3[currentTab].tit} />
+                                    <p>{charS3[currentTab].ctxt}</p>
+                                </li>
+                                <li>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    
                 </div>
             </section>
         </div>

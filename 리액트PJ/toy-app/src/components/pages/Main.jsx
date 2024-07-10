@@ -53,7 +53,7 @@ useEffect(()=>{
                 <img key={i}
                 src={process.env.PUBLIC_URL +v.src} 
                 alt={v.text} 
-                class="ts-img"/>
+                className="ts-img"/>
             )
             }
         </div>
