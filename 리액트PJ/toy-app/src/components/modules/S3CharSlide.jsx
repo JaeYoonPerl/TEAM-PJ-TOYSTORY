@@ -3,6 +3,7 @@ import { charS3 } from "../data/sub3_char_data";
 
 function S3CharSlide() {
     const [currentTab, clickTab] = useState(0);
+
     const selectMenu = (i) => {
         clickTab(i);
     };
@@ -22,17 +23,15 @@ function S3CharSlide() {
                     </div>
 
                     <h2 className="main-title sub-tit">Character</h2>
-                    {/* <div className="char-box">
-                        {charS3[currentTab].tit.map((v, i) => (
-                            <li key={i} className="dbox">
-                                <div>
-                                    <img src={charS3[currentTab].cimg[i]} alt={charS3[currentTab].tit[i]} />
-                                    <h3>{charS3[currentTab].tit[i]}</h3>
-                                    <p>{charS3[currentTab].ctxt[i]}</p>
-                                </div>
-                            </li>
-                        ))}
-                    </div> */}
+                    <div className="Desc">
+                        <div className="char-box">
+                            <ul className="char-banner sub-text2">
+                                <li><img src={charS3[currentTab].cimg} alt={charS3[currentTab].tit} /></li>
+                                <li><span>{charS3[currentTab].ctxt}</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
         </div>
