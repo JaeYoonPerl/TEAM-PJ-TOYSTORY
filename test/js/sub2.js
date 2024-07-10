@@ -16,8 +16,6 @@ showGNB();
 import scrollPage from "./sub2/sub2_slide.js";
 scrollPage();
 
-
-
 // 트레일러 뿌려주기
 showTrailers();
 // 캐릭터 뿌려주기
@@ -31,7 +29,6 @@ import showAwardsCredits from "./sub2/sub2_aw_cre.js";
 showAwardsCredits();
 //////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////gnb 뿌려주기/////////////////////////////////////////////////////
-
 function showGNB(){
   const gnb = mFn.qs('.gnb');
   // console.log("나와gnb",gnb);
