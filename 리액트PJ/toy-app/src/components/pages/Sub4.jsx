@@ -27,7 +27,7 @@ export default function Sub4() {
       {/* 메인 영역  */}
       <div id="main">
         <div className="main-title">
-          <img src="./IMG/img4/toystory4_logo.jpg" alt="토이스토리 로고" />
+          <img src={process.env.PUBLIC_URL +`/images/img4/toystory4_logo.jpg`} alt="토이스토리 로고" />
         </div>
         {/* 재귀함수 호출  */}
         <div className="gbox"></div>
@@ -48,19 +48,19 @@ export default function Sub4() {
           <h2 className="main-title">POSTER</h2>
           <ul className="poster poster-common">
             <li>
-              <img src="./IMG/img4/ts4_circle.png" alt="포스터" />
+              <img src={process.env.PUBLIC_URL +`/images/img4/ts4_circle.png`} alt="포스터" />
               <span className="sub-text1">mouse here!</span>
             </li>
           </ul>
           <ul className="poster2 poster-common">
             <li>
-              <img src="./IMG/img4/toystory4_poster.jpg" alt="포스터" />
+              <img src={process.env.PUBLIC_URL +`/images/img4/toystory4_poster.jpg`} alt="포스터" />
             </li>
             <li>
-              <img src="./IMG/img4/toystory4_poster2.jpg" alt="포스터" />
+              <img src={process.env.PUBLIC_URL +`/images/img4/toystory4_poster2.jpg`} alt="포스터" />
             </li>
             <li>
-              <img src="./IMG/img4/toystory4_poster3.jpg" alt="포스터" />
+              <img src={process.env.PUBLIC_URL +`/images/img4/toystory4_poster3.jpg`} alt="포스터" />
             </li>
           </ul>
         </div>
@@ -74,7 +74,7 @@ export default function Sub4() {
           <div className="pointer"></div>
           <div className="footer-icon">
             <a href="#">
-              <img src="./IMG/img4/alien1.png" alt="알린이미지" />
+              <img src={process.env.PUBLIC_URL +`/images/img4/alien1.png`} alt="알린이미지" />
             </a>
           </div>
         </div>
