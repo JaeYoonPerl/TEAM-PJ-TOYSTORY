@@ -1,4 +1,7 @@
 import { useEffect } from "react";
+// 폰트어썸
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faChevronLeft,faChevronRight} from "@fortawesome/free-solid-svg-icons";
 
 // 내함수 불러오기
 import mFn from "../func/my_function";
@@ -162,13 +165,13 @@ export default function Sub2() {
   }, []);
   // 코드 리턴구역 ////
   return (
-    <>
+    <div id="sub2">
       <div id="side-area">
         <nav className="gnb"></nav>
       </div>
       <div
         id="logo-area"
-        style={{ background: process.env.PUBLIC_URL + bgData.logo }}
+        // style={{ background: process.env.PUBLIC_URL + bgData.logo }}
       >
         <div className="logo-area ibx section">
           <div className="logo"></div>
@@ -191,8 +194,14 @@ export default function Sub2() {
           <div className="content-box2">
             <div id="slide" className="trailers-box"></div>
             <div className="trail-button">
-              <a href="###" className="abtn ab1 fa-solid fa-chevron-right"></a>
-              <a href="###" className="abtn ab2 fa-solid fa-chevron-right"></a>
+              <a href="###" className="abtn ab1 fa-solid fa-chevron-right">
+              <FontAwesomeIcon icon={faChevronLeft} />
+              {/* <FontAwesomeIcon icon={faChevronRight} /> */}
+              </a>
+              <a href="###" className="abtn ab2 fa-solid fa-chevron-right">
+              {/* <FontAwesomeIcon icon={faChevronLeft} /> */}
+              <FontAwesomeIcon icon={faChevronRight} />
+              </a>
             </div>
           </div>
         </div>
@@ -251,6 +260,6 @@ export default function Sub2() {
         <span className="close">&times;</span>
         <img className="modal-content" id="modalImg" />
       </div>
-    </>
+    </div>
   );
 } /////// Sub2 /////
