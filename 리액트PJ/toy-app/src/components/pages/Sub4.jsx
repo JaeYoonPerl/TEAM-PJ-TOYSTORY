@@ -1,6 +1,7 @@
 // 서브페이지4 //
 
 import "../../css/sub4.scss";
+import S4gbox from "../modules/S4gbox";
 
 
 
@@ -30,7 +31,7 @@ export default function Sub4() {
           <img src={process.env.PUBLIC_URL +`/images/img4/toystory4_logo.jpg`} alt="토이스토리 로고" />
         </div>
         {/* 재귀함수 호출  */}
-        <div className="gbox"></div>
+        <S4gbox />
         {/* 시놉시스 구역  */}
         <div className="main-synopsis">
           <h2 className="main-title">Synopsis</h2>
