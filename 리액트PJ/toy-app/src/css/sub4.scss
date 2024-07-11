@@ -1,8 +1,8 @@
 
 
-@import "./reset";
-@import "./core";
-@import "./common";
+// @import "./reset";
+// @import "./core";
+// @import "./common";
 
 
 #top, #main, #footer{
@@ -12,7 +12,7 @@
 #top{
  height: 1200px;
 
-  background: url(../IMG/img4/common4.jpg) no-repeat center /100% 100%;
+  background: url(../../public/images/img4/common4.jpg) no-repeat center /100% 100%;
 }
 
 #main{
@@ -227,7 +227,7 @@
   left: 0;
   width: 100px;
   height: 100px;
-  background: url(../IMG/img4/ts4logo.png) no-repeat center;
+  background: url(../../public/images/img4/ts4logo.png) no-repeat center;
   transition: 0.3s ease-out;
   pointer-events: none;
 }
