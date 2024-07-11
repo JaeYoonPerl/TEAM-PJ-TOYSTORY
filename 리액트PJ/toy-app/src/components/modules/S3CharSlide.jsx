@@ -17,7 +17,7 @@ function S3CharSlide() {
                         <ul className="indic">
                             {charS3.map((v, i) => (
                                 <li key={i} className={i === currentTab ? "submenu focused" : "submenu"} onClick={() => selectMenu(i)}>
-                                    <img src={v.cimg} />
+                                    <img src={process.env.PUBLIC_URL + v.cimg} />
                                     <span>{v.tit}</span>
                                 </li>
                             ))}
@@ -28,7 +28,7 @@ function S3CharSlide() {
                         <div className="char-box">
                             <ul className="char-banner sub-text2">
                                 <li>
-                                    <img src={charS3[currentTab].cimg} alt={charS3[currentTab].tit} />
+                                    <img src={process.env.PUBLIC_URL +charS3[currentTab].cimg} alt={charS3[currentTab].tit} />
                                     <p>{charS3[currentTab].ctxt}</p>
                                 </li>
                                 <li>
