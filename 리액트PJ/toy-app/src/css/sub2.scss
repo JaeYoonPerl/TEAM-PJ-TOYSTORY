@@ -26,16 +26,16 @@ font-family: "Lobster", sans-serif;
   /* z-index: 1000; */
 }
 #GNB ul li a{
-  color: #fff;
+  // color: #fff;
 }
 .ts{
-  display: none;
+  // display: none;
 }
 html{  
   scroll-behavior: smooth;
 }
 body{
-  overflow: hidden;
+  // overflow: hidden;
 }
 /* 공사중 표시 */
 body * {
@@ -88,7 +88,6 @@ strong{
   width: 100%;
   bottom: 60vh;
 }
-
 .gnb{
   position: absolute;
   right: 0;
