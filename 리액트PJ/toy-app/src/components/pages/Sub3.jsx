@@ -12,7 +12,8 @@ export default function Sub3() {
                         <div className="bg-box"></div>
 
                         <div className="toy-3rd-logo">
-                            <img src="../images/img3/toystory_logo3-removebg-preview.png" alt="toy3-logo" />
+                            <img src={process.env.PUBLIC_URL+
+"/images/img3/toystory_logo3-removebg-preview.png"} alt="toy3-logo" />
                         </div>
 
                         <div className="sino-box">
