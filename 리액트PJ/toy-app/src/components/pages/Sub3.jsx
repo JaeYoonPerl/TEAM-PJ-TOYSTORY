@@ -3,8 +3,14 @@ import S3CharSlide from "../modules/S3CharSlide";
 import S3trailer from "../plugin/s3Trailer";
 
 import goTop from "../func/sub3/goTop";
+import { useEffect } from "react";
+import scrollShowFn from "../func/sub3/scroll_show";
 
 export default function Sub3() {
+
+    useEffect(()=>{
+        scrollShowFn();
+    },[]);
 
     // goTop();
 
@@ -19,7 +25,7 @@ export default function Sub3() {
 
                         <div className="toy-3rd-logo">
                             <img src={process.env.PUBLIC_URL+
-"/images/img3/toystory_logo3-removebg-preview.png"} alt="toy3-logo" />
+                        "/images/img3/toystory_logo3-removebg-preview.png"} alt="toy3-logo" />
                         </div>
 
                         <div className="sino-box">
@@ -38,7 +44,7 @@ export default function Sub3() {
             <div id="s3Video-area">
                 <section className="video-area inbox">
                     <h2 className="s3Sub-tit main-title">Trailer</h2>
-                    <S3trailer />
+                    <S3trailer/>
                 </section>
             </div>
         </>

@@ -2,7 +2,7 @@ import myFn from "../my_function";
 
 export default function scrollShowFn() {
 // 대상선정 
-const scAct = myFn.qsa(".hide-el");
+const scAct = myFn.qsa(".obj");
 
 myFn.addEvt(window, "scroll", showIt);
 
@@ -18,8 +18,8 @@ function addOn(ele) {
     
     let bcrVal = myFn.getBCR(ele);
     
-    if (bcrVal < CRITERIA) ele.classList.add("on");
+    if (bcrVal < CRITERIA) ele.classList.add("show");
     
-    else ele.classList.remove("on");
+    else ele.classList.remove("show");
 } 
 } ///// scrollShoWFn ///

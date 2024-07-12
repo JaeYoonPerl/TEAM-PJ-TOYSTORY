@@ -11,8 +11,9 @@ function S3CharSlide() {
     return (
         <div id="s3Char-area">
             <section className="char-area inbox">
-                <div className="cont-box">
+                <div className="cont-box ">
                     <h2 className="main-title s3Sub-tit">Character</h2>
+                    <div className="obj">
                     <div className="char-btn">
                         <ul className="indic">
                             {charS3.map((v, i) => (
@@ -35,6 +36,7 @@ function S3CharSlide() {
                                 </li>
                             </ul>
                         </div>
+                    </div>
                     </div>
                 </div>
             </section>
