@@ -13,7 +13,7 @@ export default function Sub1(){
     // 코드 리턴구역 ////
     return(
         <>
-        <div className="main-bx">
+        <div className="S1main-bx">
             <S1Main/>
         </div>
         <div className="trmovie-box">
