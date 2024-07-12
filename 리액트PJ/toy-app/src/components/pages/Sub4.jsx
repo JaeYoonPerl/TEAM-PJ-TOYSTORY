@@ -1,11 +1,19 @@
 // 서브페이지4 //
 
+import { useEffect } from "react";
 import "../../css/sub4.scss";
 import S4gbox from "../modules/S4gbox";
+import sub4_mousePo from "../func/sub4/sub4_mousePo";
+import sub4_poster from "../func/sub4/sub4_poster";
 
 
 
 export default function Sub4() {
+
+  useEffect(()=>{
+    sub4_mousePo();
+    // sub4_poster();
+  })
 
   // 코드 리턴구역 ////
   return (
