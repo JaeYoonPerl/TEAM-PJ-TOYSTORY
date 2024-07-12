@@ -5,6 +5,7 @@ import "../../css/sub4.scss";
 import S4gbox from "../modules/S4gbox";
 import sub4_mousePo from "../func/sub4/sub4_mousePo";
 import sub4_poster from "../func/sub4/sub4_poster";
+import S4character from "../modules/S4character";
 
 
 
@@ -76,7 +77,8 @@ export default function Sub4() {
         </div>
         {/* 캐릭터 소개 영역  */}
         <div className="main-character">
-          <div className="cha-box"></div>
+          {/* <div className="cha-box"></div> */}
+          <S4character />
         </div>
 
         {/* 하단 영역  */}
