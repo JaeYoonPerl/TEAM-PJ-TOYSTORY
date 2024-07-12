@@ -19,37 +19,35 @@
     outline: 2px dashed #ccc;
 } */
 
-/************************************************* 상단 영역 CSS 코딩 구역 *************************************************/
-
-.ts {
-  display: none;
-}
-
-.mlogo img {
-  background-color: #ffffff7a;
-}
 
 /************************************************* 메인 영역 CSS 코딩 구역 *************************************************/
 
-#main-area {
+.main-bx {
   position: relative;
-  top: 0;
 }
 
 /* 인트로영역 이미지 */
-.intro-area {
-  height: 50vh;
-  width: 90vw;
-  padding: 80px;
-  padding-bottom: 50px;
-  // background: url(../IMG/sub01_main.jpg) no-repeat center/cover;
+.S1intro-area {
+  height: 100%;
+  width: 100%;
+  //padding: 80px;
+  //padding-bottom: 50px;
 }
 
-.intro-area h2 {
+/* .main-img{
+  position: absolute;
+} */
+
+.main-img img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.S1main-title {
   font-weight: 30;
   font-style: normal;
   color: whitesmoke;
-  padding-top: 200px;
+  //margin-top: 50px;
   line-height: 1.2;
 }
 
