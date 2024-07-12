@@ -40,9 +40,9 @@ export default function TopArea() {
               ))}
             </ul>
           </div>
-          <div className="member smenu">
+            <div className="member smenu">
           {
-                        /* 회원가입, 로그인 버튼은
+            /* 회원가입, 로그인 버튼은
                             로그인 상태가 null일때 나옴 */
                         myCon.loginSts === null && (
                             <>
