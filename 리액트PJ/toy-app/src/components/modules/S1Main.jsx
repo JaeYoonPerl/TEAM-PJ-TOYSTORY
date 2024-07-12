@@ -7,9 +7,8 @@ import "../../css/sub1.scss";
 function S1Main(props) {
   return (
     <section className="S1intro-area">
-      <div className="main-img">
-        <img src={process.env.PUBLIC_URL+"/images/img1/bged0.jpg"} alt="main_img" />
-      <h2 className="S1main-title">
+      <div className="S1main-title">
+      <h2>
         To infinity <br />
         And beyond
       </h2>
