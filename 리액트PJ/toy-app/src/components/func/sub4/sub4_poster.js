@@ -7,12 +7,12 @@ function sub4_poster(props) {
 
     mFn.addEvt(poster[0],"mouseenter",showPoster)
 
+    this.parentElement.classList.add("on");
+    // 2초후 앞에 있는 포스터 없애기
+    setTimeout(()=>{
+        poster[0].style.display="none";
+    },3000)
 
-    return (
-        <div>
-            
-        </div>
-    );
 }
 
 export default sub4_poster;

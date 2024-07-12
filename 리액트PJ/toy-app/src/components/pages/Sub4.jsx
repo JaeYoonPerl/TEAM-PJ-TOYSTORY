@@ -9,7 +9,8 @@ export default function Sub4() {
 
   // 코드 리턴구역 ////
   return (
-    <section>
+    <section className="wrap">
+  
       {/* 메뉴 영역  */}
       <header id="top-area" className=""></header>
       <div className="ts"></div>
