@@ -1,6 +1,7 @@
 import S1Movie from "../modules/S1Movie";
 import S1Main from "../modules/S1Main";
 import S1Degin from "../modules/S1Degin";
+import S1Character from "../modules/S1Character";
 
 
 
@@ -18,6 +19,9 @@ export default function Sub1(){
         </div>
         <div className="trmovie-box">
             <S1Movie/>
+        </div>
+        <div className="S1Cha-box">
+            <S1Character/>
         </div>
         <div className="design-bx">
             <S1Degin/>
