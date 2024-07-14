@@ -1,22 +1,15 @@
-import React, { useEffect } from 'react';
-
-
-import sub1Cbox from '../data/sub1/sub1_cbox.js';
-
-// CSS 불러오기
+import React, { useEffect, useRef } from 'react';
+import sub1Cbox from "../data/sub1/sub1_cbox.js";
 import "../../css/sub1.scss";
 
-export default function S1Character(prop){
+export default function S1Character(props) {
+  const chgridRef = useRef(null);
 
-    useEffect(() => {
-        sub1Cbox();
-    });
+  useEffect(() => {
+    sub1Cbox(chgridRef);
+  }, []);
 
-    ////// 코드 리턴 구역
-    return (
-        <>
-
-        </>
-    );
-
-} /////// S1Character /////
+  return (
+    <div id="cha-box" ref={chgridRef}></div>
+  );
+}
