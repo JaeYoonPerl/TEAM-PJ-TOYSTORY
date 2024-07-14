@@ -1,6 +1,6 @@
 import mFn from "../../func/my_function.js";
 
-
+import * as sub1_data from "./sub1_data.js";
 
 export default function sub1Cbox(){
 
