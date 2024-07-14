@@ -25,18 +25,18 @@ const clipData = [
     {
       idx: "1",
       title01: "Design - Character",
-      subintro: `The filmmakers assembled the Toy Story cast from a wealth of childhood memories.
+      subintro01: `The filmmakers assembled the Toy Story cast from a wealth of childhood memories.
       But for the story to work, the two main characters needed to have their own chemistry.
       Early versions of Woody included a ventriloquist's dummy and an ill-tempered cowboy before he became the affable hero seen on screen. <br> Buzz Lightyear offered a different challenge : inventing a brand-new toy that instantly felt familiar`,
-      mvid01: "4n6u2CqlGPY",
-      mvid02: "z_FYmhkOf4Q",
+      mvid01: "https://www.youtube.com/embed/4n6u2CqlGPY",
+      mvid02: "https://www.youtube.com/embed/z_FYmhkOf4Q",
     },
     {
         idx: "2",
-        title01: "Design - Background",
-        subintro: ``,
-        mvid01: "LZN0WLWhuAI",
-        mvid02: "wpwVRDrSrMU",
+        title02: "Design - Background",
+        subintro02: ``,
+        mvid03: "https://www.youtube.com/embed/LZN0WLWhuAI",
+        mvid04: "https://www.youtube.com/embed/wpwVRDrSrMU",
       },
   ];
 

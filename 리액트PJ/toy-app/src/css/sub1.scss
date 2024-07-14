@@ -55,12 +55,28 @@
   margin-left: 40px;
 }
 
+.S1deintro {
+  position: relative;
+  //padding-top: 30px;
+  margin-left: 40px;
+}
+
 // .design-box {}
 
 
 // .demovie {}
 
 .S1trmovie{
+  //position: absolute;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-family: "Lugrasimo", cursive;
+  color: #000;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.S1demovie{
   //position: absolute;
   padding-top: 40px;
   padding-bottom: 30px;
@@ -89,7 +105,51 @@
   gap: 0 30px;
 }
 
+.S1deintro>h4 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 2.2rem;
+  /* text-align: justify; */
+  line-height: 1.5;
+}
+.S1dbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 30px;
+}
+
+
+
+
+
+
 // .demovie h4 {}
+
+.dmovie1>iframe{
+  width: 100%;
+  height: 100%;
+}
+.dmovie2>iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.dmovie1{
+  width: 30vw;
+  height: 40vh;
+  //padding-top: 30px;
+  //padding-bottom: 30px;
+}
+
+.dmovie2{
+  width: 30vw;
+  height: 40vh;
+  //padding-top: 30px;
+  //padding-bottom: 30px;
+}
+
 
 .tmovie1>iframe{
   width: 100%;
