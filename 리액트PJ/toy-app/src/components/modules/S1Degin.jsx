@@ -6,16 +6,14 @@ import { designData } from '../data/sub1/sub1_data';
 // CSS 불러오기
 import "../../css/sub1.scss";
 
-function S1Degin(props) {
-  
-  const S1DeginBox = new Set();
+const S1DeBox = new Set();
 
   return (
     <>
       {designData.map((v, i) => {
-        
-        if (S1DeginBox.has(v.title01)) return null;
-        S1DeginBox.add(v.title01);
+        // title01과 title02 중복 체크
+        if (S1DeBox.has(v.title02)) return null;
+        S1DeBox.add(v.title02);
 
         return (
           <React.Fragment key={i}>
@@ -25,10 +23,10 @@ function S1Degin(props) {
               </div>
               <div className="S1dbox">
                 <div className="dmovie1">
-                  <iframe src={v.mvid01}></iframe>
+                  <iframe src={v.mvid01} title={v.title01 + ' Video 1'}></iframe>
                 </div>
                 <div className="dmovie2">
-                  <iframe src={v.mvid02}></iframe>
+                  <iframe src={v.mvid02} title={v.title01 + ' Video 2'}></iframe>
                 </div>
               </div>
               <h4>{v.subintro01}</h4>
@@ -39,10 +37,10 @@ function S1Degin(props) {
                 <h4>{v.subintro02}</h4>
                 <div className="S1dbg-box">
                   <div className="dmovie3">
-                    <iframe src={v.mvid03}></iframe>
+                    <iframe src={v.mvid03} title={v.title02 + ' Video 3'}></iframe>
                   </div>
                   <div className="dmovie4">
-                    <iframe src={v.mvid04}></iframe>
+                    <iframe src={v.mvid04} title={v.title02 + ' Video 4'}></iframe>
                   </div>
                 </div>
               </div>
@@ -53,6 +51,7 @@ function S1Degin(props) {
     </>
   );
 }
+
 
 
 
