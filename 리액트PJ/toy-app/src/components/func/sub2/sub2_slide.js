@@ -1,18 +1,18 @@
 import mFn from "../my_function.js";
 
-import SmoothScroll from "./smoothScroll23.js";
+// import SmoothScroll from "./smoothScroll23.js";
 // console.log(document.querySelectorAll(".content-box")[1]);
 // 1. 부드러운 스크롤 호출
-const mySmooth1 = new SmoothScroll(
-  document.querySelectorAll(".content-box")[0],
-  60,
-  20
-);
-const mySmooth2 = new SmoothScroll(
-  document.querySelectorAll(".content-box")[1],
-  60,
-  20
-);
+// const mySmooth1 = new SmoothScroll(
+//   document.querySelectorAll(".content-box")[0],
+//   60,
+//   20
+// );
+// const mySmooth2 = new SmoothScroll(
+//   document.querySelectorAll(".content-box")[1],
+//   60,
+//   20
+// );
 
 export default function scrollPage() {
   // 1.변수 설정하기 ////////////
@@ -64,16 +64,6 @@ export default function scrollPage() {
 
   // // 3. 함수 구현하기 ////////////////
   function wheelFn(e) {
-    // e.preventDefault();
-
-    // 내가짜본코드..........의미가있나?ㅋㅋㅋㅋㅋㅋ 아래꺼랑 비교해보자
-    // setTimeout(() => {
-    //   stopSts = true;
-    //   setTimeout(() => {
-    //     stopSts = false;
-    //   },0);
-    // }, 500);
-
     // setTimeout 설정으로 페이지가 움직이는 동안에도
     // content-box 의 스크롤기능 막아보기 !!!!!!!!!!!!!!!!!!!!!!!!!!!!
     stopSts = false;
@@ -142,8 +132,8 @@ export default function scrollPage() {
       contBox.forEach((ele) => {
         ele.scrollTo(0, 0);
       });
-      mySmooth1.setScrollPos(0);
-      mySmooth2.setScrollPos(0);
+      // mySmooth1.setScrollPos(0);
+      // mySmooth2.setScrollPos(0);
     }
     ////////////////////////////////
     ////////////////////////////////

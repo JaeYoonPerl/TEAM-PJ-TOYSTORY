@@ -8,6 +8,40 @@ const gnbItems = {
   CREDITS:"credits-area",
   ABOUT:"footer-area",
 }
+export const gnbItems2 = [
+  {
+    tit : "TOP",
+    link : "logo-area",
+  },
+  {
+    tit : "SUMMARY",
+    link : "summary-area",
+  },
+  {
+    tit : "TRAILERS",
+    link : "trailers-area",
+  },
+  {
+    tit : "CHARACTERS",
+    link :"character-design-area",
+  },
+  {
+    tit : "WORLD",
+    link :"world-design-area",
+  },
+  {
+    tit : "AWARDS",
+    link :"awards-area",
+  },
+  {
+    tit : "CREDITS",
+    link :"credits-area",
+  },
+  {
+    tit : "ABOUT",
+    link :"footer-area",
+  },
+];
 
 const creditsItems = {
     "DIRECTED BY": "JOHN LASSETER",
