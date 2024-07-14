@@ -1,5 +1,5 @@
 
-import { chaData } from "./sub1_data.js";
+import { chaData } from "../../data/sub1/sub1_data.js";
 
 //CSS 불러오기
 import "../../../css/sub1.scss";

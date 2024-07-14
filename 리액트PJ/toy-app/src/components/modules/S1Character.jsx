@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import sub1Cbox from "../data/sub1/sub1_cbox.js";
+import sub1Cbox from "../func/sub1/sub1_cbox.js";
 
 //CSS 불러오기
 import "../../css/sub1.scss";

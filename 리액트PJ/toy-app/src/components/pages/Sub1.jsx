@@ -3,6 +3,7 @@ import S1Main from "../modules/S1Main";
 import S1Degin from "../modules/S1Degin";
 import S1Character from "../modules/S1Character";
 import S1BgDegin from "../modules/S1BgDegin";
+import S1ChDegin from "../modules/S1ChDegin";
 
 
 
@@ -27,6 +28,9 @@ export default function Sub1(){
         <div className="design-bx">
             <S1Degin/>
             <S1BgDegin/>
+        </div>
+        <div className="">
+            <S1ChDegin/>
         </div>
         </>
     );
