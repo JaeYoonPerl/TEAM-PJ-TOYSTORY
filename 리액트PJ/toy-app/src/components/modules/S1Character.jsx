@@ -9,7 +9,7 @@ import "../../css/sub1.scss";
 export default function S1Character(prop){
 
     useEffect(() => {
-    sub1Cbox()
+        sub1Cbox();
     });
 
     ////// 코드 리턴 구역
