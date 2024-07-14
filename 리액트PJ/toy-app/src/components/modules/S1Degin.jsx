@@ -13,7 +13,7 @@ function S1Degin(props) {
   return (
     <>
       {designData.map((v, i) => {
-        // 중복 체크 (예: title01)
+        
         if (S1DeginBox.has(v.title01)) return null;
         S1DeginBox.add(v.title01);
 
@@ -36,6 +36,7 @@ function S1Degin(props) {
             <section className="S1bgdintro">
               <div className="S1degbmovie">
                 <h3>{v.title02}</h3>
+                <h4>{v.subintro02}</h4>
                 <div className="S1dbg-box">
                   <div className="dmovie3">
                     <iframe src={v.mvid03}></iframe>
@@ -43,7 +44,6 @@ function S1Degin(props) {
                   <div className="dmovie4">
                     <iframe src={v.mvid04}></iframe>
                   </div>
-                  <h4>{v.subintro02}</h4>
                 </div>
               </div>
             </section>
