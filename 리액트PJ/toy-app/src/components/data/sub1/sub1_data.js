@@ -27,7 +27,7 @@ const clipData = [
       title01: "Design - Character",
       subintro01: `The filmmakers assembled the Toy Story cast from a wealth of childhood memories.
       But for the story to work, the two main characters needed to have their own chemistry.
-      Early versions of Woody included a ventriloquist's dummy and an ill-tempered cowboy before he became the affable hero seen on screen. <br> Buzz Lightyear offered a different challenge : inventing a brand-new toy that instantly felt familiar`,
+      Early versions of Woody included a ventriloquist's dummy and an ill-tempered cowboy before he became the affable hero seen on screen. Buzz Lightyear offered a different challenge : inventing a brand-new toy that instantly felt familiar`,
       mvid01: "https://www.youtube.com/embed/4n6u2CqlGPY",
       mvid02: "https://www.youtube.com/embed/z_FYmhkOf4Q",
     },
@@ -65,42 +65,42 @@ const chaData = [
     idx: "3",
     chaname: "Andy",
     chaintro: `
-    Able to create elaborate gold-mining towns with boxes and crayons, Andy can dream up any prop for a good vs. <br>
+    Able to create elaborate gold-mining towns with boxes and crayons, Andy can dream up any prop for a good vs.
     evil scenario that stars all of his toys. With Andy in charge, good always triumphs.`,
     },
     {
     idx: "4",
     chaname: "Sid",
     chaintro: `
-    Every neighborhood has a bully, and Sid's it on Andy's block. <br>
+    Every neighborhood has a bully, and Sid's it on Andy's block.
     He's a malicious and overactive kid who loves to torture, torment, and blow up toys all in the name of fun.`,
     },
     {
     idx: "5",
     chaname: "Hamm",
     chaintro: `
-    The piggy bank in the window knows everything. <br>
+    The piggy bank in the window knows everything.
     Or at least that's what Hamm would have everyone believe when he's sticking his snout into the day's affairs.`,
     },
     {
     idx: "6",
     chaname: "Mr. Potato Head",
     chaintro: `
-    Mr. Potato Head has a chip on his shoulder, but you would too if your face kept falling off. <br>
+    Mr. Potato Head has a chip on his shoulder, but you would too if your face kept falling off.
     His cynical take on life makes him the toy to question Woody's authority.`,
     },
     {
     idx: "7",
     chaname: "Rex",
     chaintro: `
-    Rex is a neurotic and insecure 12-inch plastic dinosaur with a small-roar complex and limited upper-arm movement. <br>
+    Rex is a neurotic and insecure 12-inch plastic dinosaur with a small-roar complex and limited upper-arm movement.
     With his tender heart and weak spine, this Tyrannosaurus is one of the most lovable toys of the bunch.`,
     },
     {
     idx: "8",
     chaname: "Slinky",
     chaintro: `
-    A dog is man's best friend, and the saying rings true for those of the vinyl variety, too. <br>
+    A dog is man's best friend, and the saying rings true for those of the vinyl variety, too.
     Slinky is Woody's trusted friend and partner in playing checkers—and the one who "stretches" the most in the friendship.`,
     },
 ];
