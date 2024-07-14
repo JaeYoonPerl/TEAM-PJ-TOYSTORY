@@ -1,6 +1,6 @@
 import mFn from "../../func/my_function.js";
 
-import * as sub1_data from "./sub1_data.js";
+import {chaData} from "./sub1_data.js";
 
 export default function sub1Cbox(){
 
@@ -13,8 +13,8 @@ for (let i = 1; i <= 8; i++) {
   chcode += `
       <div>
         <img src="../../public/images/img1/cha0${i}.jpg" alt="캐릭터">
-        <h3>${sub1_data.chaData[i - 1].chaname}</h3>
-        <p>${sub1_data.chaData[i - 1].chaintro}</p>
+        <h3>${chaData.chaname}</h3>
+        <p>${chaData.chaintro}</p>
       </div>
       `;
   }
