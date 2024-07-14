@@ -31,6 +31,7 @@ function S1Degin(props) {
                 <div className="dmovie4">
                   <iframe src={v.mvid04}></iframe>
                 </div>
+                <h4>{v.subintro02}</h4>
               </div>
               </div>
             </section>
