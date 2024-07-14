@@ -179,7 +179,7 @@
 //.demovie > iframe{}
 
 /* 캐릭터 박스 */
-.cha-box {
+.s1chbox {
   display: grid;
   max-width: 1200px;
   grid-template-columns: repeat(4, 1fr);
@@ -188,11 +188,11 @@
   padding-top: 30px;
   margin-bottom: 50px;
 }
-.cha-box > div {
+.s1chbox > div {
   position: relative;
   aspect-ratio: 1/1;
 }
-.cha-box > div p {
+.s1chbox > div p {
   position: absolute;
   top: 20px;
   left: 1px;
@@ -208,11 +208,11 @@
   transition: 0.3s;
 }
 
-.cha-box > div:hover p {
+.s1chbox > div:hover p {
   opacity: 1;
 }
 
-.cha-box > div img {
+.s1chbox > div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -220,7 +220,7 @@
   vertical-align: middle;
 }
 
-.cha-box h3 {
+.s1chbox h3 {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
@@ -428,7 +428,7 @@
   width: 40vw;
   }
 
-  .cha-box{
+  .s1chbox{
   max-width: 800px;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: min(1.2vw, 10px) min(1vw, 10px);
@@ -512,7 +512,7 @@
       width: 78vw;
       }
 
-  .cha-box{
+  .s1chbox{
       margin-left: 25px;
       max-width: 600px;
       grid-template-columns: repeat(2, 1fr);
@@ -598,7 +598,7 @@
     margin-right: 10px;
     }
 
-  .cha-box{
+  .s1chbox{
       margin-left: 24px;
       max-width: 470px;
       grid-template-columns: repeat(2, 1fr);

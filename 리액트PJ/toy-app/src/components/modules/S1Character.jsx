@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import sub1Cbox from "../data/sub1/sub1_cbox.js";
+
+//CSS 불러오기
 import "../../css/sub1.scss";
 
 export default function S1Character(props) {
@@ -10,6 +12,6 @@ export default function S1Character(props) {
   }, []);
 
   return (
-    <div id="cha-box" ref={chgridRef}></div>
+    <div id="S1cha-box" ref={chgridRef}></div>
   );
 }

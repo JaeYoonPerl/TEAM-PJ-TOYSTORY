@@ -1,6 +1,10 @@
 
 import { chaData } from "./sub1_data.js";
 
+//CSS 불러오기
+import "../../../css/sub1.scss";
+
+
 export default function sub1Cbox(ref) {
   const chgrid = ref.current;
 
