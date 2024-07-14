@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { designData } from '../data/sub1/sub1_data';
+import S1BgDegin from './S1BgDegin';
 
 // CSS 불러오기
 import "../../css/sub1.scss";
@@ -22,18 +23,7 @@ function S1Degin(props) {
                 </div>
               </div>
               <h4>{v.subintro01}</h4>
-              <div className="S1degbmovie">
-              <h3>{v.title02}</h3>
-              <div className="S1dbg-box">
-                <div className="dmovie3">
-                  <iframe src={v.mvid03}></iframe>
-                </div>
-                <div className="dmovie4">
-                  <iframe src={v.mvid04}></iframe>
-                </div>
-                <h4>{v.subintro02}</h4>
-              </div>
-              </div>
+              <S1BgDegin/>
             </section>
 
           ))}
