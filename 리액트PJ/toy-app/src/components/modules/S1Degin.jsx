@@ -22,7 +22,19 @@ function S1Degin(props) {
                 </div>
               </div>
               <h4>{v.subintro01}</h4>
+              <div className="S1degbmovie">
+              <h3>{v.title02}</h3>
+              <div className="S1dbg-box">
+                <div className="dmovie3">
+                  <iframe src={v.mvid03}></iframe>
+                </div>
+                <div className="dmovie4">
+                  <iframe src={v.mvid04}></iframe>
+                </div>
+              </div>
+              </div>
             </section>
+
           ))}
         </>
       );
