@@ -2,6 +2,7 @@ import S1Movie from "../modules/S1Movie";
 import S1Main from "../modules/S1Main";
 import S1Degin from "../modules/S1Degin";
 import S1Character from "../modules/S1Character";
+import S1BgDegin from "../modules/S1BgDegin";
 
 
 
@@ -25,6 +26,7 @@ export default function Sub1(){
         </div>
         <div className="design-bx">
             <S1Degin/>
+            <S1BgDegin/>
         </div>
         </>
     );

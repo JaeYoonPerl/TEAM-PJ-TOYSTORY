@@ -39,6 +39,15 @@ const clipData = [
         mvid04: "https://www.youtube.com/embed/wpwVRDrSrMU",
       },
   ];
+  const designBData = [
+    {
+        idx: "2",
+        title02: "Design - Background",
+        subintro02: ``,
+        mvid03: "https://www.youtube.com/embed/LZN0WLWhuAI",
+        mvid04: "https://www.youtube.com/embed/wpwVRDrSrMU",
+      },
+  ];
 
 /************************************* 
     [ 데이터항목 : ]
@@ -108,4 +117,4 @@ const chaData = [
 
 
   // 데이터 공개하기
-export { clipData, chaData, designData };
+export { clipData, chaData, designData, designBData  };
