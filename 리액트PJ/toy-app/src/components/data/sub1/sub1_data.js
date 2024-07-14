@@ -31,13 +31,6 @@ const clipData = [
       mvid01: "https://www.youtube.com/embed/4n6u2CqlGPY",
       mvid02: "https://www.youtube.com/embed/z_FYmhkOf4Q",
     },
-    {
-        idx: "2",
-        title02: "Design - Background",
-        subintro02: ``,
-        mvid03: "https://www.youtube.com/embed/LZN0WLWhuAI",
-        mvid04: "https://www.youtube.com/embed/wpwVRDrSrMU",
-      },
   ];
   const designBData = [
     {

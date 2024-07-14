@@ -14,8 +14,10 @@ export default function sub1Cbox(ref) {
       chgrid.innerHTML += `
         <div class="s1chbox">
           <img src="../../images/img1/cha0${i}.jpg" alt="캐릭터">
-          <h3>${chaData.chaname}</h3>
-          <p>${chaData.chaintro}</p>
+          <div class="s1chtit">
+          <h3>${chaData[i - 1].chaname}</h3>
+          <p>${chaData[i - 1].chaintro}</p>
+          </div>
         </div>
       `;
     }
