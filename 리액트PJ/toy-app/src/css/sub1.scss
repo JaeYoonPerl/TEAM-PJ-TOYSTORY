@@ -192,7 +192,7 @@
   position: relative;
   aspect-ratio: 1/1;
 }
-.s1chbox > div p {
+.s1chbox > div >p {
   position: absolute;
   top: 20px;
   left: 1px;
@@ -208,11 +208,11 @@
   transition: 0.3s;
 }
 
-.s1chbox > div:hover p {
+.s1chbox > div:hover>p {
   opacity: 1;
 }
 
-.s1chbox > div img {
+.s1chbox > div > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -220,7 +220,7 @@
   vertical-align: middle;
 }
 
-.s1chbox h3 {
+.s1chbox>h3 {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
