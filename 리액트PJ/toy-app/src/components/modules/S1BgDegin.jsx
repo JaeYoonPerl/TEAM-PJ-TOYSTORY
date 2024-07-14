@@ -9,7 +9,7 @@ function S1BgDegin(props) {
     return (
         <>
           {designData.map((v,i) => (
-            <section key={i} className="S1deintro">
+            <section key={i} className="S1bgdintro">
               <div className="S1degbmovie">
               <h3>{v.title02}</h3>
               <div className="S1dbg-box">

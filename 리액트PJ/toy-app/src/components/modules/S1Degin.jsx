@@ -22,11 +22,10 @@ function S1Degin(props) {
                   <iframe src={v.mvid02}></iframe>
                 </div>
               </div>
-              <h4>{v.subintro01}</h4>
-              <S1BgDegin/>
+              <h4>{v.subintro0}</h4>
             </section>
-
           ))}
+          <S1BgDegin/>
         </>
       );
 }
