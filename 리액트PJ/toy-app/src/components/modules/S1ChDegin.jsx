@@ -26,7 +26,7 @@ function S1ChDegin(props) {
               ><img src={process.env.PUBLIC_URL +"./images/img1/left_btn.png"} alt="왼쪽이동버튼"
             /></a>
             <a href="##" className="s1abtn ab2"
-              ><img src={process.env.PUBLIC_URL +"../images/img1/right_btn.png"} alt="오른쪽이동버튼"
+              ><img src={process.env.PUBLIC_URL +"./images/img1/right_btn.png"} alt="오른쪽이동버튼"
             /></a>
                 {/* 블릿버튼 */}
             <ol className="S1indic"></ol>

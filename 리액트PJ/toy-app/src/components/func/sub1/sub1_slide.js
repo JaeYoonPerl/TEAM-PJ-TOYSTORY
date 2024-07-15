@@ -22,15 +22,15 @@ export default function sub1SlideFn(ref) {
       // 슬라이드 넣기
       chslide.innerHTML += `
       <li data-seq="${i}">
-        <img src="IMG/img1/ched${i+1}.jpg" alt="slide">
+        <img src="./images/img1/ched${i+1}.jpg" alt="slide">
       </li>
       `;
   
       // 블릿 넣기
       indic.innerHTML += `
       <li ${i===0?'class="on"':''}>
-      <img src="IMG/img1/dot1.png" alt="흰색">
-      <img src="IMG/img1/dot2.png" alt="회색">
+      <img src="./images/img1/dot1.png" alt="흰색">
+      <img src="./images/img1/dot2.png" alt="회색">
       </li>
       `;
     } ////////// for문 ///////
