@@ -170,32 +170,37 @@
  /* font-size: 3rem; */
  padding: 2%;
 }
-.cha-intro > span{
-  /* font-size: 1.3rem; */
+.cha-intro > span > p{
   /* line-height: 1.5; */
+    font-size: 1.3rem;
    display: inline-block;
    padding-bottom: 1%;
   /* text-align: center; */ 
 }
 
-.cha-pic{
+.cha-pic2{
   display: flex;
   gap: 1%;
   padding-top: 1%;
   padding-bottom: 3%;
 }
 
-.cha-pic > li img{
+.cha-pic2 > li img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 5%;
+  overflow: hidden;
 }
 
-.cha-pic > li:hover img {
-  /* transition: .2s linear;
-  transform: scale(1.1); */
-  // animation: cha-ani 1.2s linear infinite;
+
+.cha-pic2 >li >img {
+  transition: 0.3s ease-in-out;
+}
+
+.cha-pic2 > li:hover img {
+  transform: scale(1.1, 1.1);
+  transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 
