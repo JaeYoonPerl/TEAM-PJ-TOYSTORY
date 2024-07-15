@@ -6,26 +6,25 @@ import S3trailer from "../plugin/s3Trailer";
 import { useEffect } from "react";
 import scrollShowFn from "../func/sub3/scroll_show";
 
+// 제이쿼리 불러오기
+import $, { map } from "jquery";
+
 export default function Sub3() {
-
-    useEffect(()=>{
+    useEffect(() => {
         scrollShowFn();
-    },[]);
-
-    // goTop();
+    }, []);
 
     // 코드 리턴구역 ////
     return (
         <>
-         <button id="btn-back-to-top" title="위로 가기"></button>
+            <button id="btn-back-to-top" title="위로 가기"></button>
             <div id="s3Intro-area">
                 <section className="intro-area">
                     <div className="cont-box">
                         <div className="bg-box"></div>
 
                         <div className="toy-3rd-logo">
-                            <img src={process.env.PUBLIC_URL+
-                        "/images/img3/toystory_logo3-removebg-preview.png"} alt="toy3-logo" />
+                            <img src={process.env.PUBLIC_URL + "/images/img3/toystory_logo3-removebg-preview.png"} alt="toy3-logo" />
                         </div>
 
                         <div className="sino-box">
@@ -40,11 +39,12 @@ export default function Sub3() {
             </div>
 
             <S3CharSlide />
+            
 
             <div id="s3Video-area">
                 <section className="video-area inbox">
                     <h2 className="s3Sub-tit main-title">Trailer</h2>
-                    <S3trailer/>
+                    <S3trailer />
                 </section>
             </div>
         </>

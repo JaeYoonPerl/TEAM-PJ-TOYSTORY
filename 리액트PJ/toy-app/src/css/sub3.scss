@@ -209,6 +209,35 @@ body {
           z-index: 1;
          }
     }
+  }
+  .picList{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, 0.742);
+    display: none;
+  }
+
+
+  /* 닫기버튼 */
+.s3btn{
+  position: absolute;
+  top: 110px;
+  right: 50px;
+
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  
+  background-color: transparent;
+  border: 2px solid #ffffffa4;
+  border-radius: 50%;
+  color: #ffffffa4;
+  font-size: 50px;
+  cursor: pointer;
 }
 #s3Video-area{
     

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { charS3 } from "../data/sub3_char_data";
+import { charS3 } from "../data/sub3/sub3_char_data";
+// 제이쿼리 불러오기
+import $ from "jquery";
 
 function S3CharSlide() {
     const [currentTab, clickTab] = useState(0);
@@ -7,6 +9,8 @@ function S3CharSlide() {
     const selectMenu = (i) => {
         clickTab(i);
     };
+
+    
 
     return (
         <div id="s3Char-area">
