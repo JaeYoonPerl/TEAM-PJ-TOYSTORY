@@ -1,21 +1,20 @@
-import { useRef } from "react";
 import mFn from "../my_function.js";
 
 const addEvt = (ele, evt, fn) => ele.addEventListener(evt, fn);
 // HTML태그 로딩후 loadFn함수 호출! ///
-addEvt(window, "DOMContentLoaded", sub1SlideFn);
 
-export default function sub1SlideFn(ref) {
+export default function Sub1SlideFn() {
   // console.log("로딩완료!");
   // 이동 버튼 대상 : .abtn
-  const abtn = mFn.qsa(".abtn");
+  const abtn = mFn.qsa(".s1abtn");
   // 변경 대상 : #slide
-  const slide = mFn.qs("#slide");
+  const slide = mFn.qs(".S1-slide");
   //console.log(abtn,slide);
-  const chslide = ref.current;
+  const chslide = mFn.qs(".S1-slide");
+  console.log(chslide);
 
   // 블릿버튼 : .indic
-  let indic = document.querySelector(".s1indic");
+  let indic = document.querySelector(".S1indic");
   //// 초기 셋팅하기
   if(chslide){
     for (let i = 0; i < 18; i++) {
@@ -37,11 +36,15 @@ export default function sub1SlideFn(ref) {
   }
 
   // 블릿의 li까지 수집! indic 변수
-  indic = document.querySelectorAll('.indic li');
+  indic = document.querySelectorAll('.S1indic li');
 
   // 2. 버튼을 모두 이벤트 설정하기
   for (let x of abtn) {
-    x.onclick = goSlide;
+    console.log(x);
+    x.onclick = function(e){
+      e.preventDefault();
+      goSlide(e);
+    };
   } //////////////// for문
 
   // 광클 금지 변수
@@ -54,7 +57,7 @@ export default function sub1SlideFn(ref) {
   function goSlide(evt,sts=true){
 
     
-    //console.log('전달변수:',evt,sts);
+    console.log('전달변수:',evt,sts,evt.currentTarget);
     
     // 만약 버튼 클릭일 경우 인터발 지우기 함수 호출
     if(sts){
@@ -70,10 +73,10 @@ export default function sub1SlideFn(ref) {
 
     // 두번째 버튼인 .ab2인가?
     let isRbtn =
-    sts?this.classList.contains("ab2"):true;
+    sts?evt.currentTarget.classList.contains("ab2"):true;
 
     // 함수 호출 확인
-    //console.log("나 슬라이드", this, isRbtn);
+    console.log("나 슬라이드",evt.currentTarget.classList.contains("ab2"), isRbtn);
 
 
     ///// 2. 버튼별 분기하기 (나누기)
@@ -118,6 +121,8 @@ export default function sub1SlideFn(ref) {
     // 3. 블릿을 위해 읽어올 슬라이드 순번 구하기
 
     let seq = slide.querySelectorAll('li')[isRbtn?1:0].getAttribute('data-seq');
+console.log("순번:",seq);
+
 
     // 4. 블릿 변경하기
     indic.forEach((ele,idx)=>{

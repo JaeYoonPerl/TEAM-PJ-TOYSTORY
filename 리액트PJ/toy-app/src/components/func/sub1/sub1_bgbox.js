@@ -1,17 +1,13 @@
 import mFn from "../my_function.js";
 
-
 //CSS 불러오기
 import "../../../css/sub1.scss";
 
+export default function sub1bgbox() {
+  const bgcgrid = mFn.qs("#S1bgc-box");
 
-export default function sub1bgbox(ref) {
-  const S1grid = mFn.qs("#S1grid");
-  const bgcgrid = ref.current;
-  
   // 이미지 넣기
   if (bgcgrid) {
-
     // 20개 이미지 넣기
     for (let i = 1; i <= 19; i++) {
       bgcgrid.innerHTML += `
@@ -38,7 +34,7 @@ export default function sub1bgbox(ref) {
       "Pizza Planet",
     ];
 
-    mFn.qsaEl(bgcgrid, ".S1imgTxt").forEach((ele, idx) => {
+    mFn.qsaEl(bgcgrid, ".beingTxt").forEach((ele, idx) => {
       ele.innerHTML += `<span>${S1imgTxt[idx]}</span>`;
     });
   }
