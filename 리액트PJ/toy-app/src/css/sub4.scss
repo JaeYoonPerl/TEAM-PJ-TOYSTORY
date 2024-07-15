@@ -166,11 +166,11 @@
   padding-bottom: 3%;
 }
 
-.cha-box > h1{
+.cha-intro > h1{
  /* font-size: 3rem; */
  padding: 2%;
 }
-.cha-box > span{
+.cha-intro > span{
   /* font-size: 1.3rem; */
   /* line-height: 1.5; */
    display: inline-block;
@@ -195,7 +195,7 @@
 .cha-pic > li:hover img {
   /* transition: .2s linear;
   transform: scale(1.1); */
-  animation: cha-ani 1.2s linear infinite;
+  // animation: cha-ani 1.2s linear infinite;
   cursor: pointer;
 }
 
