@@ -2,6 +2,8 @@ import React from 'react';
 import mFn from '../my_function';
 
 function sub4_poster(props) {
+
+    
     
     const poster = mFn.qsa('.poster-common');
 
