@@ -366,6 +366,7 @@
   /* 박스 중앙 최대 크기 지정 */
   max-width: 1200px;
   padding-top: 20px;
+  padding-bottom: 60vh;
   margin: 0 auto;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: min(1.5vw, 15px) min(1vw, 10px);
