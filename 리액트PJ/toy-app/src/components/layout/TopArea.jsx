@@ -17,7 +17,7 @@ export default function TopArea() {
   return (
     <>
       <header id="top-area" className="">
-        <div className="page-bx col-9">
+        <div className="page-bx col-12">
            <div className="logobx-area mlogo">
             <Link to="/" >
               <img
@@ -47,10 +47,10 @@ export default function TopArea() {
                         myCon.loginSts === null && (
                             <>
                                 <li>
-                                    <Link to="/member">회원가입</Link>
+                                    <Link to="/member">JOIN US</Link>
                                 </li>
                                 <li>
-                                    <Link to="/login">로그인</Link>
+                                    <Link to="/login">LOGIN</Link>
                                 </li>
                             </>
                         )
