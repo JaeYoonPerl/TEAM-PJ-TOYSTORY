@@ -16,6 +16,8 @@ export default function S1BgCdegin(props) {
     }, []);
   
     return (
-      <div id="S1bgc-box" ref={S1gridRef}></div>
+      <div id="S1bgc-box" ref={S1gridRef}>
+        
+      </div>
     );
 }

@@ -34,6 +34,7 @@ export default function Sub1(){
             <S1ChDegin/>
         </div>
         <div className="S1bg-designbx">
+            <h2>Background Concept Design</h2>
             <S1BgCdegin/>
         </div>
         </>
