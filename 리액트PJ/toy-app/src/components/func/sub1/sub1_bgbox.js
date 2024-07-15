@@ -1,20 +1,20 @@
-
 import mFn from "../my_function.js";
 
 
 //CSS 불러오기
 import "../../../css/sub1.scss";
 
-export default function sub1Cbox(ref) {
-  const bgcgrid = ref.current;
 
+export default function sub1bgbox(ref) {
+  const S1grid = mFn.qs("#S1grid");
+  const bgcgrid = ref.current;
+  
   // 이미지 넣기
   if (bgcgrid) {
-    const S1grid = qs(".S1grid");
 
     // 20개 이미지 넣기
     for (let i = 1; i <= 19; i++) {
-      S1grid.innerHTML += `
+      bgcgrid.innerHTML += `
       <div ${
         i === 1
           ? 'class="first beingTxt"'
@@ -26,7 +26,7 @@ export default function sub1Cbox(ref) {
           ? 'class="fourth beingTxt"'
           : ""
       }>
-          <img src="./images/img1/bged${i}.jpg" alt="bg">
+          <img src="../../images/img1/bged${i}.jpg" alt="bg">
       </div>
       `;
     } //////// for /////////
@@ -38,7 +38,7 @@ export default function sub1Cbox(ref) {
       "Pizza Planet",
     ];
 
-    mFn.qsaEl(S1grid, ".S1imgTxt").forEach((ele, idx) => {
+    mFn.qsaEl(bgcgrid, ".S1imgTxt").forEach((ele, idx) => {
       ele.innerHTML += `<span>${S1imgTxt[idx]}</span>`;
     });
   }
