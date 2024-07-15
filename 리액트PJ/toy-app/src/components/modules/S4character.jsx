@@ -10,7 +10,7 @@ function S4character(props) {
       {cData.map((v, i) => (
         <div className="cha-pic1">
           <h1 className="main-title">{v.title}</h1>
-          <span>
+          <span className="cha-desc">
             {v.desc.split("*").map((v, i) => (
               <p key={i}>{v}</p>
             ))}
@@ -31,6 +31,7 @@ function S4character(props) {
             <li>
               <img src={process.env.PUBLIC_URL + `/images/img4/${v.imgName}5.jpg`} alt={v.title} />
             </li>
+            <br />
             {/* <span className="sub-text2">{v.desc}</span> */}
           </ul>
         </div>

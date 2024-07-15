@@ -165,17 +165,26 @@
   padding-top: 10%;
   padding-bottom: 3%;
 }
-
+.cha-intro{
+  position: absolute;
+  width: auto;
+  height: auto;
+}
 .cha-intro > h1{
  /* font-size: 3rem; */
  padding: 2%;
 }
-.cha-intro > span > p{
-  /* line-height: 1.5; */
-    font-size: 1.3rem;
-   display: inline-block;
-   padding-bottom: 1%;
-  /* text-align: center; */ 
+
+.cha-desc{
+  display: block;
+  margin-top: 3%;
+  text-align: center
+}
+
+.cha-desc > p{
+  font-size: 1.3rem;
+  padding-bottom: 1%;
+  text-align: center;
 }
 
 .cha-pic2{
@@ -183,6 +192,7 @@
   gap: 1%;
   padding-top: 1%;
   padding-bottom: 3%;
+  overflow: hidden;
 }
 
 .cha-pic2 > li img{
@@ -191,29 +201,14 @@
   object-fit: cover;
   border-radius: 5%;
   overflow: hidden;
-}
-
-
-.cha-pic2 >li >img {
   transition: 0.3s ease-in-out;
 }
+
 
 .cha-pic2 > li:hover img {
   transform: scale(1.1, 1.1);
   transition: 0.3s ease-in-out;
   cursor: pointer;
-}
-
-@keyframes cha-ani {
-  0% {
-    transform: translateY(0px) scale(0.95);
-  }
-  50% {
-  transform: translateY(-20px) scale(1.05);
-  }
-  100%{
-    transform: translateY(20px) scale(0.95);
-  }
 }
 
 
