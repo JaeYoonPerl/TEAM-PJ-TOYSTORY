@@ -1,19 +1,22 @@
 import React, { useEffect, useRef } from 'react';
 
 // 슬라이드 불러오기
-import sub1SlideFn from '../func/sub1/sub1_slide';
+import Sub1SlideFn from '../func/sub1/sub1_slide';
 
 // CSS 불러오기
 import "../../css/sub1.scss";
 
+import $ from "jquery";
+
 function S1ChDegin(props) {
 
-    const ref = useRef(null);
     const addEvt = (ele, evt, fn) => ele.addEventListener(evt, fn);
     
     useEffect(() => {
-      addEvt(window, "DOMContentLoaded", () => sub1SlideFn(ref));
+      new Sub1SlideFn();
     }, []);
+
+    ///// 코드리턴구역 //////////////
     return (
         <>
         <section id="S1container">

@@ -5,9 +5,8 @@ import mFn from "../my_function.js";
 import "../../../css/sub1.scss";
 
 
-export default function sub1bgbox(ref) {
-  const S1grid = mFn.qs("#S1grid");
-  const bgcgrid = ref.current;
+export default function sub1bgbox() {
+  const bgcgrid = mFn.qs("#S1bgc-box");
   
   // 이미지 넣기
   if (bgcgrid) {
@@ -38,7 +37,7 @@ export default function sub1bgbox(ref) {
       "Pizza Planet",
     ];
 
-    mFn.qsaEl(bgcgrid, ".S1imgTxt").forEach((ele, idx) => {
+    mFn.qsaEl(bgcgrid, ".beingTxt").forEach((ele, idx) => {
       ele.innerHTML += `<span>${S1imgTxt[idx]}</span>`;
     });
   }
