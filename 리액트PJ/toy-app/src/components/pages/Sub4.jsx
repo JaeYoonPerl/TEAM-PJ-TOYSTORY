@@ -6,6 +6,7 @@ import S4gbox from "../modules/S4gbox";
 import sub4_mousePo from "../func/sub4/sub4_mousePo";
 import sub4_poster from "../func/sub4/sub4_poster";
 import S4character from "../modules/S4character";
+import S4synopsis from "../modules/S4synopsis";
 
 
 
@@ -43,17 +44,7 @@ export default function Sub4() {
         {/* 재귀함수 호출  */}
         <S4gbox />
         {/* 시놉시스 구역  */}
-        <div className="main-synopsis">
-          <h2 className="main-title">Synopsis</h2>
-          <span className="sub-text1">
-            Woody has always been confident about his place in the world and that his priority is
-            taking care of his kid, whether that’s Andy or Bonnie.
-            <br />
-            But when Bonnie adds a reluctant new toy called “Forky” to her room, a road trip
-            adventure alongside old and new friends will show Woody how big the world can be for a
-            toy.
-          </span>
-        </div>
+        <S4synopsis />
         {/* 포스터 영역  */}
         <div className="main-poster">
           <h2 className="main-title">POSTER</h2>

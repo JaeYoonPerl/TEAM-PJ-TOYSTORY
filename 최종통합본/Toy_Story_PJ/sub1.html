@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOY STORY1</title>
+    <link rel="shortcut icon" href="./IMG/favicon.png" />
+    <!-- 1.리액트 기본 라이브러리 -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <!-- 2.리액트 가상돔 라이브러리 -->
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+    <!-- 3.리액트 바벨 라이브러리 -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- 서브1 메인 JS 불러오기 : 모듈로 불러오기 -->
+    <script type="module" src="./js/sub1_main.js" type="module"></script>
+    <link rel="stylesheet" href="./css/sub1_main.css" />
+    <!-- 폰트어썸 아이콘CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="ts"></div>
+    <!-- 상단영역 -->
+    <div id="top-area">
+      <nav class="top-menu col-3">
+    </div>
+    <!-- 메인 영역 -->
+    <div id="main-area">
+      <main class="main-bx">
+        <!-- 메인 이미지 -->
+        <section class="intro-area">
+          <h2 class="main-title">
+            To infinity <br />
+            And beyond
+          </h2>
+        </section>
+        <!-- 트레일러 파트 -->
+        <section>
+          <div class="trmovie-box"></div>
+        </section>
+        <!-- 캐릭터 디자인 파트 -->
+        <section>
+          <div class="cha-box"></div>
+        </section>
+        <!-- 배경 디자인 파트 -->
+        <section>
+          <div class="design-box"></div>
+        </section>
+        <!-- 캐릭터 컨셉 파트 -->
+        <section id="container">
+          <h2>Character Concept Design</h2>
+          <div class="de-chpart">
+            <!--슬라이드-->
+            <ul id="slide"></ul>
+            <!--이동버튼-->
+            <a href="###" class="abtn ab1"
+              ><img src="./IMG/img1/left_btn.png" alt="왼쪽이동버튼"
+            /></a>
+            <a href="##" class="abtn ab2"
+              ><img src="./IMG/img1/right_btn.png" alt="오른쪽이동버튼"
+            /></a>
+            <!--블릿버튼-->
+            <ol class="indic"></ol>
+          </div>
+        </section>
+        <!-- 배경 컨셉 파트 -->
+        <section>
+          <div class="de-bgpart"><h2>Background Concept Design</h2></div>
+          <div class="grid"></div>
+        </section>
+      </main>
+    </div>
+    <!-- 하단 영역 -->
+    <div id="footer-area">
+      <footer class="footer-bx col-12">
+      </footer>
+    </div>
+  </body>
+</html>
