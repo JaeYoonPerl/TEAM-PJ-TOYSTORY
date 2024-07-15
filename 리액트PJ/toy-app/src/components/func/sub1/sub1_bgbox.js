@@ -1,12 +1,11 @@
 import mFn from "../my_function.js";
 
-
 //CSS 불러오기
 import "../../../css/sub1.scss";
 
 
 export default function sub1bgbox(ref) {
-  const S1grid = mFn.qs("#S1grid");
+  
   const bgcgrid = ref.current;
   
   // 이미지 넣기
