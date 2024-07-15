@@ -17,7 +17,7 @@ export default function TopArea() {
   return (
     <>
       <header id="top-area" className="">
-        <div className="page-bx col-9">
+        <div className="page-bx col-12">
            <div className="logobx-area mlogo">
             <Link to="/" >
               <img
