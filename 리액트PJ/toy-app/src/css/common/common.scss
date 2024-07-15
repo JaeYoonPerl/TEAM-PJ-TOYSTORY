@@ -31,11 +31,12 @@
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     /* 필요한경우 각자페이지에서 아래 세줄을 주시오*/
     position: fixed; 
     z-index: 9999999;
     /* background-color: #fff; */
+    gap: 0 5px;
   }
 .top-menu{
     top: 20px;
@@ -69,6 +70,7 @@
     position: relative;
     margin-right: 50px;
     transition: .3s;
+    display: flex;
 }
 #GNB ul{
     display: flex;
@@ -91,6 +93,7 @@
     display: flex;
     justify-content: flex-end;
     padding: 5px;
+    padding-right: 15px;
 }
 .mlogo img{
     /* 필요한경우 각자페이지에서 주시오 */
@@ -100,6 +103,30 @@
     min-width: 150px;
     max-width: 300px;
     box-sizing: border-box;
+}
+
+// 로그인 회원가입 버튼
+.member{
+    top: -100px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    transition: .3s;
+    // margin-left: auto;
+}
+.member li{
+    list-style-type: none;
+    font-family: "Lugrasimo", cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+#top-area:hover .member{
+    top: 0;
+}
+.member li:hover a{
+    color: #ffe861;
 }
 
 /* 하단 영역 CSS */

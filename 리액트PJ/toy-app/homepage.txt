@@ -1,3 +1,5 @@
 process.env.PUBLIC_URL+
 
 
+설계 문서 링크
+https://drive.google.com/drive/folders/1IW11xeLOjWt4xONSiiiyMgu16EHdxnRT

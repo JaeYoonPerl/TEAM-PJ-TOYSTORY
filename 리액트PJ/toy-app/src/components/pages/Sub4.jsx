@@ -1,15 +1,25 @@
 // 서브페이지4 //
 
+import { useEffect } from "react";
 import "../../css/sub4.scss";
 import S4gbox from "../modules/S4gbox";
+import sub4_mousePo from "../func/sub4/sub4_mousePo";
+import sub4_poster from "../func/sub4/sub4_poster";
+import S4character from "../modules/S4character";
 
 
 
 export default function Sub4() {
 
+  useEffect(()=>{
+    sub4_mousePo();
+    // sub4_poster();
+  })
+
   // 코드 리턴구역 ////
   return (
-    <section>
+    <section className="wrap">
+  
       {/* 메뉴 영역  */}
       <header id="top-area" className=""></header>
       <div className="ts"></div>
@@ -67,7 +77,8 @@ export default function Sub4() {
         </div>
         {/* 캐릭터 소개 영역  */}
         <div className="main-character">
-          <div className="cha-box"></div>
+          {/* <div className="cha-box"></div> */}
+          <S4character />
         </div>
 
         {/* 하단 영역  */}

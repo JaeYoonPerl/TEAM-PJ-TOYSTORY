@@ -1,5 +1,5 @@
 body > * {
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 .ts {
     // display: none;
@@ -68,6 +68,18 @@ body {
     transform: rotate(15deg);
 }
 
+.obj {
+  opacity: 0;
+  transform: translateY(20%);
+  // translate: 0 20%;
+  transition: 0.6s ease-in-out;
+}
+.obj.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 // 캐릭터 소개 구역 /////////////////////////////////////
 #s3Char-area {
     content: "";
@@ -77,7 +89,7 @@ body {
     .char-area {
         height: 100vh;
         position: relative;
-        overflow: hidden;
+        // overflow: hidden;
         /* 서브타이틀 */
         .s3Sub-tit {
             top: 2%;
@@ -150,13 +162,13 @@ body {
         }
         /* 캐릭터 선택 버튼 */
         .char-btn {
-            position: absolute;
-            display: flex;
-            top: 50%;
-            left: 19%;
-            margin-right: 5px;
-            margin-left: 5px;
-            transform: translate(-50%, -50%);
+          position: absolute;
+          display: flex;
+          top: 50%;
+          /* left: 0; */
+          /* margin-right: 5px; */
+          margin-left: auto;
+          transform: translate(-105%, -50%);
         }
 
         .char-banner li{
@@ -187,6 +199,14 @@ body {
            border-radius: 10px;
            background-color: rgba(0, 0, 0, 0.473);
            font-size: 20px;
+         }
+         .Desc{
+          display: flex;
+          position: absolute;
+          top: 50%;
+          margin-right: auto;
+          width: 60vw;
+          z-index: 1;
          }
     }
 }
