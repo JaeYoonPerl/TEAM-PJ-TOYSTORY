@@ -19,7 +19,6 @@
     outline: 2px dashed #ccc;
 } */
 
-
 /************************************************* 메인 영역 CSS 코딩 구역 *************************************************/
 
 .S1main-bx {
@@ -28,8 +27,7 @@
 
 /* 인트로영역 이미지 */
 .S1intro-area {
-  background: url(../../public/images/img1/bged0.jpg) no-repeat
-  center/cover;
+  background: url(../../public/images/img1/bged0.jpg) no-repeat center/cover;
   width: 100%;
   height: 100vh;
 }
@@ -44,7 +42,6 @@
   font-style: normal;
   line-height: 1.3;
   color: whitesmoke;
-
 }
 
 /* 트레일러 영역 */
@@ -69,10 +66,9 @@
 
 // .design-box {}
 
-
 // .demovie {}
 
-.S1trmovie{
+.S1trmovie {
   //position: absolute;
   padding-top: 40px;
   padding-bottom: 30px;
@@ -82,7 +78,7 @@
   font-weight: 400;
 }
 
-.S1demovie{
+.S1demovie {
   //position: absolute;
   padding-top: 40px;
   padding-bottom: 30px;
@@ -92,7 +88,7 @@
   font-weight: 400;
 }
 
-.S1degbmovie>h3{
+.S1degbmovie > h3 {
   //position: absolute;
   padding-top: 40px;
   padding-bottom: 30px;
@@ -101,12 +97,10 @@
   font-size: 3rem;
   font-weight: 400;
 }
-
-
 
 // .deintro h3 {}
 
-.S1trintro>h4 {
+.S1trintro > h4 {
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 2.2rem;
@@ -121,14 +115,13 @@
   gap: 0 30px;
 }
 
-.S1deintro>h4 {
+.S1deintro > h4 {
   padding-top: 20px;
   padding-bottom: 10px;
   font-size: 2.2rem;
   /* text-align: justify; */
   line-height: 1.5;
 }
-
 
 .S1dbox {
   display: flex;
@@ -138,7 +131,6 @@
   gap: 0 30px;
 }
 
-
 .S1dbg-box {
   display: flex;
   flex-direction: row;
@@ -147,62 +139,59 @@
   gap: 0 30px;
 }
 
-
 // .demovie h4 {}
 
-.dmovie1>iframe{
+.dmovie1 > iframe {
   width: 100%;
   height: 100%;
 }
-.dmovie2>iframe{
+.dmovie2 > iframe {
   width: 100%;
   height: 100%;
 }
 
-.dmovie1{
+.dmovie1 {
   width: 30vw;
   height: 40vh;
   //padding-top: 30px;
   //padding-bottom: 30px;
 }
 
-.dmovie2{
+.dmovie2 {
   width: 30vw;
   height: 40vh;
   //padding-top: 30px;
   //padding-bottom: 30px;
 }
 
-
-.tmovie1>iframe{
+.tmovie1 > iframe {
   width: 100%;
   height: 100%;
 }
-.tmovie2>iframe{
+.tmovie2 > iframe {
   width: 100%;
   height: 100%;
 }
 
-.tmovie1{
+.tmovie1 {
   width: 30vw;
   height: 40vh;
   //padding-top: 30px;
   //padding-bottom: 30px;
 }
 
-.tmovie2{
+.tmovie2 {
   width: 30vw;
   height: 40vh;
   //padding-top: 30px;
   //padding-bottom: 30px;
 }
 
-
-.dmovie3>iframe{
+.dmovie3 > iframe {
   width: 100%;
   height: 100%;
 }
-.dmovie4>iframe{
+.dmovie4 > iframe {
   width: 100%;
   height: 100%;
 }
@@ -212,11 +201,10 @@
   height: 40vh;
 }
 
-.dmovie4{
+.dmovie4 {
   width: 30vw;
   height: 40vh;
 }
-
 
 /* 캐릭터 박스 */
 #S1cha-box {
@@ -226,14 +214,14 @@
   grid-gap: min(3.5vw, 45px) min(2vw, 10px);
   margin: 0 auto;
   padding-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 .s1chbox {
-  & div{
+  & div {
     position: relative;
     aspect-ratio: 1/1;
   }
-  & img{
+  & img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -247,7 +235,7 @@
     padding-top: 10px;
     padding-bottom: 5px;
   }
-  & .s1chtit{
+  & .s1chtit {
     position: absolute;
     top: 20px;
     left: 1px;
@@ -261,11 +249,10 @@
     opacity: 0;
     transition: opacity 0.3s;
   }
-  & .s1chtit:hover.s1chtit{
-      opacity: 1;
-  }
 }
-
+.s1chbox:hover p {
+  opacity: 1;
+}
 
 /* 컨셉 이미지 파트 */
 #S1container > .S1de-chpart {
@@ -358,7 +345,6 @@
   /*우선적용!*/
 }
 
-
 ///////////////////////////////////////////////////////////
 
 #S1bgc-box {
@@ -446,8 +432,8 @@
   padding-bottom: 10px;
 }
 
-.footer-bx{
-  margin-top: 100px;
+.footer-bx {
+  margin-top: 80px;
   bottom: 10px;
   text-align: center;
 }
@@ -455,253 +441,305 @@
 /*************************************************** 미디어 쿼리 영역 ***************************************************/
 
 @media screen and (max-width: 1040px) {
-
-  .intro-area {
-  height: 38vh;
-  width: 83vw;
+  .S1intro-area {
+    height: 60vh;
+    width: 98.25vw;
   }
 
-  .intro-area h2{
-  font-size: 3.4rem;
-  line-height: 1.3;
+  .S1main-title {
+    margin-top: 45vh;
+  }
+
+  .S1intro-area h2 {
+    font-size: 4.4rem;
+    line-height: 1.3;
+  }
+
+  .S1trintro > h4 {
+    font-size: 2.3rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-right: 25px;
+  }
+
+  .S1trmovie > iframe {
+    padding-top: 5px;
+    width: 40vw;
+  }
+
+  #S1cha-box {
+    max-width: 1000px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: min(1.2vw, 10px) min(1vw, 10px);
+    margin-left: 15px;
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .S1deintro > h4 {
+    font-size: 2.3rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-right: 25px;
+  }
+
+  .S1deintro h3 {
+    padding-top: 50px;
+  }
+
+  .S1demovie {
+    padding-top: 10px;
+  }
+
+  .S1demovie > iframe {
+    padding-top: 5px;
+    width: 40vw;
+  }
+
+  #S1container > .S1de-chpart {
+    position: relative;
+    width: 70vw;
+    height: 40vh;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  #S1container > h2 {
+    font-size: 5rem;
   }
   
-  .trmovie h4{
-  font-size: 1.6rem;
-  line-height: 1.5;
-  margin-right: 70px;
+  #S1bgc-box {
+    max-width: 900px;
   }
 
-  .trmovie>iframe{
-  padding-top: 5px;
-  width: 40vw;
+  .S1imgTxt span {
+    top: 10px;
+    font-size: 1.2rem;
   }
 
-  .s1chbox{
-  max-width: 800px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: min(1.2vw, 10px) min(1vw, 10px);
-  top: 20px;
-  margin-left: 35px;
-  font-size: 1.6rem;
-  line-height: 1.3;
+  .second span {
+    top: 0;
+    font-size: 1.1rem;
   }
 
-  .design-box{
-      padding-top: 80px;
-  }
-  .deintro h4{
-      font-size: 1.5rem;
-      line-height: 1.4;
-      margin-right: 60px;
-   }
-
-  .deintro h3 {
-      padding-top: 70px;
-  }
-
-  .demovie>iframe{
-      padding-top: 5px;
-      width: 40vw;
-  }
-  #S1container>.de-chpart {
-  width: 50vw;
-  height: 50vh;
+  .third span {
+    display: block;
+    top: 50%;
+    translate: 0 -50%;
+    height: 50%;
+    line-height: 1;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1;
   }
 
-  .grid{
-  max-width: 900px;  
+  .fourth span {
+    display: block;
+    top: 40%;
+    translate: 0 -50%;
+    height: 50%;
+    line-height: 1;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1;
   }
-
-  .beingTxt span {
-      top: 10px;
-      font-size: 1.2rem;
-  }
-
-  .second span{
-      top: 0;
-      font-size: 1.1rem;
-  }
-
-  .third span{
-      display: block;
-      top: 50%;
-      translate: 0 -50%;
-      height: 50%;
-      line-height: 1;
-      box-sizing: border-box;
-      text-align: center;
-      font-size: 1.3rem;
-      line-height: 1;
-    }
-  
-  .fourth span{
-      display: block;
-      top: 40%;
-      translate: 0 -50%;
-      height: 50%;
-      line-height: 1;
-      box-sizing: border-box;
-      text-align: center;
-      font-size: 1.5rem;
-      line-height: 1;
-    }
-
-
 }
 
 /********* 최대사이즈 1040px 이하 끝 *********/
 
-
 /********* 최대사이즈 800px 이하 시작 *********/
 @media screen and (max-width: 800px) {
-
-  .intro-area {
-      height: 38vh;
-      width: 78vw;
-      }
-
-  .s1chbox{
-      margin-left: 25px;
-      max-width: 600px;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: min(1.2vw, 1px) min(1vw, 10px);
-      font-size: 1.25rem;
-      line-height: 1.3;
-      padding-bottom: 30px;
-      }
-  
-      .trmovie h4{
-        font-size: 1.3rem;
-        line-height: 1.4;
-        text-align: left;
-        margin-right: 10px;
-        } 
-
-        .deintro h4{
-          font-size: 1.3rem;
-          line-height: 1.4;
-          text-align: left;
-       }
-
-      #S1container>.de-chpart {
-      width: 60vw;
-      }
-  
-      #S1container>h2 {
-          font-size: 3rem;
-
-      }
-
-      .de-bgpart>h2 {
-          font-size: 3rem;
-      }
-
-      .grid{
-      max-width: 780px;  
-      }
-  
-      .beingTxt span {
-          top: 5px;
-          font-size: 1.12rem;
-      }
-  
-      .second span{
-          top: 0;
-          font-size: 15.5px;
-      }
-  
-      .third span{
-          display: block;
-          top: 50%;
-          translate: 0 -50%;
-          height: 50%;
-          left: -10px;
-          box-sizing: border-box;
-          text-align: center;
-          font-size: 1.2rem;
-          line-height: 1;
-        }
-      
-      .fourth span{
-          display: block;
-          top: 40%;
-          translate: 0 -50%;
-          height: 50%;
-          line-height: 1;
-          box-sizing: border-box;
-          text-align: center;
-          font-size: 1.5rem;
-          line-height: 1;
-        }
+  .S1intro-area {
+    height: 40vh;
+    width: 97.6vw;
   }
-  /********* 최대사이즈 800px 이하 끝 *********/
 
-  /********* 최대사이즈 600px 이하 시작 *********/
+  .S1main-title {
+    margin-top: 25vh;
+  }
+
+  .S1intro-area h2 {
+    font-size: 4rem;
+    line-height: 1.3;
+  }
+
+  #S1cha-box {
+    margin-left: 2px;
+    margin-right: 16px;
+    max-width: 1000px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: min(2.2vw, 6px) min(1vw, 10px);
+    font-size: 1.25rem;
+    line-height: 1.3;
+    padding-bottom: 10px;
+}
+
+  .S1trintro > h4 {
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-right: 26px;
+}
+
+  .tmovie1 {
+    width: 40vw;
+    height: 30vh;
+}
+
+  .tmovie2 {
+    width: 40vw;
+    height: 30vh;
+}
+
+.S1deintro h3 {
+  padding-top: 20px;
+}
+
+  .S1deintro h4 {
+    font-size: 2.3rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-right: 23px;
+  }
+
+  .dmovie1 {
+    width: 40vw;
+    height: 30vh;
+}
+  .dmovie2 {
+    width: 40vw;
+    height: 30vh;
+}
+  .dmovie3 {
+    width: 40vw;
+    height: 30vh;
+}
+  .dmovie4 {
+    width: 40vw;
+    height: 30vh;
+}
+
+#S1container > .S1de-chpart {
+  position: relative;
+  width: 70vw;
+  height: 40vh;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+  #S1container > h2 {
+    font-size: 5rem;
+  }
+
+  #S1bgc-box {
+    max-width: 780px;
+  }
+
+  .S1imgTxt span {
+    top: 5px;
+    font-size: 1.12rem;
+  }
+
+  .second span {
+    top: 0;
+    font-size: 15.5px;
+  }
+
+  .third span {
+    display: block;
+    top: 50%;
+    translate: 0 -50%;
+    height: 50%;
+    left: -10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .fourth span {
+    display: block;
+    top: 40%;
+    translate: 0 -50%;
+    height: 50%;
+    line-height: 1;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+}
+/********* 최대사이즈 800px 이하 끝 *********/
+
+/********* 최대사이즈 600px 이하 시작 *********/
 @media screen and (max-width: 600px) {
-
-  .trmovie h4{
+  .S1trmovie h4 {
     font-size: 1.5rem;
     line-height: 1.4;
     text-align: left;
     margin-right: 10px;
-    }
-
-  .s1chbox{
-      margin-left: 24px;
-      max-width: 470px;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: min(1.2vw, 1px) min(1vw, 10px);
-      font-size: 1rem;
-      line-height: 1.3;
-      padding-bottom: 30px;
   }
 
-  .deintro h4{
+  .s1chbox {
+    margin-left: 24px;
+    max-width: 470px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: min(1.2vw, 1px) min(1vw, 10px);
+    font-size: 1rem;
+    line-height: 1.3;
+    padding-bottom: 30px;
+  }
+
+  .S1deintro h4 {
     font-size: 1.5rem;
     line-height: 1.4;
     text-align: left;
     margin-right: 10px;
- }
+  }
 
- .beingTxt span {
-  top: 5px;
-  font-size: 0.8rem;
-}
+  .S1imgTxt span {
+    top: 5px;
+    font-size: 0.8rem;
+  }
 
-.second span{
-  top: 0;
-  font-size: 0.7rem;
-}
+  .second span {
+    top: 0;
+    font-size: 0.7rem;
+  }
 
-.third span{
-  display: block;
-  top: 50%;
-  translate: 0 -50%;
-  height: 50%;
-  left: -10px;
-  box-sizing: border-box;
-  text-align: center;
-  font-size: 0.9rem;
-  line-height: 1;
-}
+  .third span {
+    display: block;
+    top: 50%;
+    translate: 0 -50%;
+    height: 50%;
+    left: -10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1;
+  }
 
-.fourth span{
-  display: block;
-  top: 40%;
-  translate: 0 -50%;
-  height: 50%;
-  line-height: 1;
-  box-sizing: border-box;
-  text-align: center;
-  font-size: 1rem;
-  line-height: 1;
-}
+  .fourth span {
+    display: block;
+    top: 40%;
+    translate: 0 -50%;
+    height: 50%;
+    line-height: 1;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1;
+  }
 
-.grid{
-  max-width: 590px;
-  margin-left: 6px;
+  #S1bgc-box {
+    max-width: 590px;
+    margin-left: 6px;
   }
 }
- /********* 최대사이즈 600px 이하 끝 *********/
-  
+/********* 최대사이즈 600px 이하 끝 *********/
