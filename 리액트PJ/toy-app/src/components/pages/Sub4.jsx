@@ -14,7 +14,7 @@ export default function Sub4() {
 
   useEffect(()=>{
     sub4_mousePo();
-    // sub4_poster();
+    sub4_poster();
   })
 
   // 코드 리턴구역 ////
@@ -46,7 +46,7 @@ export default function Sub4() {
         {/* 시놉시스 구역  */}
         <S4synopsis />
         {/* 포스터 영역  */}
-        <div className="main-poster">
+        <div className="main-poster" >
           <h2 className="main-title">POSTER</h2>
           <ul className="poster poster-common">
             <li>
