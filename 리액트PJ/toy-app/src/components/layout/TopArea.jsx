@@ -47,10 +47,10 @@ export default function TopArea() {
                         myCon.loginSts === null && (
                             <>
                                 <li>
-                                    <Link to="/member">회원가입</Link>
+                                    <Link to="/member">JOIN US</Link>
                                 </li>
                                 <li>
-                                    <Link to="/login">로그인</Link>
+                                    <Link to="/login">LOGIN</Link>
                                 </li>
                             </>
                         )
