@@ -27,7 +27,7 @@ export default function S3trailer() {
                 }}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                className="s3Swiper"
+                className="s3Swiper obj"
             >
                 <SwiperSlide>
                     <li>

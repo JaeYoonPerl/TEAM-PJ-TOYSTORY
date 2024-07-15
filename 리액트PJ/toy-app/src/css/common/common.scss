@@ -62,7 +62,7 @@
 }
 .page-bx{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
 }
 #GNB{
@@ -112,7 +112,7 @@
     z-index: 2;
     display: flex;
     align-items: center;
-    gap: 0 10px;
+    gap: 0 15px;
     transition: .3s;
     // margin-left: auto;
 }

@@ -2,7 +2,7 @@ import "../../css/sub3.scss";
 import S3CharSlide from "../modules/S3CharSlide";
 import S3trailer from "../plugin/s3Trailer";
 
-import goTop from "../func/sub3/goTop";
+// import goTop from "../func/sub3/goTop";
 import { useEffect } from "react";
 import scrollShowFn from "../func/sub3/scroll_show";
 

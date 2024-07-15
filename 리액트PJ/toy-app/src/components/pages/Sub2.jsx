@@ -1,14 +1,15 @@
 import { useEffect } from "react";
-// 폰트어썸
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faChevronLeft,faChevronRight} from "@fortawesome/free-solid-svg-icons";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper/modules";
 // 내함수 불러오기
 import mFn from "../func/my_function";
 // 데이터 불러오기
 import { gnbItems } from "../func/sub2/sub2_data";
-// 슬라이드 기능 : 전체적으로 오류남
-// import scrollPage from "../func/sub2/sub2_slide";
+
 // 배경이미지 불러오기
 import { bgData } from "../func/sub2/bg_src";
 // 트레일러 뿌려주기
@@ -20,18 +21,21 @@ import showWorld from "../func//sub2/sub2_world";
 // 어워즈 & 크레딧 뿌려주기
 import showAwardsCredits from "../func//sub2/sub2_aw_cre";
 import "../../css/sub2.scss";
+// 트레일러 스와이프
+import S2tail from "../modules/S2tail";
+import S2gnb from "../modules/S2gnb";
+// 슬라이드기능
+// import scrollPage from "../func/sub2/sub2_slide";
 // process.env.PUBLIC_URL +
 export default function Sub2() {
   useEffect(() => {
-    // 슬라이드 기능
     // scrollPage();
-    showTrailers();
     showChar();
     showWorld();
     showAwardsCredits();
+
     function showGNB() {
       const gnb = mFn.qs(".gnb");
-      // console.log("나와gnb",gnb);
       let hcode = "<ul>";
       Object.keys(gnbItems).forEach((key) => {
         hcode += `
@@ -44,10 +48,8 @@ export default function Sub2() {
       gnb.innerHTML = hcode;
 
       const gnbLi = mFn.qsaEl(gnb, "li");
-      // console.log("나와라 li",gnbLi);
       gnbLi[0].classList.add("on");
     } /////////////// showGNB함수 /////////////////
-    showGNB();
 
     const inBox = mFn.qsa(".ibx");
     for (let i = 0; i < inBox.length; i++) {
@@ -157,109 +159,120 @@ export default function Sub2() {
         modal.style.display = "none";
       }
     };
-    // const about = mFn.qs("#footer-area");
-    // const abountTit = `<h1 class="main-title main-tit2">ABOUT</h1>`;
-    // about.innerHTML += abountTit;
-    // console.log("about", about);
-    // 페이지가 로드될 때 모달을 숨깁니다.
   }, []);
   // 코드 리턴구역 ////
   return (
     <div id="sub2">
       <div id="side-area">
-        <nav className="gnb"></nav>
+        <nav className="gnb">
+          <S2gnb/>
+        </nav>
       </div>
-      <div
-        id="logo-area"
-        // style={{ background: process.env.PUBLIC_URL + bgData.logo }}
+      <Swiper
+        spaceBetween={0}
+        centeredSlides={true}
+        direction="vertical"
+        style={{ height: '100vh' }}
+         className="sub2-swiper"
       >
-        <div className="logo-area ibx section">
-          <div className="logo"></div>
+        <SwiperSlide>
+          <div
+            id="logo-area"
+            // style={{ background: process.env.PUBLIC_URL + bgData.logo }}
+          >
+            <div className="logo-area ibx section">
+              <div className="logo"></div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div
+          id="summary-area"
+          style={{ background: process.env.PUBLIC_URL + bgData.summary }}
+        >
+          <div className="summary-area ibx section">
+            <div className="sum-text"></div>
+          </div>
         </div>
-      </div>
-      <div
-        id="summary-area"
-        style={{ background: process.env.PUBLIC_URL + bgData.summary }}
-      >
-        <div className="summary-area ibx section">
-          <div className="sum-text"></div>
-        </div>
-      </div>
-      <div
-        id="trailers-area"
-        style={{ background: process.env.PUBLIC_URL + bgData.trailers }}
-      >
-        <div className="trailers-area ibx section">
-          <h1 className="main-title main-tit2">TRAILERS</h1>
-          <div className="content-box2">
-            <div id="slide" className="trailers-box"></div>
-            <div className="trail-button">
-              <a href="###" className="abtn ab1 fa-solid fa-chevron-right">
-              <FontAwesomeIcon icon={faChevronLeft} />
-              {/* <FontAwesomeIcon icon={faChevronRight} /> */}
-              </a>
-              <a href="###" className="abtn ab2 fa-solid fa-chevron-right">
-              {/* <FontAwesomeIcon icon={faChevronLeft} /> */}
-              <FontAwesomeIcon icon={faChevronRight} />
-              </a>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div
+          id="trailers-area"
+          style={{ background: process.env.PUBLIC_URL + bgData.trailers }}
+        >
+          <div className="trailers-area ibx section">
+            <h1 className="main-title main-tit2">TRAILERS</h1>
+            <div className="content-box2">
+              <div id="slide" className="trailers-box">
+                <S2tail/>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        id="character-design-area"
-        style={{ background: process.env.PUBLIC_URL + bgData.character }}
-      >
-        <div className="character-design-area ibx section">
-          <section className="cont-box flex-column">
-            <h1 className="main-title main-tit2">CHARACTER DESIGN</h1>
-            <div className="flex-row">
-              <div className="menu menu1"></div>
-              <div className="main-cont"></div>
-            </div>
-          </section>
-        </div>
-      </div>
-      <div
-        id="world-design-area"
-        style={{ background: process.env.PUBLIC_URL + bgData.world }}
-      >
-        <div className="world-design-area ibx section">
-          <section className="cont-box flex-column">
-            <h1 className="main-title main-tit2">WORLD DESIGN</h1>
-            <div className="flex-row">
-              <div className="menu menu2"></div>
-              <div className="main-cont"></div>
-            </div>
-          </section>
-        </div>
-      </div>
-      <div
-        id="awards-area"
-        style={{ background: process.env.PUBLIC_URL + bgData.awards }}
-      >
-        <div className="awards-area ibx section">
-          <div className="content-box">
-            <h1 className="main-title main-tit2">AWARDS</h1>
-            <div className="sub-text2 awards-text"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div
+          id="character-design-area"
+          style={{ background: process.env.PUBLIC_URL + bgData.character }}
+        >
+          <div className="character-design-area ibx section">
+            <section className="cont-box flex-column">
+              <h1 className="main-title main-tit2">CHARACTER DESIGN</h1>
+              <div className="flex-row">
+                <div className="menu menu1"></div>
+                <div className="main-cont"></div>
+              </div>
+            </section>
           </div>
         </div>
-      </div>
-      <div
-        id="credits-area"
-        style={{ background: process.env.PUBLIC_URL + bgData.credits }}
-      >
-        <div className="credits-area ibx section">
-          <div className="content-box">
-            <h1 className="main-title main-tit2">CREDITS</h1>
-            <div className="sub-text2 credits-text"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div
+          id="world-design-area"
+          style={{ background: process.env.PUBLIC_URL + bgData.world }}
+        >
+          <div className="world-design-area ibx section">
+            <section className="cont-box flex-column">
+              <h1 className="main-title main-tit2">WORLD DESIGN</h1>
+              <div className="flex-row">
+                <div className="menu menu2"></div>
+                <div className="main-cont"></div>
+              </div>
+            </section>
           </div>
         </div>
-      </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div
+          id="awards-area"
+          style={{ background: process.env.PUBLIC_URL + bgData.awards }}
+        >
+          <div className="awards-area ibx section">
+            <div className="content-box">
+              <h1 className="main-title main-tit2">AWARDS</h1>
+              <div className="sub-text2 awards-text"></div>
+            </div>
+          </div>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div
+          id="credits-area"
+          style={{ background: process.env.PUBLIC_URL + bgData.credits }}
+        >
+          <div className="credits-area ibx section">
+            <div className="content-box">
+              <h1 className="main-title main-tit2">CREDITS</h1>
+              <div className="sub-text2 credits-text"></div>
+            </div>
+          </div>
+        </div>
+        </SwiperSlide>
+      </Swiper>
       <div id="modal1" className="modal">
-        <span className="close">&times;</span>
-        <img className="modal-content" id="modalImg" />
-      </div>
+          <span className="close">&times;</span>
+          <img className="modal-content" id="modalImg" />
+        </div>
     </div>
   );
 } /////// Sub2 /////
