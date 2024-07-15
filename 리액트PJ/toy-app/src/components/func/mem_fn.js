@@ -31,10 +31,10 @@ const initData = () => {
               },
               {
                   "idx": "2",
-                  "uid":"tomtom",
+                  "uid":"toystory",
                   "pwd":"1111",
-                  "unm":"Tom",
-                  "eml":"tom@gmail.com"
+                  "unm":"toystory",
+                  "eml":"toystory@gmail.com"
               }
           ]
       `

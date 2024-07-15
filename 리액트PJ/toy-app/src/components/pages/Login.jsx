@@ -207,7 +207,7 @@ function Login(props) {
   return (
     <div className="outbx">
       <section className="membx" style={{ minHeight: "300px" }}>
-        <h2>LOG IN</h2>
+        <h2><img src={process.env.PUBLIC_URL +"/images/toystory_logo2.png"} alt="Main Logo" style={{ height: "40px" }}/>LOG IN</h2>
         <form method="post" action="process.php">
           <ul>
             <li>
