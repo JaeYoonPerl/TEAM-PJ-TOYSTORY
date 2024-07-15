@@ -59,7 +59,7 @@ export default function TopArea() {
                         /* 로그인 상태이면 로그아웃 버튼 보임 */
                         myCon.loginSts !== null && (
                             <>
-                                <li className="logmsg">
+                                <li className="logmsg" style={{fontSize:"15px", color:"Blue",}}>
                                     {/* 로그인 확인 */}
                                      {myCon.loginMsg}
                                 </li>
