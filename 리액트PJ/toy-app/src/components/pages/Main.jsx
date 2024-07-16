@@ -7,7 +7,7 @@ import "../../css/main.scss"
 const mData = mainItems;
 export default function Main() {
 useEffect(()=>{
-  
+    
         // li 요소와 이미지 요소를 찾아서 이벤트 리스너 추가
         const lis = document.querySelectorAll("#GNB li");
         const tsImgs = document.querySelectorAll(".ts .ts-img");
