@@ -31,6 +31,7 @@ export default function scrollPage() {
     window.scroll(0, 0);
   }, 500);
 
+  // const contBox = mFn.qsa(".wh-slide");
   const contBox = mFn.qsa(".content-box");
   // console.log(contBox);
 
@@ -197,9 +198,3 @@ export default function scrollPage() {
     return scrollPercentage;
   }
 }
-
-// 3번의 이유로 스무스스크롤 적용해보았지만 다른 오류가 생김 (3번오류는 거의없어짐)
-// 오류해결해야함
-// 1.위치값공유 오류 = 스무스 스크롤 적용다음부터임
-// 2.콘텐트박스의 퍼센트가 98 또는 99로 멈춰서 아랫방향이 안됨
-// 3. 페이지가 넘어가면서 true로 잠기는 현상있음 -> 내가 settimeout 걸어봤는데 의미없음

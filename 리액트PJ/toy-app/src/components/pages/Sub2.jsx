@@ -1,20 +1,15 @@
-import { useEffect } from "react";
-
+import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore from "swiper";
+import { Mousewheel } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper/modules";
 // 내함수 불러오기
 import mFn from "../func/my_function";
-// 데이터 불러오기
-import { gnbItems } from "../func/sub2/sub2_data";
-
 // 배경이미지 불러오기
 import { bgData } from "../func/sub2/bg_src";
-// 트레일러 뿌려주기
-import showTrailers from "../func//sub2/sub2_trailers";
-// 캐릭터 뿌려주기
+// 캐릭터 뿌려주기o
 import showChar from "../func//sub2/sub2_char";
 // 월드 뿌려주기
 import showWorld from "../func//sub2/sub2_world";
@@ -24,32 +19,16 @@ import "../../css/sub2.scss";
 // 트레일러 스와이프
 import S2tail from "../modules/S2tail";
 import S2gnb from "../modules/S2gnb";
-// 슬라이드기능
-// import scrollPage from "../func/sub2/sub2_slide";
+
+import scrollPage from "../func/sub2/sub2_slide";
 // process.env.PUBLIC_URL +
+SwiperCore.use([Mousewheel]);
 export default function Sub2() {
   useEffect(() => {
-    // scrollPage();
+    scrollPage();
     showChar();
     showWorld();
     showAwardsCredits();
-
-    function showGNB() {
-      const gnb = mFn.qs(".gnb");
-      let hcode = "<ul>";
-      Object.keys(gnbItems).forEach((key) => {
-        hcode += `
-        <li>
-          <a href="#${gnbItems[key]}">${key}</a>
-        </li>
-        `;
-      });
-      hcode += "<ul>";
-      gnb.innerHTML = hcode;
-
-      const gnbLi = mFn.qsaEl(gnb, "li");
-      gnbLi[0].classList.add("on");
-    } /////////////// showGNB함수 /////////////////
 
     const inBox = mFn.qsa(".ibx");
     for (let i = 0; i < inBox.length; i++) {
@@ -67,43 +46,6 @@ export default function Sub2() {
         inBox[i].style.backgroundColor = "rgb(0 0 0 / 60%)"; // 배경색
       }
     }
-    function innerLogo() {
-      const logo = mFn.qs(".logo");
-      let hcode = `
-  <a href="###">
-  <img src="/images/img2/page_logo.png" alt="페이지로고" />
-</a>
-<a href="###">
-  <img src="/images/img2/02_ts.jpg" alt="포스터" />
-</a>
-    `;
-      logo.innerHTML = hcode;
-    }
-    innerLogo();
-    function innerSum() {
-      const sunTit = mFn.qs(".sum-text");
-      let hcode = `
-  <a href="###" class="summary-click">
-  <h1 class="main-title">SUMMARY</h1>
-</a>
-<a href="###">
-  <p class="sub-text1">
-    Buzz, Woody, and their friends are back as Andy heads off to
-    Cowboy Camp, leaving his toys to their own devices. Things shift
-    into high gear when an obsessive toy collector name Al
-    McWhiggin, owner of Al's Toy Barn, kidnaps Woody. At Al's
-    apartment, Woody discovers that he is a highly valued
-    collectible from a 1950s TV show called "Woody's Roundup." He
-    meets the other prized toys from the show: Jessie the Cowgirl,
-    Bullseye the Horse, and Stinky Pete the Prospector. Andy's toys
-    mount a daring rescue mission, Buzz Lightyear meets his match,
-    and Woody has to decide where he and his heart truly belong.
-  </p>
-</a>
-    `;
-      sunTit.innerHTML = hcode;
-    }
-    innerSum();
 
     const toyLogoA = mFn.qsa(".logo a");
     const poster = mFn.qs(".logo a:last-child");
@@ -160,43 +102,74 @@ export default function Sub2() {
       }
     };
   }, []);
+
+
   // 코드 리턴구역 ////
   return (
     <div id="sub2">
       <div id="side-area">
         <nav className="gnb">
-          <S2gnb/>
+          <S2gnb />
         </nav>
       </div>
       <Swiper
         spaceBetween={0}
         centeredSlides={true}
+        mousewheel={true}
         direction="vertical"
-        style={{ height: '100vh' }}
-         className="sub2-swiper"
+        style={{ height: "100vh" }}
+        className="sub2-swiper"
       >
-        <SwiperSlide>
-          <div
-            id="logo-area"
-            // style={{ background: process.env.PUBLIC_URL + bgData.logo }}
-          >
-            <div className="logo-area ibx section">
-              <div className="logo"></div>
+        <SwiperSlide
+          id="logo-area"
+          // style={{ background: process.env.PUBLIC_URL + bgData.logo }}
+        >
+          <div className="logo-area ibx section">
+            <div className="logo">
+              <a href="###">
+                <img
+                  src={process.env.PUBLIC_URL + "/images/img2/page_logo.png"}
+                  alt="페이지로고"
+                />
+              </a>
+              <a href="###">
+                <img
+                  src={process.env.PUBLIC_URL + "/images/img2/02_ts.jpg"}
+                  alt="포스터"
+                />
+              </a>
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-        <div
+        <SwiperSlide
           id="summary-area"
           style={{ background: process.env.PUBLIC_URL + bgData.summary }}
         >
           <div className="summary-area ibx section">
-            <div className="sum-text"></div>
+            <div className="sum-text">
+              <a href="###" className="summary-click">
+                <h1 className="main-title">SUMMARY</h1>
+              </a>
+              <a href="###">
+                <p className="sub-text1">
+                  Buzz, Woody, and their friends are back as Andy heads off to
+                  Cowboy Camp, leaving his toys to their own devices. Things
+                  shift into high gear when an obsessive toy collector name Al
+                  McWhiggin, owner of Al's Toy Barn, kidnaps Woody. At Al's
+                  apartment, Woody discovers that he is a highly valued
+                  collectible from a 1950s TV show called "Woody's Roundup." He
+                  meets the other prized toys from the show: Jessie the Cowgirl,
+                  Bullseye the Horse, and Stinky Pete the Prospector. Andy's
+                  toys mount a daring rescue mission, Buzz Lightyear meets his
+                  match, and Woody has to decide where he and his heart truly
+                  belong.
+                </p>
+              </a>
+            </div>
           </div>
-        </div>
         </SwiperSlide>
-        <SwiperSlide>
-        <div
+
+        <SwiperSlide
           id="trailers-area"
           style={{ background: process.env.PUBLIC_URL + bgData.trailers }}
         >
@@ -204,14 +177,13 @@ export default function Sub2() {
             <h1 className="main-title main-tit2">TRAILERS</h1>
             <div className="content-box2">
               <div id="slide" className="trailers-box">
-                <S2tail/>
+                <S2tail />
               </div>
             </div>
           </div>
-        </div>
         </SwiperSlide>
-        <SwiperSlide>
-        <div
+
+        <SwiperSlide
           id="character-design-area"
           style={{ background: process.env.PUBLIC_URL + bgData.character }}
         >
@@ -224,10 +196,9 @@ export default function Sub2() {
               </div>
             </section>
           </div>
-        </div>
         </SwiperSlide>
-        <SwiperSlide>
-        <div
+
+        <SwiperSlide
           id="world-design-area"
           style={{ background: process.env.PUBLIC_URL + bgData.world }}
         >
@@ -240,10 +211,9 @@ export default function Sub2() {
               </div>
             </section>
           </div>
-        </div>
         </SwiperSlide>
-        <SwiperSlide>
-        <div
+
+        <SwiperSlide
           id="awards-area"
           style={{ background: process.env.PUBLIC_URL + bgData.awards }}
         >
@@ -253,10 +223,9 @@ export default function Sub2() {
               <div className="sub-text2 awards-text"></div>
             </div>
           </div>
-        </div>
         </SwiperSlide>
-        <SwiperSlide>
-        <div
+
+        <SwiperSlide
           id="credits-area"
           style={{ background: process.env.PUBLIC_URL + bgData.credits }}
         >
@@ -266,13 +235,12 @@ export default function Sub2() {
               <div className="sub-text2 credits-text"></div>
             </div>
           </div>
-        </div>
         </SwiperSlide>
       </Swiper>
       <div id="modal1" className="modal">
-          <span className="close">&times;</span>
-          <img className="modal-content" id="modalImg" />
-        </div>
+        <span className="close">&times;</span>
+        <img className="modal-content" id="modalImg" />
+      </div>
     </div>
   );
 } /////// Sub2 /////
