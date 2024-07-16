@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "//TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/css/main.91856c0a.css",
-    "main.js": "//TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/js/main.9850efb8.js",
-    "static/media/common4.jpg": "//TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/media/common4.9ea8926cf7ff4fc66e1f.jpg",
-    "static/media/character.jpg": "//TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/media/character.99bad23653c5f756515e.jpg",
-    "static/media/creditshead.jpg": "//TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/media/creditshead.89e17638ecd30618f6db.jpg",
-    "static/media/world_head.jpg": "//TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/media/world_head.36e3e3483e14e198e4aa.jpg",
-    "static/media/bg_sky.jpg": "//TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/media/bg_sky.7a814e1d6ee7b6130147.jpg",
-    "static/media/bged0.jpg": "//TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/media/bged0.9a17e201471ac6afa60e.jpg",
-    "static/media/sky.jpg": "//TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/media/sky.af5f31dfba0df1695a85.jpg",
-    "index.html": "//TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/index.html",
-    "main.91856c0a.css.map": "//TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/css/main.91856c0a.css.map",
-    "main.9850efb8.js.map": "//TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/js/main.9850efb8.js.map"
+    "main.css": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/css/main.bdac2232.css",
+    "main.js": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/js/main.316baee8.js",
+    "static/media/common4.jpg": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/media/common4.9ea8926cf7ff4fc66e1f.jpg",
+    "static/media/character.jpg": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/media/character.99bad23653c5f756515e.jpg",
+    "static/media/creditshead.jpg": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/media/creditshead.89e17638ecd30618f6db.jpg",
+    "static/media/world_head.jpg": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/media/world_head.36e3e3483e14e198e4aa.jpg",
+    "static/media/bg_sky.jpg": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/media/bg_sky.7a814e1d6ee7b6130147.jpg",
+    "static/media/bged0.jpg": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/media/bged0.9a17e201471ac6afa60e.jpg",
+    "static/media/sky.jpg": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/media/sky.af5f31dfba0df1695a85.jpg",
+    "index.html": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/index.html",
+    "main.bdac2232.css.map": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/css/main.bdac2232.css.map",
+    "main.316baee8.js.map": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/js/main.316baee8.js.map"
   },
   "entrypoints": [
-    "static/css/main.91856c0a.css",
-    "static/js/main.9850efb8.js"
+    "static/css/main.bdac2232.css",
+    "static/js/main.316baee8.js"
   ]
 }
