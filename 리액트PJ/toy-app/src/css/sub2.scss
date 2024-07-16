@@ -403,36 +403,36 @@ body * {
   }
 }
 /******************* 7.하단 영역 *******************/
-#footer-area {
-  /* 부모설정 */
-  position: relative;
-}
-.footer-bx {
-  width: 100%;
-  position: absolute;
-  /* background-color: #ffffff33; */
-  bottom: 0;
-  padding: 30px 0;
-}
-.sns-box ul {
-  gap: 30px;
-}
-.sns-box a {
-  color: #fff;
-  font-size: 40px;
-}
-.fcont-part a {
-  color: #fff;
-  font-size: 20px;
-  line-height: 2.5;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-.corp-part {
-  color: #fff;
-  margin-top: 20px;
-  font-size: 25px;
-}
+// #footer-area {
+//   /* 부모설정 */
+//   position: relative;
+// }
+// .footer-bx {
+//   width: 100%;
+//   position: absolute;
+//   /* background-color: #ffffff33; */
+//   bottom: 0;
+//   padding: 30px 0;
+// }
+// .sns-box ul {
+//   gap: 30px;
+// }
+// .sns-box a {
+//   color: #fff;
+//   font-size: 40px;
+// }
+// .fcont-part a {
+//   color: #fff;
+//   font-size: 20px;
+//   line-height: 2.5;
+//   text-decoration: underline;
+//   text-underline-offset: 3px;
+// }
+// .corp-part {
+//   color: #fff;
+//   margin-top: 20px;
+//   font-size: 25px;
+// }
 @media only screen and (max-width: 1870px) and (max-height: 830px) {
   #sub2 {
     /* 상단 */
