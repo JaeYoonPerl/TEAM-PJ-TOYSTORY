@@ -52,6 +52,7 @@
   margin-left: 40px;
 }
 
+
 .S1deintro {
   position: relative;
   //padding-top: 30px;
@@ -64,9 +65,6 @@
   margin-left: 40px;
 }
 
-// .design-box {}
-
-// .demovie {}
 
 .S1trmovie {
   //position: absolute;
@@ -98,37 +96,62 @@
   font-weight: 400;
 }
 
-// .deintro h3 {}
-
-.S1trintro > h4 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 2.2rem;
-  /* text-align: justify; */
-  line-height: 1.5;
-}
+/* 버튼 포함 트레일러 영역 */
 .S1tbox {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0 30px;
+  margin-bottom: 30px;
+  & h4 {
+    padding-top: 10px;
+    font-size: 2.2rem;
+    line-height: 1.5;
+  }
 }
 
-.S1deintro > h4 {
-  padding-top: 20px;
-  padding-bottom: 10px;
-  font-size: 2.2rem;
-  /* text-align: justify; */
-  line-height: 1.5;
+/* 버튼 */
+.S1tbtn{
+  width: 100%;
+  height: 15vh;
+  font-size: 3rem;
+  border: none;
+  background-color: #fff;
+  padding-top: 35px;
+  & :hover{
+    color: gold;
+  }
 }
 
+
+
+/* 버튼 포함 디자인 캐릭터 영역 */
 .S1dbox {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0 30px;
+  margin-bottom: 30px;
+  & h4 {
+    padding-top: 10px;
+    font-size: 2.2rem;
+    line-height: 1.5;
+  }
+}
+
+/* 버튼 */
+.S1dbtn{
+  width: 100%;
+  height: 15vh;
+  font-size: 3rem;
+  border: none;
+  background-color: #fff;
+  padding-top: 35px;
+  & :hover{
+    color: lawngreen;
+  }
 }
 
 .S1dbg-box {
@@ -513,12 +536,34 @@
     line-height: 1.3;
   }
 
-  .S1trintro > h4 {
-    font-size: 2.3rem;
+  .S1tbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 30px;
+  margin-bottom: 30px;
+  & h4 {
+    padding-top: 10px;
+    font-size: 2.2rem;
     line-height: 1.5;
-    text-align: justify;
-    margin-right: 25px;
   }
+}
+
+/* 버튼 */
+.S1tbtn{
+  width: 100%;
+  height: 15vh;
+  font-size: 3rem;
+  border: none;
+  background-color: #fff;
+  padding-top: 35px;
+  & :hover{
+    color: gold;
+  }
+}
+
+
 
   .S1trmovie > iframe {
     padding-top: 5px;
@@ -534,12 +579,34 @@
     line-height: 1.3;
   }
 
-  .S1deintro > h4 {
-    font-size: 2.3rem;
-    line-height: 1.5;
-    text-align: justify;
-    margin-right: 25px;
+  /* 버튼 포함 디자인 캐릭터 영역 */
+  .S1dbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 30px;
+    margin-bottom: 30px;
+    & h4 {
+      padding-top: 10px;
+      font-size: 2.2rem;
+      line-height: 1.5;
+    }
   }
+  
+  /* 버튼 */
+  .S1dbtn{
+    width: 100%;
+    height: 15vh;
+    font-size: 3rem;
+    border: none;
+    background-color: #fff;
+    padding-top: 35px;
+    & :hover{
+      color: lawngreen;
+    }
+  }
+
 
   .S1deintro h3 {
     padding-top: 50px;
@@ -656,12 +723,32 @@
     }
   }
 
-  .S1trintro > h4 {
-    font-size: 2rem;
+  .S1tbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 30px;
+  margin-bottom: 30px;
+  & h4 {
+    padding-top: 10px;
+    font-size: 2.2rem;
     line-height: 1.5;
-    text-align: justify;
-    margin-right: 26px;
   }
+}
+
+/* 버튼 */
+.S1tbtn{
+  width: 100%;
+  height: 15vh;
+  font-size: 3rem;
+  border: none;
+  background-color: #fff;
+  padding-top: 35px;
+  & :hover{
+    color: gold;
+  }
+}
 
   .tmovie1 {
     width: 40vw;
@@ -676,6 +763,35 @@
   .S1deintro h3 {
     padding-top: 20px;
   }
+
+  /* 버튼 포함 디자인 캐릭터 영역 */
+  .S1dbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 30px;
+    margin-bottom: 30px;
+    & h4 {
+      padding-top: 10px;
+      font-size: 2.2rem;
+      line-height: 1.5;
+    }
+  }
+  
+  /* 버튼 */
+  .S1dbtn{
+    width: 100%;
+    height: 15vh;
+    font-size: 3rem;
+    border: none;
+    background-color: #fff;
+    padding-top: 35px;
+    & :hover{
+      color: lawngreen;
+    }
+  }
+
 
   .S1deintro h4 {
     font-size: 2.3rem;
@@ -796,6 +912,35 @@
       transition: opacity 0.3s;
     }
   }
+
+  /* 버튼 포함 트레일러 영역 */
+  .S1tbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 30px;
+    margin-bottom: 30px;
+    & h4 {
+      padding-top: 10px;
+      font-size: 2.2rem;
+      line-height: 1.5;
+    }
+  }
+  
+  /* 버튼 */
+  .S1tbtn{
+    width: 100%;
+    height: 15vh;
+    font-size: 3rem;
+    border: none;
+    background-color: #fff;
+    padding-top: 35px;
+    & :hover{
+      color: gold;
+    }
+  }
+
   .S1trmovie h4 {
     font-size: 1.5rem;
     line-height: 1.4;
@@ -816,6 +961,34 @@
     line-height: 1.5;
     text-align: justify;
     margin-right: 56px;
+  }
+
+  /* 버튼 포함 디자인 캐릭터 영역 */
+  .S1dbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 30px;
+    margin-bottom: 30px;
+    & h4 {
+      padding-top: 10px;
+      font-size: 2.2rem;
+      line-height: 1.5;
+    }
+  }
+  
+  /* 버튼 */
+  .S1dbtn{
+    width: 100%;
+    height: 15vh;
+    font-size: 3rem;
+    border: none;
+    background-color: #fff;
+    padding-top: 35px;
+    & :hover{
+      color: lawngreen;
+    }
   }
 
   #S1bgc-box span {
