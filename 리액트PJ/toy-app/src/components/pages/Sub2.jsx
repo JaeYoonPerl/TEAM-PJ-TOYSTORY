@@ -20,12 +20,12 @@ import "../../css/sub2.scss";
 import S2tail from "../modules/S2tail";
 import S2gnb from "../modules/S2gnb";
 
-import scrollPage from "../func/sub2/sub2_slide";
+//import scrollPage from "../func/sub2/sub2_slide";
 // process.env.PUBLIC_URL +
 SwiperCore.use([Mousewheel]);
 export default function Sub2() {
   useEffect(() => {
-    scrollPage();
+    //scrollPage();
     showChar();
     showWorld();
     showAwardsCredits();
