@@ -19,7 +19,7 @@ function S2tail() {
       {vData.map((v, i) => (
         <SwiperSlide key={i}>
           <div className="trailer">
-            <video src={v.vsrc} controls poster={v.isrc}></video>
+            <video src={process.env.PUBLIC_URL + v.vsrc} controls poster={process.env.PUBLIC_URL + v.isrc}></video>
           </div>
         </SwiperSlide>
       ))}

@@ -60,7 +60,7 @@ export default function showChar() {
       for (let i = 0; i < total; i++) {
         hcode += `
            <a href="###">
-             <img src="/images/img2/world/${seq + 1}_${i + 1}.jpg" alt="${i + 1}">
+             <img src="${process.env.PUBLIC_URL}/images/img2/world/${seq + 1}_${i + 1}.jpg" alt="${i + 1}">
            </a>
          `;
       } /// for ///

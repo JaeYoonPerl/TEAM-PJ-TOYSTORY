@@ -1,10 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore from "swiper";
-import { Mousewheel } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import { scrolled, setPos } from "../func/sub2/smoothScroll23";
+
 // 내함수 불러오기
 import mFn from "../func/my_function";
 // 배경이미지 불러오기
@@ -20,12 +16,14 @@ import "../../css/sub2.scss";
 import S2tail from "../modules/S2tail";
 import S2gnb from "../modules/S2gnb";
 
-//import scrollPage from "../func/sub2/sub2_slide";
+import $ from "jquery";
+
+import { wheelFn, setContBoxWheelEvent, setPgNum } from "../func/sub2/sub2_slide";
 // process.env.PUBLIC_URL +
-SwiperCore.use([Mousewheel]);
+// SwiperCore.use([Mousewheel]);
+
 export default function Sub2() {
   useEffect(() => {
-    //scrollPage();
     showChar();
     showWorld();
     showAwardsCredits();
@@ -101,8 +99,36 @@ export default function Sub2() {
         modal.style.display = "none";
       }
     };
-  }, []);
 
+    $("html,body").delay(1000).animate({scrollTop: "0"},0);
+    setPos(0);
+    setPgNum(0);
+
+    // 휠이벤트가 발생하면 wheelFn을 호출해라
+    window.addEventListener("wheel", wheelFn, { passive: false });
+
+    // const contBox = mFn.qsa(".wh-slide");
+    const contBox = document.querySelectorAll(".content-box");
+    // console.log(contBox);
+
+    contBox.forEach((ele) => {
+      ele.addEventListener("wheel", setContBoxWheelEvent);
+    });
+
+    // 1. 부드러운 스크롤 호출
+    // document
+    //   .querySelectorAll(".content-box")[0]
+    //   .addEventListener("wheel", scrolled);
+
+    // document
+    //   .querySelectorAll(".content-box")[1]
+    //   .addEventListener("wheel", scrolled);
+
+    // 2. 소멸자
+    return () => {
+      window.removeEventListener("wheel", wheelFn);
+    };
+  }, []);
 
   // 코드 리턴구역 ////
   return (
@@ -112,131 +138,121 @@ export default function Sub2() {
           <S2gnb />
         </nav>
       </div>
-      <Swiper
-        spaceBetween={0}
-        centeredSlides={true}
-        mousewheel={true}
-        direction="vertical"
-        style={{ height: "100vh" }}
-        className="sub2-swiper"
+      <div
+        id="logo-area"
+        // style={{ background: process.env.PUBLIC_URL + bgData.logo }}
       >
-        <SwiperSlide
-          id="logo-area"
-          // style={{ background: process.env.PUBLIC_URL + bgData.logo }}
-        >
-          <div className="logo-area ibx section">
-            <div className="logo">
-              <a href="###">
-                <img
-                  src={process.env.PUBLIC_URL + "/images/img2/page_logo.png"}
-                  alt="페이지로고"
-                />
-              </a>
-              <a href="###">
-                <img
-                  src={process.env.PUBLIC_URL + "/images/img2/02_ts.jpg"}
-                  alt="포스터"
-                />
-              </a>
+        <div className="logo-area ibx section">
+          <div className="logo">
+            <a href="###">
+              <img
+                src={process.env.PUBLIC_URL + "/images/img2/page_logo.png"}
+                alt="페이지로고"
+              />
+            </a>
+            <a href="###">
+              <img
+                src={process.env.PUBLIC_URL + "/images/img2/02_ts.jpg"}
+                alt="포스터"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        id="summary-area"
+        style={{ background: process.env.PUBLIC_URL + bgData.summary }}
+      >
+        <div className="summary-area ibx section">
+          <div className="sum-text">
+            <a href="###" className="summary-click">
+              <h1 className="main-title">SUMMARY</h1>
+            </a>
+            <a href="###">
+              <p className="sub-text1">
+                Buzz, Woody, and their friends are back as Andy heads off to
+                Cowboy Camp, leaving his toys to their own devices. Things shift
+                into high gear when an obsessive toy collector name Al
+                McWhiggin, owner of Al's Toy Barn, kidnaps Woody. At Al's
+                apartment, Woody discovers that he is a highly valued
+                collectible from a 1950s TV show called "Woody's Roundup." He
+                meets the other prized toys from the show: Jessie the Cowgirl,
+                Bullseye the Horse, and Stinky Pete the Prospector. Andy's toys
+                mount a daring rescue mission, Buzz Lightyear meets his match,
+                and Woody has to decide where he and his heart truly belong.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="trailers-area"
+        style={{ background: process.env.PUBLIC_URL + bgData.trailers }}
+      >
+        <div className="trailers-area ibx section">
+          <h1 className="main-title main-tit2">TRAILERS</h1>
+          <div className="content-box2">
+            <div id="slide" className="trailers-box">
+              <S2tail />
             </div>
           </div>
-        </SwiperSlide>
-        <SwiperSlide
-          id="summary-area"
-          style={{ background: process.env.PUBLIC_URL + bgData.summary }}
-        >
-          <div className="summary-area ibx section">
-            <div className="sum-text">
-              <a href="###" className="summary-click">
-                <h1 className="main-title">SUMMARY</h1>
-              </a>
-              <a href="###">
-                <p className="sub-text1">
-                  Buzz, Woody, and their friends are back as Andy heads off to
-                  Cowboy Camp, leaving his toys to their own devices. Things
-                  shift into high gear when an obsessive toy collector name Al
-                  McWhiggin, owner of Al's Toy Barn, kidnaps Woody. At Al's
-                  apartment, Woody discovers that he is a highly valued
-                  collectible from a 1950s TV show called "Woody's Roundup." He
-                  meets the other prized toys from the show: Jessie the Cowgirl,
-                  Bullseye the Horse, and Stinky Pete the Prospector. Andy's
-                  toys mount a daring rescue mission, Buzz Lightyear meets his
-                  match, and Woody has to decide where he and his heart truly
-                  belong.
-                </p>
-              </a>
+        </div>
+      </div>
+
+      <div
+        id="character-design-area"
+        style={{ background: process.env.PUBLIC_URL + bgData.character }}
+      >
+        <div className="character-design-area ibx section">
+          <section className="cont-box flex-column">
+            <h1 className="main-title main-tit2">CHARACTER DESIGN</h1>
+            <div className="flex-row">
+              <div className="menu menu1"></div>
+              <div className="main-cont"></div>
             </div>
-          </div>
-        </SwiperSlide>
+          </section>
+        </div>
+      </div>
 
-        <SwiperSlide
-          id="trailers-area"
-          style={{ background: process.env.PUBLIC_URL + bgData.trailers }}
-        >
-          <div className="trailers-area ibx section">
-            <h1 className="main-title main-tit2">TRAILERS</h1>
-            <div className="content-box2">
-              <div id="slide" className="trailers-box">
-                <S2tail />
-              </div>
+      <div
+        id="world-design-area"
+        style={{ background: process.env.PUBLIC_URL + bgData.world }}
+      >
+        <div className="world-design-area ibx section">
+          <section className="cont-box flex-column">
+            <h1 className="main-title main-tit2">WORLD DESIGN</h1>
+            <div className="flex-row">
+              <div className="menu menu2"></div>
+              <div className="main-cont"></div>
             </div>
-          </div>
-        </SwiperSlide>
+          </section>
+        </div>
+      </div>
 
-        <SwiperSlide
-          id="character-design-area"
-          style={{ background: process.env.PUBLIC_URL + bgData.character }}
-        >
-          <div className="character-design-area ibx section">
-            <section className="cont-box flex-column">
-              <h1 className="main-title main-tit2">CHARACTER DESIGN</h1>
-              <div className="flex-row">
-                <div className="menu menu1"></div>
-                <div className="main-cont"></div>
-              </div>
-            </section>
+      <div
+        id="awards-area"
+        style={{ background: process.env.PUBLIC_URL + bgData.awards }}
+      >
+        <div className="awards-area ibx section">
+          <div className="content-box">
+            <h1 className="main-title main-tit2">AWARDS</h1>
+            <div className="sub-text2 awards-text"></div>
           </div>
-        </SwiperSlide>
+        </div>
+      </div>
 
-        <SwiperSlide
-          id="world-design-area"
-          style={{ background: process.env.PUBLIC_URL + bgData.world }}
-        >
-          <div className="world-design-area ibx section">
-            <section className="cont-box flex-column">
-              <h1 className="main-title main-tit2">WORLD DESIGN</h1>
-              <div className="flex-row">
-                <div className="menu menu2"></div>
-                <div className="main-cont"></div>
-              </div>
-            </section>
+      <div
+        id="credits-area"
+        style={{ background: process.env.PUBLIC_URL + bgData.credits }}
+      >
+        <div className="credits-area ibx section">
+          <div className="content-box">
+            <h1 className="main-title main-tit2">CREDITS</h1>
+            <div className="sub-text2 credits-text"></div>
           </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          id="awards-area"
-          style={{ background: process.env.PUBLIC_URL + bgData.awards }}
-        >
-          <div className="awards-area ibx section">
-            <div className="content-box">
-              <h1 className="main-title main-tit2">AWARDS</h1>
-              <div className="sub-text2 awards-text"></div>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide
-          id="credits-area"
-          style={{ background: process.env.PUBLIC_URL + bgData.credits }}
-        >
-          <div className="credits-area ibx section">
-            <div className="content-box">
-              <h1 className="main-title main-tit2">CREDITS</h1>
-              <div className="sub-text2 credits-text"></div>
-            </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
+        </div>
+      </div>
       <div id="modal1" className="modal">
         <span className="close">&times;</span>
         <img className="modal-content" id="modalImg" />

@@ -39,7 +39,7 @@ function increasePercent() {
   return (
     <div className="loging-pg">
       <div className="fly">
-        <img src="/images/fly.png" alt="" />
+        <img src={process.env.PUBLIC_URL+"/images/fly.png"} alt="" />
         <div className="pbar">
           <span className="pNum">0%</span>
           <span className="bar"></span>

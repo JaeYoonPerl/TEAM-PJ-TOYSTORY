@@ -40,7 +40,7 @@ useEffect(()=>{
     <>
       <h1>토이스토리 메인</h1>
       <div className="bg-image"
-      style={{background: "url(../images/bg/bg2.jpg) no-repeat center/cover"}}
+      style={{background: `url(${process.env.PUBLIC_URL}/images/bg/bg2.jpg) no-repeat center/cover`}}
       ></div>
       <main className="main">
         <a href="###" className="logo"

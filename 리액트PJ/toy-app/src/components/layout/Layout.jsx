@@ -86,7 +86,7 @@ export default function Layout() {
         <Loding />
       <TopArea />
       <MainArea />
-      {/* <FooterArea /> */}
+      <FooterArea />
     </dCon.Provider>
   );
 }
