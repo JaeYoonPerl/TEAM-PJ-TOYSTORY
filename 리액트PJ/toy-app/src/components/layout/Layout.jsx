@@ -12,6 +12,10 @@ import "../../css/common/reset.scss";
 import "../../css/common/common.scss";
 import "../../css/common/core.scss";
 import "../../css/common/grid_12_flex.scss";
+import Loding from "./Loding";
+
+
+
 
 
 export default function Layout() {
@@ -79,6 +83,7 @@ export default function Layout() {
       makeMsg,
       logoutFn
       }}>
+        <Loding />
       <TopArea />
       <MainArea />
       {/* <FooterArea /> */}
