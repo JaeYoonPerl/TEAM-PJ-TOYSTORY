@@ -90,13 +90,32 @@
   text-align: center;
  
 }
-.main-synopsis span{
+.synop-box{
   text-align: center;
   display: flex;
   margin: 72px auto 0;
   padding-bottom: 3%;
   width: 66%;
   border-bottom: 1px solid rgb(204, 204, 204);
+}
+.synop-btn{
+  margin-top: 3%;
+  margin-left: 46%;
+  width: 9%;
+  padding: 1% 0%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: darkgreen;
+  background-color: beige;
+  border-radius: 25px;
+
+}
+.synop-txt{
+  font-size: 3rem;
+  opacity: 1;
+}
+.synop-txt .on{
+  opacity: 0;
 }
 
 
@@ -178,7 +197,7 @@
 .cha-desc{
   display: block;
   margin-top: 3%;
-  text-align: center
+  text-align: center;
 }
 
 .cha-desc > p{
@@ -206,7 +225,7 @@
 
 
 .cha-pic2 > li:hover img {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.05, 1.05);
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
