@@ -12,7 +12,7 @@ import Login from './components/pages/Login';
 
 export default function MainComponent(){
   return(
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     < ScrollGoTop/>
     <Routes>
       <Route path="/" element={<Layout/>}>
