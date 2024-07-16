@@ -13,7 +13,7 @@ export default function Sub4() {
 
   useEffect(()=>{
     sub4_mousePo();
-    // sub4_poster();
+    sub4_poster();
   })
 
   // 코드 리턴구역 ////
