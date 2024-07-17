@@ -71,7 +71,7 @@
 }
 .page-bx{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 #GNB{
@@ -129,6 +129,7 @@
     align-items: center;
     gap: clamp(10px,2vw,30px);
     transition: .3s;
+    padding-right: clamp(1px,2vw,60px);
     // margin-left: auto;
 }
 .member li{
@@ -207,11 +208,9 @@
     }
     .icon2{
         display: inline-block;
-        max-width: 70px;
-        max-height: 70px;
+        width: clamp(30px,8vw,70px);
         aspect-ratio: 1/1;
-        min-width: 30px;
-        min-height: 30px;
+
     }
     .icon2 img{
         width: 100%;
