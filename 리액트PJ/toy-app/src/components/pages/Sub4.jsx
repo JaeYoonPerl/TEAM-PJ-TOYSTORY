@@ -24,7 +24,7 @@ export default function Sub4() {
     <section className="wrap">
   
       {/* 메뉴 영역  */}
-      <header id="top-area" className=""></header>
+      {/* <header id="top-area" className=""></header> */}
       <div className="ts"></div>
       {/* 상단 영역  */}
       <div id="top">
