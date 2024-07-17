@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/css/main.d341c30f.css",
-    "main.js": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/js/main.9fe374c0.js",
+    "main.css": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/css/main.1cc2aefb.css",
+    "main.js": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/js/main.088d474a.js",
     "static/media/common4.jpg": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/media/common4.9ea8926cf7ff4fc66e1f.jpg",
     "static/media/bg_TRAILERS.png": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/media/bg_TRAILERS.a46ac66cfafecbe24192.png",
     "static/media/bg_summary.jpg": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/media/bg_summary.705617ef1365cf5342d2.jpg",
@@ -16,11 +16,11 @@
     "static/media/bged0.jpg": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/media/bged0.9a17e201471ac6afa60e.jpg",
     "static/media/sky.jpg": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/media/sky.af5f31dfba0df1695a85.jpg",
     "index.html": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/index.html",
-    "main.d341c30f.css.map": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/css/main.d341c30f.css.map",
-    "main.9fe374c0.js.map": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/js/main.9fe374c0.js.map"
+    "main.1cc2aefb.css.map": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/css/main.1cc2aefb.css.map",
+    "main.088d474a.js.map": "/TEAM-PJ-TOYSTORY/%EB%A6%AC%EC%95%A1%ED%8A%B8PJ/toy-app/build/static/js/main.088d474a.js.map"
   },
   "entrypoints": [
-    "static/css/main.d341c30f.css",
-    "static/js/main.9fe374c0.js"
+    "static/css/main.1cc2aefb.css",
+    "static/js/main.088d474a.js"
   ]
 }
