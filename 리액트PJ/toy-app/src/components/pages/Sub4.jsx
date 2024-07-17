@@ -75,7 +75,7 @@ export default function Sub4() {
         </div>
 
         {/* 하단 영역  */}
-        <div id="footer">
+        
           <div className="pointer"></div>
           <div className="footer-icon">
             <a href="#">
@@ -84,7 +84,7 @@ export default function Sub4() {
           </div>
         </div>
         <div className="footer-bx col-12"></div>
-      </div>
+      
     </section>
   );
 } /////// Sub4 /////
