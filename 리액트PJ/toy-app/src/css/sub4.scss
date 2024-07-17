@@ -256,6 +256,7 @@
 
 .footer-icon img{
   position: relative;
+  z-index: 99;
   width: 50%;
   left: 55%;
   animation: icon-ani 1.3s ease-in-out infinite;
