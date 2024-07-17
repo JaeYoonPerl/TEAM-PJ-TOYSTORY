@@ -13,7 +13,7 @@ export default function sub1Cbox(ref) {
     for (let i = 1; i <= 8; i++) {
       chgrid.innerHTML += `
         <div class="s1chbox">
-          <img src={process.env.PUBLIC_URL+"/img"+cha0${i}.jpg} alt="캐릭터">
+          <img src=${process.env.PUBLIC_URL}/images/img1/cha0${i}.jpg alt="캐릭터">
           <div class="s1chtit">
           <h3>${chaData[i - 1].chaname}</h3>
           <p>${chaData[i - 1].chaintro}</p>

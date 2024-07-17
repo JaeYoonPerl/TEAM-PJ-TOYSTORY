@@ -24,7 +24,7 @@ export default function sub1bgbox() {
           ? 'class="fourth beingTxt"'
           : ""
       }>
-          <img src="../../images/img1/bged${i}.jpg" alt="bg">
+          <img src=${process.env.PUBLIC_URL}/images/img1/bged${i}.jpg alt="bg">
       </div>
       `;
     } //////// for /////////

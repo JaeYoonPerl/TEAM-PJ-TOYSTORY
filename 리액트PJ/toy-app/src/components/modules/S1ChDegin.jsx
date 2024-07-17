@@ -26,13 +26,13 @@ function S1ChDegin(props) {
           {/* 이동버튼 */}
           <a href="##" className="s1abtn ab1">
             <img
-              src={process.env.PUBLIC_URL + "./images/img1/left_btn.png"}
+              src={process.env.PUBLIC_URL + "/images/img1/left_btn.png"}
               alt="왼쪽이동버튼"
             />
           </a>
           <a href="##" className="s1abtn ab2">
             <img
-              src={process.env.PUBLIC_URL + "./images/img1/right_btn.png"}
+              src={process.env.PUBLIC_URL + "/images/img1/right_btn.png"}
               alt="오른쪽이동버튼"
             />
           </a>
