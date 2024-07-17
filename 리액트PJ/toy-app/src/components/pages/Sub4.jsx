@@ -8,21 +8,15 @@ import sub4_poster from "../func/sub4/sub4_poster";
 import S4character from "../modules/S4character";
 import S4synopsis from "../modules/S4synopsis";
 
-
-
-
-
 export default function Sub4() {
-
-  useEffect(()=>{
+  useEffect(() => {
     sub4_mousePo();
     sub4_poster();
-  })
+  });
 
   // 코드 리턴구역 ////
   return (
     <section className="wrap">
-  
       {/* 메뉴 영역  */}
       {/* <header id="top-area" className=""></header> */}
       <div className="ts"></div>
@@ -41,7 +35,10 @@ export default function Sub4() {
       {/* 메인 영역  */}
       <div id="main">
         <div className="main-title">
-          <img src={process.env.PUBLIC_URL +`/images/img4/toystory4_logo.jpg`} alt="토이스토리 로고" />
+          <img
+            src={process.env.PUBLIC_URL + `/images/img4/toystory4_logo.jpg`}
+            alt="토이스토리 로고"
+          />
         </div>
         {/* 재귀함수 호출  */}
         <S4gbox />
@@ -52,19 +49,28 @@ export default function Sub4() {
           <h2 className="main-title">POSTER</h2>
           <ul className="poster poster-common">
             <li>
-              <img src={process.env.PUBLIC_URL +`/images/img4/ts4_circle.png`} alt="포스터" />
+              <img src={process.env.PUBLIC_URL + `/images/img4/ts4_circle.png`} alt="포스터" />
               <span className="sub-text1">mouse here!</span>
             </li>
           </ul>
           <ul className="poster2 poster-common">
             <li>
-              <img src={process.env.PUBLIC_URL +`/images/img4/toystory4_poster.jpg`} alt="포스터" />
+              <img
+                src={process.env.PUBLIC_URL + `/images/img4/toystory4_poster.jpg`}
+                alt="포스터"
+              />
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL +`/images/img4/toystory4_poster2.jpg`} alt="포스터" />
+              <img
+                src={process.env.PUBLIC_URL + `/images/img4/toystory4_poster2.jpg`}
+                alt="포스터"
+              />
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL +`/images/img4/toystory4_poster3.jpg`} alt="포스터" />
+              <img
+                src={process.env.PUBLIC_URL + `/images/img4/toystory4_poster3.jpg`}
+                alt="포스터"
+              />
             </li>
           </ul>
         </div>
@@ -75,16 +81,15 @@ export default function Sub4() {
         </div>
 
         {/* 하단 영역  */}
-        
+        <div className="footer">
           <div className="pointer"></div>
           <div className="footer-icon">
             <a href="#">
-              <img src={process.env.PUBLIC_URL +`/images/img4/alien1.png`} alt="알린이미지" />
+              <img src={process.env.PUBLIC_URL + `/images/img4/alien1.png`} alt="알린이미지" />
             </a>
           </div>
         </div>
-        <div className="footer-bx col-12"></div>
-      
+      </div>
     </section>
   );
 } /////// Sub4 /////
