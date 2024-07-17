@@ -52,7 +52,6 @@
   margin-left: 40px;
 }
 
-
 .S1deintro {
   position: relative;
   //padding-top: 30px;
@@ -64,7 +63,6 @@
   //padding-top: 30px;
   margin-left: 40px;
 }
-
 
 .S1trmovie {
   //position: absolute;
@@ -112,19 +110,17 @@
 }
 
 /* 버튼 */
-.S1tbtn{
+.S1tbtn {
   width: 100%;
   height: 15vh;
   font-size: 3rem;
   border: none;
   background-color: #fff;
   padding-top: 35px;
-  & :hover{
+  & :hover {
     color: gold;
   }
 }
-
-
 
 /* 버튼 포함 디자인 캐릭터 영역 */
 .S1dbox {
@@ -142,14 +138,14 @@
 }
 
 /* 버튼 */
-.S1dbtn{
+.S1dbtn {
   width: 100%;
   height: 15vh;
   font-size: 3rem;
   border: none;
   background-color: #fff;
   padding-top: 35px;
-  & :hover{
+  & :hover {
     color: lawngreen;
   }
 }
@@ -463,59 +459,56 @@
   padding-bottom: 10px;
 }
 
-
 /*************************************************** 미디어 쿼리 영역 ***************************************************/
 
 @media screen and (max-width: 2000px) {
-
   .S1intro-area h2 {
     font-size: 4rem;
     line-height: 1.3;
   }
-  
+
   #S1cha-box {
     display: grid;
-        max-width: 2000px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: min(2.5vw, 35px) min(2vw, 8px);
-        margin: 0 auto;
-        padding-top: 20px;
-        margin-bottom: 2px;
-}
-.s1chbox {
-  & h3 {
-    font-size: 1.4rem;
-    padding-bottom: 1px;
+    max-width: 2000px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: min(2.5vw, 35px) min(2vw, 8px);
+    margin: 0 auto;
+    padding-top: 20px;
+    margin-bottom: 2px;
   }
-  & p {
-    font-size: 1.9rem;;
-        font-weight: bold;
-        text-align: left;
-        padding-top: 1px;
-        line-height: 1.5;
-        padding-right: 20px;
-        padding-left: 32px
+  .s1chbox {
+    & h3 {
+      font-size: 1.4rem;
+      padding-bottom: 1px;
+    }
+    & p {
+      font-size: 1.9rem;
+      font-weight: bold;
+      text-align: left;
+      padding-top: 1px;
+      line-height: 1.5;
+      padding-right: 20px;
+      padding-left: 32px;
+    }
+    & .s1chtit {
+      position: absolute;
+      top: 0px;
+      left: 2px;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 1/1;
+      color: #000;
+      line-height: 1.4;
+      box-sizing: border-box;
+      text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff;
+      padding: 15px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
   }
-  & .s1chtit {
-    position: absolute;
-    top: 0px;
-    left: 2px;
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1/1;
-    color: #000;
-    line-height: 1.4;
-    box-sizing: border-box;
-    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff;
-    padding: 15px;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-}
 }
 
 @media screen and (max-width: 1400px) {
-
   .s1chbox p {
     font-size: 1.3rem;
     font-weight: bold;
@@ -524,12 +517,10 @@
     line-height: 1.5;
     padding-right: 20px;
     padding-left: 32px;
-}
-
+  }
 }
 
 @media screen and (max-width: 1270px) {
-
   .s1chbox p {
     font-size: 1.2rem;
     font-weight: bold;
@@ -538,16 +529,16 @@
     line-height: 1.5;
     padding-right: 20px;
     padding-left: 32px;
-}
+  }
 }
 
 @media screen and (max-width: 1160px) {
   .s1chbox h3 {
     font-size: 1.11rem;
     padding-bottom: 1px;
-}
+  }
 
-.s1chbox p {
+  .s1chbox p {
     font-size: 1.15rem;
     font-weight: bold;
     text-align: left;
@@ -555,18 +546,31 @@
     line-height: 1.4;
     padding-right: 20px;
     padding-left: 32px;
+  }
 }
 
+@media screen and (max-width: 1130px) {
+  .s1chbox p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 1px;
+    line-height: 1.4;
+    padding-right: 20px;
+    padding-left: 32px;
+  }
+  #S1bgc-box .second span {
+    line-height: 1.3;
+    font-size: 2.2rem;
+    text-align: justify;
+  }
 }
-
-
 
 @media screen and (max-width: 1100px) {
-
   .s1chbox h3 {
     font-size: 1.2rem;
     padding-bottom: 1px;
-}
+  }
   .s1chbox p {
     font-size: 1rem;
     font-weight: bold;
@@ -575,20 +579,18 @@
     line-height: 1.5;
     padding-right: 20px;
     padding-left: 32px;
+  }
+  #S1bgc-box span {
+    font-size: 2.1rem;
+  }
+  #S1bgc-box .second span {
+    line-height: 1.5;
+    font-size: 2rem;
+    text-align: justify;
+  }
 }
-#S1bgc-box span {
-  font-size: 2.1rem;
-}
-#S1bgc-box .second span {
-  line-height: 1.5;
-  font-size: 2rem;
-  text-align: justify;
-}
-}
-
 
 @media screen and (max-width: 1040px) {
-
   .S1intro-area {
     height: 60vh;
     width: 98.25vw;
@@ -604,33 +606,31 @@
   }
 
   .S1tbox {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0 30px;
-  margin-bottom: 30px;
-  & h4 {
-    padding-top: 10px;
-    font-size: 2.2rem;
-    line-height: 1.5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 30px;
+    margin-bottom: 30px;
+    & h4 {
+      padding-top: 10px;
+      font-size: 2.2rem;
+      line-height: 1.5;
+    }
   }
-}
 
-/* 버튼 */
-.S1tbtn{
-  width: 100%;
-  height: 15vh;
-  font-size: 3rem;
-  border: none;
-  background-color: #fff;
-  padding-top: 35px;
-  & :hover{
-    color: gold;
+  /* 버튼 */
+  .S1tbtn {
+    width: 100%;
+    height: 15vh;
+    font-size: 3rem;
+    border: none;
+    background-color: #fff;
+    padding-top: 35px;
+    & :hover {
+      color: gold;
+    }
   }
-}
-
-
 
   .S1trmovie > iframe {
     padding-top: 5px;
@@ -660,20 +660,19 @@
       line-height: 1.5;
     }
   }
-  
+
   /* 버튼 */
-  .S1dbtn{
+  .S1dbtn {
     width: 100%;
     height: 15vh;
     font-size: 3rem;
     border: none;
     background-color: #fff;
     padding-top: 35px;
-    & :hover{
+    & :hover {
       color: lawngreen;
     }
   }
-
 
   .S1deintro h3 {
     padding-top: 50px;
@@ -791,31 +790,31 @@
   }
 
   .S1tbox {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0 30px;
-  margin-bottom: 30px;
-  & h4 {
-    padding-top: 10px;
-    font-size: 2.2rem;
-    line-height: 1.5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 30px;
+    margin-bottom: 30px;
+    & h4 {
+      padding-top: 10px;
+      font-size: 2.2rem;
+      line-height: 1.5;
+    }
   }
-}
 
-/* 버튼 */
-.S1tbtn{
-  width: 100%;
-  height: 15vh;
-  font-size: 3rem;
-  border: none;
-  background-color: #fff;
-  padding-top: 35px;
-  & :hover{
-    color: gold;
+  /* 버튼 */
+  .S1tbtn {
+    width: 100%;
+    height: 15vh;
+    font-size: 3rem;
+    border: none;
+    background-color: #fff;
+    padding-top: 35px;
+    & :hover {
+      color: gold;
+    }
   }
-}
 
   .tmovie1 {
     width: 40vw;
@@ -845,20 +844,19 @@
       line-height: 1.5;
     }
   }
-  
+
   /* 버튼 */
-  .S1dbtn{
+  .S1dbtn {
     width: 100%;
     height: 15vh;
     font-size: 3rem;
     border: none;
     background-color: #fff;
     padding-top: 35px;
-    & :hover{
+    & :hover {
       color: lawngreen;
     }
   }
-
 
   .S1deintro h4 {
     font-size: 2.3rem;
@@ -994,16 +992,16 @@
       line-height: 1.5;
     }
   }
-  
+
   /* 버튼 */
-  .S1tbtn{
+  .S1tbtn {
     width: 100%;
     height: 15vh;
     font-size: 3rem;
     border: none;
     background-color: #fff;
     padding-top: 35px;
-    & :hover{
+    & :hover {
       color: gold;
     }
   }
@@ -1044,16 +1042,16 @@
       line-height: 1.5;
     }
   }
-  
+
   /* 버튼 */
-  .S1dbtn{
+  .S1dbtn {
     width: 100%;
     height: 15vh;
     font-size: 3rem;
     border: none;
     background-color: #fff;
     padding-top: 35px;
-    & :hover{
+    & :hover {
       color: lawngreen;
     }
   }
@@ -1083,3 +1081,172 @@
   }
 }
 /********* 최대사이즈 600px 이하 끝 *********/
+
+@media screen and (max-width: 375px) {
+  .S1main-title {
+    margin-top: 29vh;
+    margin-left: -20px;
+  }
+
+  .S1intro-area h2 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+
+  .S1trintro {
+    position: relative;
+    margin-left: 10px;
+  }
+  .tmovie1 {
+    width: 40vw;
+    height: 20vh;
+  }
+  .tmovie2 {
+    width: 40vw;
+    height: 20vh;
+  }
+
+  .S1tbox h4 {
+    padding-top: 10px;
+    font-size: 1.85rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-left: 7px;
+    margin-right: 15px;
+}
+  #S1cha-box {
+    margin-left: 5px;
+    margin-right: 6px;
+    max-width: 600px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: min(2.5vw, 5px) min(2vw, 2px);
+    font-size: 2rem;
+    line-height: 1.5;
+    padding-bottom: 0px;
+  }
+
+  .s1chbox h3 {
+    font-size: 2rem;
+    margin-top: -10px;
+  }
+
+  .s1chbox p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.5;
+    padding-right: 1px;
+    padding-left: 1px;
+  }
+
+  .S1deintro {
+    position: relative;
+    margin-left: 15px;
+  }
+
+  .dmovie1 {
+    width: 40vw;
+    height: 20vh;
+  }
+
+  .dmovie2 {
+    width: 40vw;
+    height: 20vh;
+  }
+
+  .S1dbox h4 {
+    padding-top: 10px;
+    font-size: 2.1rem;
+    line-height: 1.4;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 21px;
+  }
+
+  .S1bgdintro {
+    position: relative;
+    margin-left: 16px;
+  }
+
+  .dmovie3 {
+    width: 40vw;
+    height: 20vh;
+  }
+  .dmovie4 {
+    width: 40vw;
+    height: 20vh;
+  }
+
+  #S1container > h2 {
+    font-size: 3.5rem;
+  }
+
+  #S1container > .S1de-chpart {
+    position: relative;
+    width: 90vw;
+    height: 40vh;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .ab1 {
+    left: 18px;
+  }
+  .ab2 {
+    right: 18px;
+  }
+
+  .S1indic {
+    display: flex;
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+  }
+  .S1indic li {
+    width: 17px;
+    height: 15px;
+  }
+
+  .S1bg-designbx > h2 {
+    font-family: "Lobster", sans-serif;
+    font-size: 3.2rem;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 10px;
+  }
+
+  #S1bgc-box {
+    display: grid;
+    max-width: 1200px;
+    padding-top: 20px;
+    padding-bottom: 0.5vh;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: min(1.5vw, 15px) min(1vw, 10px);
+  }
+
+  #S1bgc-box span {
+    text-align: left;
+    font-size: 2.2rem;
+    padding: 24px;
+    top: 4px;
+  }
+
+  #S1bgc-box .second span {
+    line-height: 1.3;
+    font-size: 2rem;
+    text-align: left;
+    top: 7px;
+  }
+  #S1bgc-box .third span {
+    font-size: 2rem;
+    height: 50%;
+  }
+
+  #S1bgc-box .fourth span {
+    height: 35%;
+    font-size: 2.4rem;
+  }
+}
