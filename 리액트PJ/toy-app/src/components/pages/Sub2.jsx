@@ -41,7 +41,7 @@ export default function Sub2() {
         inBox[i].style.backgroundColor = "rgb(0 0 0 / 40%)"; // 배경색
       } else if (i === 7) {
         // 순번 5와 6에 해당하는 경우
-        inBox[i].style.backgroundColor = "#fff"; // 배경색
+        inBox[i].style.backgroundColor = "#ffffffa0";
       } else {
         // 그 외의 경우
         inBox[i].style.backgroundColor = "rgb(0 0 0 / 60%)"; // 배경색
