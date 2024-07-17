@@ -17,7 +17,7 @@ export default function Sub3() {
     // 코드 리턴구역 ////
     return (
         <>
-         <button id="btn-back-to-top" title="위로 가기"></button>
+         {/* <button id="btn-back-to-top" title="위로 가기"></button> */}
             <div id="s3Intro-area">
                 <section className="intro-area">
                     <div className="cont-box">
