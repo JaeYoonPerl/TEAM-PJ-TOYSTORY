@@ -9,7 +9,7 @@
 #foot-back{
     background-color: #ffffffa0;
     position: relative;
-    z-index: 99999;
+    // z-index: 9;
 }
 .icon2{
     display: none;
@@ -127,7 +127,7 @@
     z-index: 2;
     display: flex;
     align-items: center;
-    gap: 0 60px;
+    gap: clamp(10px,2vw,30px);
     transition: .3s;
     // margin-left: auto;
 }
@@ -135,7 +135,7 @@
     list-style-type: none;
     font-family: "Lugrasimo", cursive;
     font-weight: bold;
-    font-size: 20px;
+    font-size: clamp(10px,1.5vw,20px);
 }
 #top-area:hover .member{
     top: 0;
